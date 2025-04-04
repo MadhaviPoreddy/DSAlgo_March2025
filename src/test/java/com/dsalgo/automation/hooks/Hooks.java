@@ -8,16 +8,4 @@ import io.cucumber.java.Scenario;
 
 public class Hooks {
 
-	@Before
-	public void setUp(Scenario scenario) {
-		DriverFactory.initializeDriver();
-	}
-	
-    @After
-    public void tearDown(Scenario scenario) {
-        if (scenario.isFailed()) {
-            System.out.println("Scenario Failed: " + scenario.getName());
-        }
-        DriverFactory.quitDriver();
-    }
 }
