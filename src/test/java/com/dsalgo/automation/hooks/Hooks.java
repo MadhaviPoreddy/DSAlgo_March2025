@@ -18,7 +18,6 @@ public class Hooks {
         if (scenario.isFailed()) {
             System.out.println("Scenario Failed: " + scenario.getName());
         }
-        System.out.println("Closing browser for scenario: " + scenario.getName());
         DriverFactory.quitDriver();
     }
 }
