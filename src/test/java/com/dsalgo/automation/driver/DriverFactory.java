@@ -1,9 +1,5 @@
-package com.dsalgo.automation.driver;
-
-
+package com.dsalgo.automatio.driver;
 
 public class DriverFactory {
-
-
 
 }
