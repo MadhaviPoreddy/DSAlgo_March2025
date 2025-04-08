@@ -1,7 +1,14 @@
 Feature: Queue
 
-  Background: Login into DsAlgo application
-    Given The User is on Queue page
+ Scenario: Login into DsAlgo application
+    Given the user is on the DS Algo Sign-In Page
+    When the user clicks the Login button
+    Then user should be redirected to the Home Page
+
+  Scenario: Navigate to Queue page
+    Given the user is on the Home page
+    When the user clicks the Get Started button for Queues
+    Then the user should navigated to Queue page
 
   Scenario: Verify that user is able to navigate to Implementation of Queue in Python page
     When The user clicks on Implementation of Queue in Python link
@@ -71,7 +78,7 @@ Feature: Queue
     Then The User should be navigated to Implementation using array page
 
   Scenario: Verify that user is able to navigate to Practice questions page
-    Given The User is on IImplementation using array page
+    Given The User is on Implementation using array page
     When The user clicks on Practice questions link
     Then The User should be navigated to Practice Questions page
 
@@ -123,4 +130,3 @@ Feature: Queue
     Given The User is on Try Editor Page
     When The user enters an invalid code in Editor and click on the Run button
     Then The user should get an error message after excuting the code
-

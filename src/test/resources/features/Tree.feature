@@ -1,7 +1,14 @@
 Feature: Tree
 
-  Background: Login into DsAlgo application
-    Given The User is on Tree page
+ Scenario: Login into DsAlgo application
+    Given the user is on the DS Algo Sign-In Page
+    When the user clicks the Login button
+    Then user should be redirected to the Home Page
+    
+   Scenario: Navigate to Queue page
+    Given the user is on the Home page
+    When the user clicks the Get Started button for Tree
+    Then the user should navigated to Tree page
 
   Scenario: Verify that user is able to navigate to Overview of Trees page
     When The user clicks on Overview of Trees link
@@ -54,7 +61,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Terminologies page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -76,14 +83,14 @@ Feature: Tree
     Then The User should be navigated to Types of Trees page
 
   Scenario: Verify that user is able to navigate to Practice questions page
-    Given The User is on Types of Trees  page
+    Given The User is on Types of Trees page
     When The user clicks on Practice questions link
     Then The User should be navigated to Practice Questions page
 
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Types of Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -122,7 +129,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Tree Traversals page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -156,7 +163,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Traversals-Illustration page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -190,7 +197,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Binary Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -229,7 +236,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Types of Binary Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -258,7 +265,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Implementation in Python page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -292,7 +299,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Binary Tree Travesals page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -321,7 +328,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Implementation of Binary Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -350,7 +357,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Applications of Binary Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -384,7 +391,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Binary Search Trees page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
@@ -413,7 +420,7 @@ Feature: Tree
   Scenario: Verify that user is able to navigate to Code executor page
     Given The User is on Implementation of BST page
     When The user clicks on Try Here button
-    Then The User should be navigated to CodeExecutor Editor Page
+    Then The User should be navigated to the CodeExecutor Editor Page
 
   Scenario: Verify TryEditor
     Given The User is on Try Editor Page
