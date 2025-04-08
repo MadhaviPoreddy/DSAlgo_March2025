@@ -1,60 +1,47 @@
 Feature: Navigation to Sign-In Page
 
   Scenario: User navigates to the Sign-In page from the Home Page
-    Given the user is on the DS Algo Home Page
+    Given the user is on the "Home" page before sign in
     When the user clicks the "Sign in" link
     Then the user should be redirected to the Sign-In page
 
-  Scenario: Display error message for empty fields during login
-    Given the user is on the DS Algo Sign-In Page
-    When the user clicks the "Login" button with empty "Username" and "Password" fields
-    Then the user should see an error message "Please fill out this field." below the "Username" textbox
+  Scenario: Login with various combinations of username and password from Excel
+    Given the user is on the "Sign-In" page
+    When the user performs login using Excel sheet "LoginData"
+    Then login results should be validated based on Excel data
+    And if login is successful, the user should be redirected to the Home Page
 
-  Scenario: Display error message for empty Password field during login
-    Given the user is on the DS Algo Sign-In Page
-    When the user enters a valid "Username" and leaves the "Password" field empty
-    And the user clicks the "Login" button
-    Then an error message "Please fill out this field." should appear below the "Password" textbox
+  Scenario: User views Data Structures dropdown options after sign in
+    Given the user is on the "Home" page after sign in
+    When the user clicks the Data Structures dropdown after sign in
+    Then the user is not able to see Data Structure Introduction in the dropdown
 
-  Scenario: Display error message for empty Username field during login
-    Given the user is on the DS Algo Sign-In Page
-    When the user enters a valid password and leaves the "Username" field empty
-    And the user clicks the "Login" button
-    Then an error message "Please fill out this field." should appear below the "Username" textbox
+  Scenario Outline: Selecting an option from the Data Structures dropdown after sign in
+    Given the user is on the "Home" page after sign in
+    When the user selects "<option>" from the Data Structure dropdown after signing in
+    Then the user should be navigated to the "<option>" module page
 
-  Scenario: Display error message for invalid username during login
-    Given the user is on the DS Algo Sign-In Page
-    When the user enters an invalid username and a valid password
-    And the user clicks the "Login" button
-    Then the user should see an error message "Invalid username and password"
+    Examples: 
+      | option      |
+      | Array       |
+      | Linked List |
+      | Stack       |
+      | Queue       |
+      | Tree        |
+      | Graph       |
 
-  Scenario: Display error message for invalid password during login
-    Given the user is on the DS Algo Sign-In Page
-    When the user enters a valid username and an invalid password
-    And the user clicks the "Login" button
-    Then the user should see an error message "Invalid username and password"
-
-  Scenario: Successful login with valid credentials
-    Given the user is on the DS Algo Sign-In Page
-    When the user enters a valid username and password
-    And the user clicks the "Login" button
-    Then the user should be redirected to the Data Structure Home Page
-    And a message "You are logged in" should be displayed
-   
- 
   Scenario: User navigates to the Registration Page from the Sign-In Page
-    Given the user is on the DS Algo Sign-In Page
+    Given the user is on the "Sign-In" page
     When the user clicks the "Register" link
     Then the user should be redirected to the User Registration Page
-    
-   Scenario: User clicks 'NumpyNinja' link and is redirected to the home page
-    Given the user is on the DS Algo Sign-In Page
-    When the user clicks the "NumpyNinja" link on the top left corner
-    Then the user is not redirected to the home page
 
   Scenario: Verify that the user is able to sign out successfully
-    Given the user is on the DS Algo Sign-In Page
+    Given the user is on the "Sign-In" page
     When the user clicks on the "Sign out" button
     Then the user should be redirected to the Home page
     And a message "Logged out successfully" should be displayed
 
+  Scenario: Verify that the user is able to be redirected to the home page
+    Given the user is on the "Sign-In" page
+    When the user clicks the "NumpyNinja" logo on the top left corner
+    Then the user is not redirected to the home page
