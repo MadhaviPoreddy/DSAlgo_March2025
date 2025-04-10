@@ -1,21 +1,41 @@
 package com.dsalgo.automation.hooks;
 
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.ExcelReader;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
-	public class Hooks {
-	    
-	    @Before //this will open the browser for each scenario 
-	    public static void setup() {
-	        DriverFactory.initializeDriver();
-	    }
-	    
-	    @After //this will close the browser for each scenario 
-	    public static void teardown() {
-		DriverFactory.quitDriver();
-	    }
-	}
+public class Hooks {
+	
+	private WebDriver driver;
+	
+	List<Map<String, String>> testData = ExcelReader.getAllRows("Browser"); //This code is to get All rows from specific sheet in excel
+    
+    @Before
+    public void setUpFreshBrowser(Scenario scenario) {
+    	Map<String, String> specificRow = testData.get(0); 	//This code will get all details from particular row
+    	String browser = specificRow.get("Browser"); 		//This code will get specific cell from the row, for the given Tile e.g Here Title (Header) is Browser
+    	System.out.println("Choosen Browser is : "+browser);
+    	DriverFactory.initializeDriver(browser);
+    }
 
-
+    @After
+    public void tearDownFreshBrowser(Scenario scenario) {
+    	driver = DriverFactory.getDriver();
+    	//below code is to get screenshots for failed scenarios. screenshots can be viewed in cucumber reports in Target
+    	if (scenario.isFailed()) {
+    		byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    		scenario.attach(screenshot, "image/png", "Screenshot");
+    	}
+        DriverFactory.quitDriver();
+    }
+}
