@@ -1,24 +1,20 @@
+package com.dsalgo.automation.hooks;
 
+import com.dsalgo.automation.driver.DriverFactory;
 
-	package com.dsalgo.automation.hooks;
-
-	import com.dsalgo.automation.driver.DriverFactory;
-
-	import io.cucumber.java.AfterAll;
-	import io.cucumber.java.BeforeAll;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 	public class Hooks {
 	    
-	    @BeforeAll
+	    @Before //this will open the browser for each scenario 
 	    public static void setup() {
-	        System.out.println("Initializing WebDriver once before all scenarios");
 	        DriverFactory.initializeDriver();
 	    }
 	    
-	    @AfterAll
+	    @After //this will close the browser for each scenario 
 	    public static void teardown() {
-	        System.out.println("Closing WebDriver after all scenarios");
-	        DriverFactory.quitDriver();
+		DriverFactory.quitDriver();
 	    }
 	}
 
