@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class ExcelReader {
-    private static final String EXCEL_FILE_PATH = "src/test/resources/testdata/TestDataedge.xlsx";
+    private static final String EXCEL_FILE_PATH = "src/test/resources/testdata/TestData.xlsx";
 
     public static List<Map<String, String>> getAllRows(String sheetName) {
         List<Map<String, String>> allData = new ArrayList<>();
@@ -21,8 +21,9 @@ public class ExcelReader {
                 throw new RuntimeException("Header row is missing in the Excel sheet.");
             }
 
-            int totalColumns = headerRow.getLastCellNum();
+            int totalColumns = headerRow.getLastCellNum(); // Total number of columns
 
+            // Loop through all rows, including empty ones
             for (int rowNum = 1; rowNum <= sheet.getLastRowNum(); rowNum++) {
                 Row dataRow = sheet.getRow(rowNum);
                 Map<String, String> rowData = new LinkedHashMap<>();
@@ -36,7 +37,7 @@ public class ExcelReader {
 
                     rowData.put(header, value);
                 }
-                allData.add(rowData);
+                allData.add(rowData); // Ensure even empty rows are included
             }
         } catch (IOException e) {
             throw new RuntimeException("Failed to read Excel file", e);
@@ -44,13 +45,13 @@ public class ExcelReader {
         return allData;
     }
 
- 
+    // Helper method to handle different cell types
     private static String getCellValue(Cell cell) {
         switch (cell.getCellType()) {
             case STRING:
                 return cell.getStringCellValue().trim();
             case NUMERIC:
-                return String.valueOf((long) cell.getNumericCellValue());
+                return String.valueOf((long) cell.getNumericCellValue()); // Convert numeric to string
             case BOOLEAN:
                 return String.valueOf(cell.getBooleanCellValue());
             case FORMULA:
@@ -60,17 +61,5 @@ public class ExcelReader {
             default:
                 return "";
         }
-    }
-    // Specific to Register Module
-    public static List<String> extractUserDetails(Map<String, String> rowData) {
-        if (rowData == null || rowData.isEmpty()) {
-            throw new IllegalArgumentException("Row data is empty or null");
-        }
-
-        String username = rowData.getOrDefault("Username", ""); 
-        String password = rowData.getOrDefault("Password", "");
-        String confirmPassword = rowData.getOrDefault("ConfirmPassword", "");
-
-        return Arrays.asList(username, password, confirmPassword);
     }
 }
