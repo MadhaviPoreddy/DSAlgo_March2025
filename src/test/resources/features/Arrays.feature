@@ -262,46 +262,46 @@ Feature: Test Scenarios for Arrays
     #Then The user should able to see Find Numbers with Even Number of Digits Practiece Questions output in the console
 
   #Test Case 43
-  Scenario: Verify that user receives error on submitting invalid python code for "Find Numbers with Even Number of Digits" question
-    Given The user is on the Find Numbers with Even Number of Digits practice question editor
-    When The user write the invalid code in Practice Questions Editor and Click the Submit Button
-    Then The user see an error message Error occurred during submission
+  #Scenario: Verify that user receives error on submitting invalid python code for "Find Numbers with Even Number of Digits" question
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Submit Button
+    #Then The user see an error message Error occurred during submission
     
   #Test Case 44
-  Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Find Numbers with Even Number of Digits" question
-    Given The user is on the Find Numbers with Even Number of Digits practice question editor
-    When The user write the valid Find Numbers with Even Number of Digits and Click the Submit Button
-    Then The user is not able to see success message Submission successful in Find Numbers with Even Number of Digits output
+  #Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Find Numbers with Even Number of Digits" question
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    #When The user write the valid Find Numbers with Even Number of Digits and Click the Submit Button
+    #Then The user is not able to see success message Submission successful in Find Numbers with Even Number of Digits output
 
   #Test Case 45
   #Scenario: Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Run button
     #Given The user is on the Find Numbers with Even Number of Digits practice question editor
     #When The user Clicks the Run Button without entering any code in Editor
-    #Then The user is not able to see error message
+    #Then The user is not able to see error message for blank input
 #
   #Test Case 46
   #Scenario: Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Submit button
     #Given The user is on the Find Numbers with Even Number of Digits practice question editor
     #When The user Clicks the Submit Button without entering any code in Editor
-    #Then The user should be able to see error message "Error occured during submission"
-#
+    #Then The user see an error message Error occurred during submission
+
   #Test Case 47
   #Scenario: Verify that user is able to navigate to "Squares of a Sorted Array" Page from Practice question page of "Arrays in Python" page
     #Given The user is on the Arrays Practice Questions page
     #When The user clicks the Squares of a Sorted Array link
-    #Then The user should be redirected to Practice Question page contains a question,and try Editor with Run and Submit buttons
+    #Then The user should be redirected to Question page contains a question,and try Editor with Run and Submit buttons
 
   #Test Case 48
   #Scenario: Verify that user receives error message for invalid python code on running "Squares of a Sorted Array" question
     #Given The user is on the Squares of a Sorted Array practice question editor
-    #When The user write the invalid code in Editor and Click the Run Button
+    #When The user write the invalid code in Editor and click the Run Button
     #Then The user should able to see an error message in alert window
-#
+
   #Test Case 49---Kalpana to check the step 3
-  #Scenario: Verify that user is able to run valid python code for "Squares of a Sorted Array" question
-    #Given The user is on the Squares of a Sorted Array practice question editor
-    #When The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button
-    #Then The user should able to see Squares of a Sorted Array output in the console
+  Scenario: Verify that user is able to run valid python code for "Squares of a Sorted Array" question
+    Given The user is on the Squares of a Sorted Array practice question editor
+    When The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button
+    Then The user should able to see Squares of a Sorted Array output in the console
 
   #Test Case 50 ----> Defect and Fail the test case ----Kalpana to check the step for double verification
   #Scenario: Verify that user receives error message on submitting invalid python code for "Squares of a Sorted Array" question

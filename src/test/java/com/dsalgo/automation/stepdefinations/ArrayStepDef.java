@@ -522,6 +522,14 @@ public class ArrayStepDef {
 //		}
 //	
 	
+	@When("The user clicks the Squares of a Sorted Array link")
+	public void the_user_clicks_the_Squares_of_Sorted_array_link() throws InterruptedException
+	{
+	Thread.sleep(2000);
+	 array.squaresOfSortedArrayPractieceQue();
+	}
+
+	
 	@When("The user write the valid Squares of a Sorted Array code in Editor and Click the Submit Button")
 	public void the_user_write_the_valid_code_in_SquaresOfSortedArray_Practice_Question_editor_and_click_the_submit_button() {
 		Map<String, String> specificRow = testData2.get(11);
@@ -545,9 +553,10 @@ public class ArrayStepDef {
 	public void the_user_write_the_valid_code_in_SquaresOfSortedArray_Practice_Question_editor_and_click_the_Run_button() {
 		Map<String, String> specificRow = testData2.get(10);
     	String validCode = specificRow.get("ValidCode");
-    	//System.out.println("valid code is displayed as : " +validCode);
+    	System.out.println("valid code is displayed as : " +validCode);
     	array.verifyCodeEditor(validCode);
     	array.arrayPythonTextEditRun();
+    	
 		}
 	
 	@Then("The user should able to see Squares of a Sorted Array output in the console")
@@ -555,7 +564,7 @@ public class ArrayStepDef {
 		Map<String, String> specificRow = testData1.get(10);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = array.verifyOutput();
-        //assertEquals(expectedOutput,codeOutput);
+        assertEquals(expectedOutput,codeOutput);
         System.out.println("The out put displayed on console is:" +expectedOutput);
 
         System.out.println("The out put displayed on console is:" +codeOutput);
