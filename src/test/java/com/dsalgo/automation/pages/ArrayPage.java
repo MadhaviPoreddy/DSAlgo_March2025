@@ -44,6 +44,8 @@ public class ArrayPage {
  	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement arrayUsingListTryEdit;
  	@FindBy (css=".CodeMirror") WebElement arrayUsingListTextEdit;
  	@FindBy (xpath="//*[@id=\"content\"]/li[2]/a") WebElement arrayUsingListfromLeftMenu;
+ 	@FindBy (xpath="//*[@id=\"content\"]/li[1]/a") WebElement arrayInPythonfromLeftMenu;
+	
  	
  	//Basic Operations in Lists
  	@FindBy (xpath="/html/body/div[2]/ul[3]/a") WebElement arrayBasicOperinListLink;
@@ -61,13 +63,14 @@ public class ArrayPage {
  	@FindBy (css="body > div:nth-child(3) > a") WebElement searchArrayPractieceQue;
  	@FindBy (xpath="/html/body/div[3]/a") WebElement maxConsucutiveOnesPractieceQue;
  	@FindBy (xpath="/html/body/div[4]/a") WebElement findNumwithEvenDigitsPractieceQue;
- 	@FindBy (xpath="/html/body/div[4]/a") WebElement squaresOfSortedArrayPractieceQue;
+ 	@FindBy (xpath="/html/body/div[5]/a") WebElement squaresOfSortedArrayPractieceQue;
 
  	//practice Questions Text Editor
  	//@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement arrayPracticeRun;
  	@FindBy (css="#answer_form > input.button") WebElement arrayPracticeSubmit;
 
 	@FindBy(xpath = "//pre[text()=\"Error occurred during submission\"]") WebElement outputerror;
+	@FindBy(xpath = "//pre [text()=\" No tests were collected\"]") WebElement Blankoutputerror;
 	@FindBy(xpath = "//pre[@id='output']") WebElement output;
 
 	
@@ -123,6 +126,11 @@ public class ArrayPage {
 		return outputerror.getText();
 	}
 	
+	public String verifyBlankOutputError() {
+		return Blankoutputerror.getText();
+	}
+	
+	
 	public void arrayUsingListTryEdit()
 	{
 		arrayUsingListTryEdit.click();
@@ -156,6 +164,11 @@ public class ArrayPage {
 	{
 	arrayGetStartedBtn.click();
 	}
+	 public void arrayInPythonfromLeftMenu()
+	   {
+		 arrayInPythonfromLeftMenu.click();
+	   }
+	
 	public void arrayUsingList()
 	{
 		arrayUsingList.click();

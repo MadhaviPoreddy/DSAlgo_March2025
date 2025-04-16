@@ -168,7 +168,7 @@ Feature: Test Scenarios for Arrays
   #Test Case 27
   #Scenario: Verify that user receives error for invalid python code on running "Search the array" question
     #Given The user is on the Search the array Practice Questions editor
-    #When The user write the invalid code in Search the Array Practice Questions Editor and Click the Run Button
+    #When The user write the invalid code in Practice Questions Editor and Click the Run Button
     #Then The user should able to see an error message in alert window
 
   #Test Case 28
@@ -189,152 +189,152 @@ Feature: Test Scenarios for Arrays
     #When The user write the valid Search the Array code in Editor and Click the Submit Button
     #Then The user is not able to see success message Submission successful
 
-  #Test Case 31=======Need to update test data sheet with blank input and output
-  Scenario: Verify that user receives error message without entering any code in "Search the Array" editor and click on Run button
-    Given The user is on the Search the array Practice Questions editor
-    When The user Clicks the Run Button without entering any code in Editor
-    Then The user is not able to see error message for blank input
+  #Test Case 31
+  #Scenario: Verify that user receives error message without entering any code in "Search the Array" editor and click on Run button
+    #Given The user is on the Search the array Practice Questions editor
+    #When The user Clicks the Run Button without entering any code in Editor
+    #Then The user is not able to see error message for blank input
 
-  #Test Case 32
+  #Test Case 32 ---Need to ask Kalpana to check this
   #Scenario: Verify that user receives error message without entering any code in "Search the Array" editor and click on Submit button
     #Given The user is on the Search the array Practice Questions editor
     #When The user Clicks the Submit Button without entering any code in Editor
-    #Then The user should be able to see error message "Error occured during submission"
-#
+    #Then The user see an error message Error occurred during submission
+
   #Test Case 33
   #Scenario: Verify that user is able to navigate to "Max Consecutive Ones" Page from Practice question page of "Arrays in Python" page
-    #Given The user is on the Search the array Practice Questions editor
-    #When The user clicks the "Max Consecutive Ones" link
-    #Then The user should be redirected to "Question" page contains a question,and try Editor with Run and Submit buttons
-#
+    #Given The user is on the Arrays Practice Questions page
+    #When The user clicks the Max Consecutive Ones link
+    #Then The user should be redirected to Question page contains a question,and try Editor with Run and Submit buttons
+
   #Test Case 34
   #Scenario: Verify that user receives error for invalid python code on running "Max Consecutive Ones" question
-    #Given The user is on the practice question editor
-    #When The user write the invalid code in Editor and Click the Run Button
+    #Given The user is on the Max Consecutive Ones practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Run Button
     #Then The user should able to see an error message in alert window
-#
+
   #Test Case 35
   #Scenario: Verify that user is able to run valid python code for "Max Consecutive Ones" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Max Consecutive Ones" code in Editor and Click the Run Button
-    #Then The user should able to see output in the console
-#
+    #Given The user is on the Max Consecutive Ones practice question editor
+    #When The user write the valid Max Consecutive Ones code in Editor and Click the Run Button
+    #Then The user should able to see Max Consecutive Ones Practiece Questions output in the console
+
   #Test Case 36
   #Scenario: Verify that user receives error message on submitting invalid python code for "Max Consecutive Ones" question
-    #Given The user is on the practice question editor
-    #When The user write the invalid code in Editor and Click the Submit Button
-    #Then The user see an error message "Error occurred during submission"
-#
+    #Given The user is on the Max Consecutive Ones practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Submit Button
+    #Then The user see an error message Error occurred during submission
+
   #Test Case 37
   #Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Max Consecutive Ones" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Max Consecutive Ones" code in Editor and Click the Submit Button
-    #Then The user is not able to see success message "Submission successful"
-#
+    #Given The user is on the Max Consecutive Ones practice question editor
+    #When The user write the valid Max Consecutive Ones code in Editor and Click the Submit Button
+    #Then The user is not able to see success message Submission successful
+
   #Test Case 38
   #Scenario: Verify that user receives error message without entering any code in "Max Consecutive Ones" editor and click on Run button
-    #Given The user is on the practice question editor
+    #Given The user is on the Max Consecutive Ones practice question editor
     #When The user Clicks the Run Button without entering any code in Editor
-    #Then The user is not able to see error message
+    #Then The user is not able to see error message for blank input
 #
   #Test Case 39
   #Scenario: Verify that user receives error message without entering any code in "Max Consecutive Ones" editor and click on Submit button
-    #Given The user is on the practice question editor
+    #Given The user is on the Max Consecutive Ones practice question editor
     #When The user Clicks the Submit Button without entering any code in Editor
-    #Then The user should be able to see error message "Error occured during submission"
-#
+    #Then The user see an error message Error occurred during submission
+
   #Test Case 40
   #Scenario: Verify that user is able to navigate to "Find Numbers with Even Number of Digits" Page from Practice question page of "Arrays in Python" page
-    #Given The user is on the "Practice Questions" page
-    #When The user clicks the "Find Numbers with Even Number of Digits" link
-    #Then The user should be redirected to "Question" page contains a question,and try Editor with Run and Submit buttons
-#
+    #Given The user is on the Arrays Practice Questions page
+    #When The user clicks the Find Numbers with Even Number of Digits link
+    #Then The user should be redirected to Question page contains a question,and try Editor with Run and Submit buttons
+
   #Test Case 41
   #Scenario: Verify that user receives error message for invalid python code on running "Find Numbers with Even Number of Digits" question
-    #Given The user is on the practice question editor
-    #When The user write the invalid code in Editor and Click the Run Button
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Run Button
     #Then The user should able to see an error message in alert window
-#
+
   #Test Case 42
   #Scenario: Verify that user is able to run valid python code for "Find Numbers with Even Number of Digits" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Max Consecutive Ones" code in Editor and Click the Run Button
-    #Then The user should able to see output in the console
-#
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    #When The user write the valid Find Numbers with Even Number of Digits and Click the Run Button
+    #Then The user should able to see Find Numbers with Even Number of Digits Practiece Questions output in the console
+
   #Test Case 43
-  #Scenario: Verify that user receives error on submitting invalid python code for "Find Numbers with Even Number of Digits" question
-    #Given The user is on the practice question editor
-    #When The user write the invalid code in Editor and Click the Submit Button
-    #Then The user see an error message "Error occurred during submission"
-#
+  Scenario: Verify that user receives error on submitting invalid python code for "Find Numbers with Even Number of Digits" question
+    Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    When The user write the invalid code in Practice Questions Editor and Click the Submit Button
+    Then The user see an error message Error occurred during submission
+    
   #Test Case 44
-  #Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Find Numbers with Even Number of Digits" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Find Numbers with Even Number of Digits" code in Editor and Click the Submit Button
-    #Then The user is not able to see success message "Submission successful"
-#
+  Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Find Numbers with Even Number of Digits" question
+    Given The user is on the Find Numbers with Even Number of Digits practice question editor
+    When The user write the valid Find Numbers with Even Number of Digits and Click the Submit Button
+    Then The user is not able to see success message Submission successful in Find Numbers with Even Number of Digits output
+
   #Test Case 45
   #Scenario: Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Run button
-    #Given The user is on the practice question editor
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
     #When The user Clicks the Run Button without entering any code in Editor
     #Then The user is not able to see error message
 #
   #Test Case 46
   #Scenario: Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Submit button
-    #Given The user is on the practice question editor
+    #Given The user is on the Find Numbers with Even Number of Digits practice question editor
     #When The user Clicks the Submit Button without entering any code in Editor
     #Then The user should be able to see error message "Error occured during submission"
 #
   #Test Case 47
   #Scenario: Verify that user is able to navigate to "Squares of a Sorted Array" Page from Practice question page of "Arrays in Python" page
-    #Given The user is on the "Practice Questions" page
-    #When The user clicks the "Squares of a Sorted Array" link
-    #Then The user should be redirected to "Question" page contains a question,and try Editor with Run and Submit buttons
-#
+    #Given The user is on the Arrays Practice Questions page
+    #When The user clicks the Squares of a Sorted Array link
+    #Then The user should be redirected to Practice Question page contains a question,and try Editor with Run and Submit buttons
+
   #Test Case 48
   #Scenario: Verify that user receives error message for invalid python code on running "Squares of a Sorted Array" question
-    #Given The user is on the practice question editor
+    #Given The user is on the Squares of a Sorted Array practice question editor
     #When The user write the invalid code in Editor and Click the Run Button
     #Then The user should able to see an error message in alert window
 #
-  #Test Case 49
+  #Test Case 49---Kalpana to check the step 3
   #Scenario: Verify that user is able to run valid python code for "Squares of a Sorted Array" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Squares of a Sorted Array" code in Editor and Click the Run Button
-    #Then The user should able to see output in the console
-#
-  #Test Case 50
+    #Given The user is on the Squares of a Sorted Array practice question editor
+    #When The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button
+    #Then The user should able to see Squares of a Sorted Array output in the console
+
+  #Test Case 50 ----> Defect and Fail the test case ----Kalpana to check the step for double verification
   #Scenario: Verify that user receives error message on submitting invalid python code for "Squares of a Sorted Array" question
-    #Given The user is on the practice question editor
-    #When The user write the invalid code in Editor and Click the Submit Button
-    #Then The user see an error message "No tests were collected"
-#
-  #Test Case 51
+    #Given The user is on the Squares of a Sorted Array practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Submit Button
+    #Then The user should be able to see error message No tests were Collected
+
+  #Test Case 51 ----> Defect and Fail the test case ----Kalpana to check the step 3 for double verification
   #Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Squares of a Sorted Array" question
-    #Given The user is on the practice question editor
-    #When The user write the valid "Squares of a Sorted Array" code in Editor and Click the Submit Button
-    #Then The user is not able to see success message "Submission successful"
-#
+    #Given The user is on the Squares of a Sorted Array practice question editor
+    #When The user write the valid Squares of a Sorted Array code in Editor and Click the Submit Button
+    #Then The user is not able to see success message Submission successful for Squares of a Sorted Array code
+
   #Test Case 52
   #Scenario: Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Run button
-    #Given The user is on the practice question editor
+    #Given The user is on the Squares of a Sorted Array practice question editor
     #When The user Clicks the Run Button without entering any code in Editor
-    #Then The user is not able to see error message
+    #Then The user is not able to see error message for blank input
 
-  #Test Case 53
-  Scenario: Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Submit button
-    Given The user is on the practice question editor
-    When The user Clicks the Submit Button without entering any code in Editor
-    Then The user should be able to see error message "No tests were Collected"
+  #Test Case 53 ------>Kalpana to check this 3rd step since its not reading console error and print
+  #Scenario: Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Submit button
+    #Given The user is on the Squares of a Sorted Array practice question editor
+    #When The user Clicks the Submit Button without entering any code in Editor
+    #Then The user should be able to see error message No tests were Collected
 
-  #Test Case 54 ---- Duplicate test case
+  #Test Case 54
   #Scenario: Verify that user is able to navigate to "Arrays in Python" page
     #Given The user is in the Array page after Sign in
-    #When The user clicks "Arrays in Pyt" link of the Arrays page left side menu
-    #Then The user should be redirected to "Arrays in Python" page
-#
-  #Test Case 55
+    #When The user clicks Arrays in Python link of the Arrays page left side menu
+    #Then The user should be redirected to Arrays in Python page
+
+  #Test Case 55 -This will be mapped to Registration page
   #Scenario: Verify that user is able to redirected to the  home page
-    Given The user is in the Array page after Sign in
-    When The user clicks the NumpyNinja link on the top left corner
-    Then The user is not able to land on home page
+   #	Given The user is in the Array page after Sign in
+    #When The user clicks the NumpyNinja link on the top left corner
+    #Then The user is not able to land on home page

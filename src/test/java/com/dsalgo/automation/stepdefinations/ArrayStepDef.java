@@ -307,7 +307,7 @@ public class ArrayStepDef {
 	@Given("The user is on the Arrays Practice Questions page")
 	public void the_user_is_on_the_Arrays_Practice_Questions_page()
 	{
-		array.applicationOfArraryLink();
+		array.arrayPythonLink();
 		array.arrayPractieceQue();
 		System.out.println("User is landed on Practiece questions of Array page");
 	}
@@ -335,7 +335,7 @@ public class ArrayStepDef {
 		array.searchArrayPractieceQue();
 	}
 
-	@When("The user write the invalid code in Search the Array Practice Questions Editor and Click the Run Button")
+	@When("The user write the invalid code in Practice Questions Editor and Click the Run Button")
 	public void the_user_write_the_invalid_code_in_practiece_editor_and_click_the_run_button() {
 		Map<String, String> specificRow = testData2.get(3);
     	String invalidCode = specificRow.get("InvalidCode");
@@ -377,7 +377,7 @@ public class ArrayStepDef {
 		Map<String, String> specificRow = testData2.get(3);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = array.verifyOutputError();
-        System.out.println("The out put passedvia excel sheet is: " +expectedOutput);
+        System.out.println("The out put passed via excel sheet is: " +expectedOutput);
         
         System.out.println("The out put displayed on console is:" +codeOutput);
         assertEquals(expectedOutput,codeOutput);
@@ -399,11 +399,11 @@ public class ArrayStepDef {
         assertEquals(expectedOutput,codeOutput);
         System.out.println("valid code is displayed as : " +expectedOutput);
         System.out.println("The out put displayed on console is:" +codeOutput);
-		System.out.println("User is not displayed with successful message though the input is valid and clicked on Submit");
+		System.out.println("User is not displayed with Expected Successful Submission message though the input is valid");
 		}
 	@When("The user Clicks the Run Button without entering any code in Editor")
 	public void the_user_click_the_run_button_without_entering_code() {
-		Map<String, String> specificRow = testData2.get(0);
+		Map<String, String> specificRow = testData2.get(4);
     	String invalidCode = specificRow.get("InvalidCode");
     	//System.out.println("valid code is displayed as : " +InvalidCode);
     	array.verifyCodeEditor(invalidCode);
@@ -412,45 +412,191 @@ public class ArrayStepDef {
 
 	@Then("The user is not able to see error message for blank input")
 	public void the_user_is_able_to_see_error_message() {
-		Map<String, String> specificRow = testData2.get(9);
+		Map<String, String> specificRow = testData2.get(4);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = array.verifyOutput();
         assertEquals(expectedOutput,codeOutput);
         System.out.println("valid code is displayed as : " +expectedOutput);
         System.out.println("The out put displayed on console is:" +codeOutput);
-		System.out.println("User is not displayed with successful message though the input is valid and clicked on Submit");
 	}
 
-//	@When("The user Clicks the Run Button without entering any code in Editor")
-//	public void the_user_clicks_the_run_button_without_entering_any_code_in_editor() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("The user is not able to see error message")
-//	public void the_user_is_not_able_to_see_error_message() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("The user Clicks the Submit Button without entering any code in Editor")
-//	public void the_user_clicks_the_submit_button_without_entering_any_code_in_editor() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("The user should be able to see error message {string}")
-//	public void the_user_should_be_able_to_see_error_message(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("The user clicks {string} link of the Arrays page left side menu")
-//	public void the_user_clicks_link_of_the_arrays_page_left_side_menu(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
+	@When("The user clicks the Max Consecutive Ones link")
+	public void the_user_clicks_the_Max_Consecutive_Ones_link() throws InterruptedException
+	{
+	Thread.sleep(2000);
+	
+	array.maxConsucutiveOnesPractieceQue();
+	}
+	
+
+	@Given("The user is on the Max Consecutive Ones practice question editor")
+	public void the_user_is_on_the_MaxConsecutiveOnes_practice_question_editor() {
+		array.applicationOfArraryLink();
+		array.arrayPractieceQue();
+		array.maxConsucutiveOnesPractieceQue();
+	}
+
+	@When("The user write the valid Max Consecutive Ones code in Editor and Click the Run Button")
+	public void the_user_write_the_valid_code_in_MaxConsecutiveOnes_Practice_Question_editor_and_click_the_run_button() {
+		Map<String, String> specificRow = testData2.get(6);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPythonTextEditRun();
+		}
+
+	@Then("The user should able to see Max Consecutive Ones Practiece Questions output in the console")
+	public void the_user_should_able_to_see_Max_Consecutive_Ones_Practiece_Questions_output_in_the_console() {
+		Map<String, String> specificRow = testData2.get(6);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyOutput();
+        assertEquals(expectedOutput,codeOutput);
+        System.out.println("valid code is displayed as : " +expectedOutput);
+        System.out.println("The out put displayed on console is:" +codeOutput);
+		System.out.println("User is displayed with successful message when the input is valid and clicked on Run");
+		}
+	
+	@When("The user write the valid Max Consecutive Ones code in Editor and Click the Submit Button")
+	public void the_user_write_the_valid_code_in_MaxConsecutiveOnes_Practice_Question_editor_and_click_the_submit_button() {
+		Map<String, String> specificRow = testData2.get(6);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPracticeSubmit();
+		}
+	
+	
+	@When("The user clicks the Find Numbers with Even Number of Digits link")
+	public void the_user_clicks_the_Find_Numbers_with_Even_Number_of_Digits_link() throws InterruptedException
+	{
+	Thread.sleep(2000);
+	
+	array.findNumwithEvenDigitsPractieceQue();
+	}
+	
+
+	@Given("The user is on the Find Numbers with Even Number of Digits practice question editor")
+	public void the_user_is_on_the_Find_Numbers_with_Even_Number_of_Digits_practice_question_editor() {
+		array.arrayPythonLink();
+		array.arrayPractieceQue();
+		array.findNumwithEvenDigitsPractieceQue();
+	}
+	@When("The user write the valid Find Numbers with Even Number of Digits and Click the Run Button")
+	public void the_user_write_the_valid_code_in_Find_Even_Number_of_Digits_Practice_Question_editor_and_click_the_run_button() {
+		Map<String, String> specificRow = testData2.get(8);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPythonTextEditRun();
+		}
+
+	@Then("The user is not able to see success message Submission successful in Find Numbers with Even Number of Digits output")
+	public void the_user_should_able_to_see_Find_Numbers_with_Even_Number_of_Digits_s_output_in_the_console() {
+		Map<String, String> specificRow = testData2.get(8);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyOutput();
+        assertEquals(expectedOutput,codeOutput);
+        System.out.println("valid code is displayed as : " +expectedOutput);
+        System.out.println("The out put displayed on console is:" +codeOutput);
+		System.out.println("User is displayed with successful message when the input is valid and clicked on Run");
+		}
+	
+	@When("The user write the valid Find Numbers with Even Number of Digits and Click the Submit Button")
+	public void the_user_write_the_valid_code_in_Find_Even_Number_of_Digits_Practice_Question_editor_and_click_the_Submit_button() {
+		Map<String, String> specificRow = testData2.get(8);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPracticeSubmit();
+		}
+
+//	@Then("The user is not able to see success message Submission successful")
+//	public void the_user_is_not_able_to_see_Submission_success_message() {
+//		Map<String, String> specificRow = testData2.get(2);
+//    	String expectedOutput = specificRow.get("Output");
+//        String codeOutput = array.verifyOutput();
+//        assertEquals(expectedOutput,codeOutput);
+//        System.out.println("valid code is displayed as : " +expectedOutput);
+//        System.out.println("The out put displayed on console is:" +codeOutput);
+//		System.out.println("User is not displayed with Expected Successful Submission message though the input is valid");
+//		}
+//	
+	
+	@When("The user write the valid Squares of a Sorted Array code in Editor and Click the Submit Button")
+	public void the_user_write_the_valid_code_in_SquaresOfSortedArray_Practice_Question_editor_and_click_the_submit_button() {
+		Map<String, String> specificRow = testData2.get(11);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPracticeSubmit();
+		}
+	@Then("The user is not able to see success message Submission successful for Squares of a Sorted Array code")
+	public void the_user_is_not_able_to_see_Submission_success_message_for_SquaresofSortedArray_code() {
+		Map<String, String> specificRow = testData2.get(11);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyBlankOutputError();
+        assertEquals(expectedOutput,codeOutput);
+        System.out.println("valid code is displayed as : " +expectedOutput);
+        System.out.println("The out put displayed on console is:" +codeOutput);
+		System.out.println("User is not displayed with Expected Successful Submission message though the input is valid");
+		}
+	
+	@When("The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button")
+	public void the_user_write_the_valid_code_in_SquaresOfSortedArray_Practice_Question_editor_and_click_the_Run_button() {
+		Map<String, String> specificRow = testData2.get(10);
+    	String validCode = specificRow.get("ValidCode");
+    	//System.out.println("valid code is displayed as : " +validCode);
+    	array.verifyCodeEditor(validCode);
+    	array.arrayPythonTextEditRun();
+		}
+	
+	@Then("The user should able to see Squares of a Sorted Array output in the console")
+	public void the_user_should_able_to_see_Squares_of_a_Sorted_Arrayoutput_in_the_console() {
+		Map<String, String> specificRow = testData1.get(10);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyOutput();
+        //assertEquals(expectedOutput,codeOutput);
+        System.out.println("The out put displayed on console is:" +expectedOutput);
+
+        System.out.println("The out put displayed on console is:" +codeOutput);
+		System.out.println("User is displayed with successful message when the input is valid and clicked on Run");
+	
+	}
+	@Given("The user is on the Squares of a Sorted Array practice question editor")
+	public void the_user_is_on_the_Squares_of_sorted_array_practice_question_editor() {
+		array.applicationOfArraryLink();
+		array.arrayPractieceQue();
+		array.squaresOfSortedArrayPractieceQue();
+	}
+
+	@When("The user Clicks the Submit Button without entering any code in Editor")
+	public void the_user_clicks_the_submit_button_without_entering_any_code_in_editor() {
+	Map<String, String> specificRow = testData2.get(5);
+	String invalidCode = specificRow.get("InvalidCode");
+	System.out.println("valid code is displayed as : " +invalidCode);
+	array.verifyCodeEditor(invalidCode);
+	array.arrayPracticeSubmit();
+	}
+	
+	@Then("The user should be able to see error message No tests were Collected")
+	public void the_user_is_able_to_see_error_message_No_tests_were_Collected() {
+		Map<String, String> specificRow = testData2.get(5);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyBlankOutputError();
+        assertEquals(expectedOutput,codeOutput);
+        System.out.println("valid code is displayed as : " +expectedOutput);
+        System.out.println("The out put displayed on console is:" +codeOutput);
+	}
+
+	
+
+	@When("The user clicks Arrays in Python link of the Arrays page left side menu")
+	public void the_user_clicks_arrays_in_Python_link_of_the_arrays_topics_page_left_side_menu() {
+		array.arrayUsingList();
+		array.arrayInPythonfromLeftMenu();
+		System.out.println("User is landed on the Array in Python page from left side menu");
+	}
+
 //	@Given("The user is in the Array page")
 //	public void the_user_is_in_the_array_page() {
 //	    // Write code here that turns the phrase above into concrete actions
