@@ -9,7 +9,7 @@ public class configReader {
 
     static {
         try {
-            FileInputStream file = new FileInputStream("src/test/resources/config/config.properties");
+            FileInputStream file = new FileInputStream("src/test/resources/config.properties");
             prop = new Properties();
             prop.load(file);
         } catch (IOException e) {
