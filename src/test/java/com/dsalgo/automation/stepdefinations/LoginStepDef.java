@@ -28,20 +28,15 @@ public class LoginStepDef {
 	
 	@When("the user enters a valid username and password")
 	public void user_enters_valid_credentials() {
-	
-
-		// Retrieve username and password from the Excel file
-		for (Map<String, String> row : data) {
-			String username = row.get("username");
-			String password = row.get("password");
-			if (username != null && password != null) {
-				// You can now use them for login logic
-				loginpom.enterUsername(username);
-				loginpom.enterPassword(password);
-			}
-		}
-
-		
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(0); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
+				
 	}
 	
 	@And("the user clicks the login button")
@@ -68,19 +63,19 @@ public class LoginStepDef {
 	    Thread.sleep(2000);
 	}
 	
-	@When("the user enters {string} and leaves the Password field empty")
-	public void userEntersUsernameOnly(String username) {
+	@When("the user enters username and leaves the Password field empty")
+	public void userEntersUsernameOnly() {
 		// Load the Excel file containing test data
-		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel file
-		// Retrieve username from the Excel file
-		for (Map<String, String> row : data) {
-			String user = row.get("username");
-			if (user != null) {
-				// You can now use them for login logic
-				loginpom.enterUsername(user);
-				
-			}
-		}
+		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to the Excel file
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(1); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
+		
 	}
 	
 	@Then("the user should see the error message {string} below the Password textbox")
@@ -89,16 +84,17 @@ public class LoginStepDef {
 	    Assert.assertEquals(actualMessage, expectedMessage, "Password field validation message is not visible");
 	}
 	
-	@When("the user enters {string} and leaves the Username field empty")
-	public void userEntersPasswordOnly(String password) {
-		// Retrieve password from the Excel file
-		for (Map<String, String> row : data) {
-			String pwd = row.get("password");
-			if (pwd != null) {
-				// You can now use them for login logic
-				loginpom.enterPassword(pwd);	
-			}
-		}
+	@When("the user enters password and leaves the Username field empty")
+	public void userEntersPasswordOnly() {
+		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to the Excel file
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(2); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
 	}
 	
 	@Then("the user should see the error message {string} below the Username textbox")
@@ -109,16 +105,15 @@ public class LoginStepDef {
 	
 	@When("the user enters an invalid username and a valid password")
 	public void enterInvalidUsernameValidPassword() {
-	    loginpom.enterUsername("invalidUser123");
-	
-		// Retrieve password from the Excel file
-		for (Map<String, String> row : data) {
-			String pwd = row.get("password");
-			if (pwd != null) {
-				// You can now use them for login logic
-				loginpom.enterPassword(pwd);	
-			}
-		}
+	    List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to the Excel file
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(4); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
 	}
 	
 	@Then("the user should see an error message {string}")
@@ -130,16 +125,15 @@ public class LoginStepDef {
 	@When("the user enters a valid username and an invalid password")
 	public void enterValidUsernameInvalidPassword() {
 
-		// Retrieve username from the Excel file
-		for (Map<String, String> row : data) {
-			String user = row.get("username");
-			if (user != null) {
-				// You can now use them for login logic
-				loginpom.enterUsername(user);
-				
-			}
-		}
-	    loginpom.enterPassword("wrongPassword!");   // Use an incorrect password
+		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to the Excel file
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(3); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
 	}
 	
 	@When("the user clicks the {string} link from signin page")

@@ -10,11 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class waitHelper {
 
-    private WebDriver driver;
     private WebDriverWait wait;
 
     public waitHelper(WebDriver driver, int timeoutInSeconds) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
     }
 

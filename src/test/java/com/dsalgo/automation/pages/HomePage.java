@@ -16,7 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.dsalgo.automation.driver.DriverFactory;
-import com.dsalgo.automation.utils.configReader;
 import com.dsalgo.automation.utils.waitHelper;
 
 
@@ -125,7 +124,7 @@ public class HomePage {
 	}
 	
 	public String getExpectedHomeUrl() {
-        return configReader.getProperty("homeUrl");
+        return homeurl;
     }
 
 	// Actions

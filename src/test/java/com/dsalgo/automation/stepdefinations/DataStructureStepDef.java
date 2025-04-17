@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import org.openqa.selenium.TimeoutException;
+
 
 import org.testng.Assert;
 
@@ -27,25 +27,21 @@ public class DataStructureStepDef {
 	HomePage homepom = new HomePage();
 	DataStructure datastructurepom = new DataStructure();
 	GraphPage graphpom = new GraphPage();
-	
+	// Load the Excel file containing test data
+	List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel file
 	
 
 	@And("the user enters a valid credentials and click on login")
 	public void user_enters_valid_credentials_and_click_on_login() {
-		// Load the Excel file containing test data
-		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel
-																			// file
-
-		// Retrieve username and password from the Excel file
-		for (Map<String, String> row : data) {
-			String username = row.get("username");
-			String password = row.get("password");
-			if (username != null && password != null) {
-				// You can now use them for login logic
-				loginpom.enterUsername(username);
-				loginpom.enterPassword(password);
-			}
-		}
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(0); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
+				
 		loginpom.clickLogin();
 	}
 
@@ -264,7 +260,7 @@ public class DataStructureStepDef {
 			String alertText = datastructurepom.AlertGetText();
 			Assert.assertFalse(alertText.isEmpty(), "Alert is empty or not displayed.");
 			
-		} catch (TimeoutException e) {
+		} catch (NullPointerException e) {
 			Assert.fail("Alert was not displayed.");
 		}
 	}

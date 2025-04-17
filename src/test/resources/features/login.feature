@@ -8,13 +8,13 @@ Feature: Navigation to Sign-In Page
 
   Scenario: Verify that user receives error message for empty Password field during Login
     Given the user is on the DS Algo Sign in Page
-    When the user enters "<username>" and leaves the Password field empty
+    When the user enters username and leaves the Password field empty
     And the user clicks the login button
     Then the user should see the error message "Please fill out this field." below the Password textbox
 
   Scenario: Verify that user receives error message for empty Username field during Login
     Given the user is on the DS Algo Sign in Page
-    When the user enters "<password>" and leaves the Username field empty
+    When the user enters password and leaves the Username field empty
     And the user clicks the login button
     Then the user should see the error message "Please fill out this field." below the Username textbox
 
