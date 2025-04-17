@@ -2,8 +2,7 @@ package com.dsalgo.automation.stepdefinations;
 
 import java.io.IOException;
 import java.util.List;
-
-
+import java.util.Map;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -96,13 +95,20 @@ public class GraphStepDef {
 	
 	@And("the user enters invalid python code for Graph")
 	public void the_user_enters_invalid_python_code() {
-		String secondRow = ExcelReader.getCellValue("PythonCode", 2, 0);
-		graphpom.enterPythonCode(secondRow);
+		// Load the Excel file containing test data
+		List<Map<String, String>> allData = ExcelReader.getAllRows("PythonCode"); 
+		// Get value of third row and column "pythonCode"
+		String invalidCode = allData.get(1).get("PythonCode");		
+		graphpom.enterPythonCode(invalidCode);
 	}
+	
 	@And("the user enters valid python code for Graph")
 	public void user_enters_valid_python_code() {
-		String FirstRow = ExcelReader.getCellValue("PythonCode", 1, 0);
-		graphpom.enterPythonCode(FirstRow);
+		// Load the Excel file containing test data
+		List<Map<String, String>> allData = ExcelReader.getAllRows("PythonCode"); 
+		// Get value of second row and column "pythonCode"
+		String validCode = allData.get(0).get("PythonCode");
+		graphpom.enterPythonCode(validCode);
 	}
 	
 	@Then("the user should be able to see output in the console for Graph")

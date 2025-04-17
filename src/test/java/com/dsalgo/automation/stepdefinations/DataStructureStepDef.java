@@ -3,7 +3,7 @@ package com.dsalgo.automation.stepdefinations;
 import java.util.List;
 import java.util.Map;
 
-import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.TimeoutException;
 
 import org.testng.Assert;
@@ -13,7 +13,7 @@ import com.dsalgo.automation.pages.GraphPage;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
 import com.dsalgo.automation.utils.ExcelReader;
-import com.dsalgo.automation.utils.waitHelper;
+
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -27,7 +27,7 @@ public class DataStructureStepDef {
 	HomePage homepom = new HomePage();
 	DataStructure datastructurepom = new DataStructure();
 	GraphPage graphpom = new GraphPage();
-
+	
 	
 
 	@And("the user enters a valid credentials and click on login")
@@ -251,8 +251,11 @@ public class DataStructureStepDef {
 
 	@And("the user enters invalid python code")
 	public void the_user_enters_invalid_python_code() {
-		String secondRow = ExcelReader.getCellValue("PythonCode", 2, 0);
-		datastructurepom.enterPythonCode(secondRow);
+		// Load the Excel file containing test data
+		List<Map<String, String>> allData = ExcelReader.getAllRows("PythonCode"); 
+		// Get value of third row and column "pythonCode"
+		String invalidCode = allData.get(1).get("PythonCode");
+		datastructurepom.enterPythonCode(invalidCode);
 	}
 
 	@Then("the user should see an error message in an alert window")
@@ -268,8 +271,11 @@ public class DataStructureStepDef {
 
 	@And("the user enters valid python code")
 	public void user_enters_valid_python_code() {
-		String FirstRow = ExcelReader.getCellValue("PythonCode", 1, 0);
-		datastructurepom.enterPythonCode(FirstRow);
+		// Load the Excel file containing test data
+		List<Map<String, String>> allData = ExcelReader.getAllRows("PythonCode"); 
+		// Get value of second row and column "pythonCode"
+		String validCode = allData.get(0).get("PythonCode");
+		datastructurepom.enterPythonCode(validCode);
 	}
 
 	@Then("the user should be able to see output in the console")
