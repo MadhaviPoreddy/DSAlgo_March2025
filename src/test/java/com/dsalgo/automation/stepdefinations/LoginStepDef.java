@@ -1,124 +1,164 @@
 package com.dsalgo.automation.stepdefinations;
 
+import java.util.List;
+import java.util.Map;
 
+import org.testng.Assert;
+
+import com.dsalgo.automation.pages.HomePage;
+import com.dsalgo.automation.pages.LoginPage;
+import com.dsalgo.automation.utils.ExcelReader;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class LoginStepDef {
+	LoginPage loginpom = new LoginPage();
+	HomePage homepom = new HomePage();
+	// Load the Excel file containing test data
+	List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel file
 	
-	 	
+	@Given("the user is on the DS Algo Sign in Page")
+	public void user_is_on_signin_page() {
+	    loginpom.openLoginurl(); 
+	}
+	
+	@When("the user enters a valid username and password")
+	public void user_enters_valid_credentials() {
+	
 
-	    @When("the user clicks the \"Sign in\" link")
-	    public void theUserClicksSignInLink() {
-	        // Locate the "Sign in" link by its link text
-	       
-	        // Click the "Sign in" link
-	       
-	    }
-
-	    @Then("the user should be redirected to the Sign-In page")
-	    public void theUserIsRedirectedToSignInPage() {
-	        // Wait for the page to load and verify the current URL
-	    
-	        // Optionally, verify the presence of a unique element on the Sign-In page
-	        
-	    }
-	    
-
-	    @When("the user performs login using Excel sheet {string}")
-	    public void user_performs_login_using_excel_sheet(String sheetName) {
-	       
-	    }
-	    
-	   
-	    
-	    @Then("login results should be validated based on Excel data")
-	    public void login_results_should_be_validated() {
-	        
-	        
-	    }
-	    
-	    @Then("if login is successful, the user should be redirected to the Home Page")
-	    public void user_should_be_redirected_to_home_if_login_successful() {
-	       
-	    }
-	    
-	    @Given("the user is on the {string} page after sign in")
-		public void the_user_is_on_the_page_after_sign_in(String pageName) {
-
+		// Retrieve username and password from the Excel file
+		for (Map<String, String> row : data) {
+			String username = row.get("username");
+			String password = row.get("password");
+			if (username != null && password != null) {
+				// You can now use them for login logic
+				loginpom.enterUsername(username);
+				loginpom.enterPassword(password);
+			}
 		}
-	    
-	    @When("the user clicks the Data Structures dropdown after sign in")
-	    public void the_user_clicks_the_dropdown_after_sign_in() {
-	       
-	    }
-	    
-	    @Then("the user is not able to see Data Structure Introduction in the dropdown")
-	    public void the_user_is_not_able_to_see_intro_option() {
-	       
-	    }
-	    
-	    @When("the user selects {string} from the Data Structure dropdown after signing in")
-	    public void the_user_selects_option_from_dropdown(String option) {
-	        
-	    }
-	    
-	    @Then("the user should be navigated to the {string} module page")
-	    public void the_user_should_be_navigated_to_module_page(String option) {
-	       
-	    }
-	    
-	    @When("the user clicks the \"Register\" link")
-	    public void clickRegisterLink() {
-	        // Locate the "Register" link
-	      
-	        // Click the "Register" link
-	       
-	    }
 
-	    @Then("the user should be redirected to the User Registration Page")
-	    public void verifyRedirectionToRegistrationPage() {
-	        // Wait for the page to load and verify the current URL
-	       
-	    }
-	    
-	   
-	    
-	    @When("the user clicks on the \"Sign out\" button")
-	    public void clickSignOutButton() {
-	        // Locate the "Sign out" button
-	       
-	        // Click the "Sign out" button
-	      
-	    }
+		
+	}
+	
+	@And("the user clicks the login button")
+	public void user_clicks_login_button() {
+		// Sign in using the retrieved credentials
+		loginpom.clickLogin();
+	}
+	
+	@Then("the user should land on the Home Page with the message {string}")
+	public void user_should_land_on_home_page_with_message(String expectedMessage) {
+	    // Validate URL 
+	    String currentUrl = homepom.getHomeUrl();
+	    Assert.assertTrue(currentUrl.toLowerCase().contains("home")," Not redirected to Home page. Current URL: " + currentUrl);
 
+	    // Validate success message
+	    String actualMessage = homepom.successLogin();
+	    Assert.assertEquals(actualMessage, expectedMessage, "Login success message mismatch.\nExpected: " + expectedMessage + "\nActual: " + actualMessage);
+	}
+	
+	@When("the user clicks the login button after leaving the {string} and {string} fields empty")
+	public void user_clicks_login_with_empty_fields(String username, String password) throws InterruptedException {
+	    // Just click the login button — don't enter anything
+	    loginpom.clickLogin();
+	    Thread.sleep(2000);
+	}
+	
+	@When("the user enters {string} and leaves the Password field empty")
+	public void userEntersUsernameOnly(String username) {
+		// Load the Excel file containing test data
+		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel file
+		// Retrieve username from the Excel file
+		for (Map<String, String> row : data) {
+			String user = row.get("username");
+			if (user != null) {
+				// You can now use them for login logic
+				loginpom.enterUsername(user);
+				
+			}
+		}
+	}
+	
+	@Then("the user should see the error message {string} below the Password textbox")
+	public void userShouldSeePasswordFieldError(String expectedMessage) {
+		String actualMessage = loginpom.getPasswordValidationMessage();
+	    Assert.assertEquals(actualMessage, expectedMessage, "Password field validation message is not visible");
+	}
+	
+	@When("the user enters {string} and leaves the Username field empty")
+	public void userEntersPasswordOnly(String password) {
+		// Retrieve password from the Excel file
+		for (Map<String, String> row : data) {
+			String pwd = row.get("password");
+			if (pwd != null) {
+				// You can now use them for login logic
+				loginpom.enterPassword(pwd);	
+			}
+		}
+	}
+	
+	@Then("the user should see the error message {string} below the Username textbox")
+	public void userShouldSeeUsernameValidationMessage(String expectedMessage) {
+	    String actualMessage = loginpom.getUsernameValidationMessage();
+	    Assert.assertEquals(actualMessage, expectedMessage,"Username field validation message is not visible");
+	}
+	
+	@When("the user enters an invalid username and a valid password")
+	public void enterInvalidUsernameValidPassword() {
+	    loginpom.enterUsername("invalidUser123");
+	
+		// Retrieve password from the Excel file
+		for (Map<String, String> row : data) {
+			String pwd = row.get("password");
+			if (pwd != null) {
+				// You can now use them for login logic
+				loginpom.enterPassword(pwd);	
+			}
+		}
+	}
+	
+	@Then("the user should see an error message {string}")
+	public void userShouldSeeErrorMessage(String expectedErrorMsg) {
+	    String actualErrorMsg = loginpom.invalidAlert();
+	    Assert.assertEquals(actualErrorMsg, expectedErrorMsg,"Error message doesn't match");
+	}
+	
+	@When("the user enters a valid username and an invalid password")
+	public void enterValidUsernameInvalidPassword() {
+
+		// Retrieve username from the Excel file
+		for (Map<String, String> row : data) {
+			String user = row.get("username");
+			if (user != null) {
+				// You can now use them for login logic
+				loginpom.enterUsername(user);
+				
+			}
+		}
+	    loginpom.enterPassword("wrongPassword!");   // Use an incorrect password
+	}
+	
+	@When("the user clicks the {string} link from signin page")
+	public void clickLinkFromSigninPage(String linkText) {
+	    loginpom.clickRegister();// This will handle clicking the link
+	}
+	
+	@Then("the user should be redirected to the User Registration Page")
+	public void verifyRedirectToRegistrationPage() {
+	    String pageTitle = loginpom.register_page();   //Check title of the register page
 	  
+	    Assert.assertEquals(pageTitle.trim(), "Registration", "Expected heading to be 'Registration'");
+	}
+	
+	@Then("the user should be redirected to the home page")
+	public void the_user_should_be_redirected_to_the_home_page() {
+		String expectedUrl = homepom.getExpectedHomeUrl();  // from POM
+	    String actualUrl = homepom.getHomeUrl();
 
-	    @Then("a message \"Logged out successfully\" should be displayed")
-	    public void verifyLogoutMessage() {
-	        // Locate the logout success message element
-	      
-	        // Assert that the logout message is displayed
-	      
-	        // Assert that the logout message text matches the expected message
-	       
-	    }
-	    
-	    @Then("the user should be redirected to the Home page")
-	    public void theUserShouldBeRedirectedToHomePage() {
-	        // Wait until the Home page is fully loaded (you can check for a specific element)
-	       
-
-	        // Verify if the current URL indicates that the user is on the Home page
-	        
-	    }
-
-	    @Then("the user is not redirected to the home page")
-		public void userIsNotRedirectedToHomePage() {
-
-		}
-
-	    
-	    
+	    Assert.assertEquals(actualUrl, expectedUrl," User was not redirected to the Home page.");
+	}
 }

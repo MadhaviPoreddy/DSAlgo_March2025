@@ -52,13 +52,13 @@
 			<version>5.2.3</version>
 		</dependency>
 
-		<!-- TestNG (if using TestNG instead of JUnit) 
+		<!--TestNG (if using TestNG instead of JUnit)--> 
 		 <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
             <scope>test</scope>
-        </dependency> -->
+        </dependency> 
 	</dependencies>
 
 	<build>

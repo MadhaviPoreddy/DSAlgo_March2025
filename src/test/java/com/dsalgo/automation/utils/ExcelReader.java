@@ -62,4 +62,21 @@ public class ExcelReader {
                 return "";
         }
     }
+    
+    //To retrieve single cell value
+    public static String getCellValue(String sheetName, int rowIndex, int colIndex) {
+        try (FileInputStream file = new FileInputStream(EXCEL_FILE_PATH);
+             Workbook workbook = new XSSFWorkbook(file)) {
+
+            Sheet sheet = workbook.getSheet(sheetName);
+            Row row = sheet.getRow(rowIndex);
+
+            if (row == null) return "";
+
+            Cell cell = row.getCell(colIndex, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+            return getCellValue(cell); // Reuses your existing method
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to read cell from Excel file", e);
+        }
+    }
 }
