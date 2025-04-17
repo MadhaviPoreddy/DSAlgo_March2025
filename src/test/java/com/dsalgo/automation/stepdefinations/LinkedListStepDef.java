@@ -168,6 +168,8 @@ public class LinkedListStepDef {
 
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
 		System.out.println("Title of the page is : " +LinkedListTitle);
+		
+		linkedList.testAssertFalseWithMessage();
 	}
 	
 	@When("The user clicks linked list link in the Types of Linked List page")
@@ -184,6 +186,8 @@ public class LinkedListStepDef {
 	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
 		System.out.println("Title of the page is : " +LinkedListTitle);
+	 	linkedList.testAssertFalseWithMessage();
+
 	}
 	
 	@When("The user clicks doubly linked list link in the Types of Linked List page")
@@ -200,6 +204,8 @@ public class LinkedListStepDef {
 	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
 		System.out.println("Title of the page is : " +LinkedListTitle);
+	 	linkedList.testAssertFalseWithMessage();
+
 	}
 	
 	@When("The user clicks type of the linked list page link in the Types of Linked List page")
@@ -216,8 +222,8 @@ public class LinkedListStepDef {
 	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
 	 	
-	//	System.out.println("Title of the page is : " +LinkedListTitle);
-	}
+	 	linkedList.testAssertFalseWithMessage();
+	 	}
 	
 	@When("The user clicks Try Here button in Types of Linked List page")
 	public void the_user_clicks_Try_Here_button_in_Typesof_LinkedList_page() {

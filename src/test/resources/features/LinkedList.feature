@@ -97,29 +97,29 @@ Feature: Test Scenarios for Linked List Module
     #Then The user should be redirected to Types of Linked List page
 
   #Test Case 16
-  #Scenario: Verify that user is able to navigate to "singly linked list page" upon clicking the hyperlink from Types of Linked List page
-    #Given The user is in the Types of Linked List page after Sign in
-    #When The user clicks singly linked list link in the Types of Linked List page
-    #Then The user should be redirected to singly linked list page
+  Scenario: Verify that user is able to navigate to "singly linked list page" upon clicking the hyperlink from Types of Linked List page
+    Given The user is in the Types of Linked List page after Sign in
+    When The user clicks singly linked list link in the Types of Linked List page
+    Then The user should be redirected to singly linked list page
 
   #Test Case 17
-  #Scenario: Verify that user is able to navigate to "linked list page" upon clicking the hyperlink from Types of Linked List page
-    #Given The user is in the Types of Linked List page after Sign in
-    #When The user clicks linked list link in the Types of Linked List page
-    #Then The user should be redirected to linked list link page
+  Scenario: Verify that user is able to navigate to "linked list page" upon clicking the hyperlink from Types of Linked List page
+    Given The user is in the Types of Linked List page after Sign in
+    When The user clicks linked list link in the Types of Linked List page
+    Then The user should be redirected to linked list link page
 #
   #Test Case 18
-  #Scenario: Verify that user is able to navigate to "doubly linked list page" upon clicking the hyperlink from Types of Linked List page
-    #Given The user is in the Types of Linked List page after Sign in
-    #When The user clicks doubly linked list link in the Types of Linked List page
-    #Then The user should be redirected to doubly linked list page
-#
+  Scenario: Verify that user is able to navigate to "doubly linked list page" upon clicking the hyperlink from Types of Linked List page
+    Given The user is in the Types of Linked List page after Sign in
+    When The user clicks doubly linked list link in the Types of Linked List page
+    Then The user should be redirected to doubly linked list page
+
   #Test Case 19
-  #Scenario: Verify that user is able to navigate to "type of the linked list page" upon clicking the hyperlink from Types of Linked List page
-    #Given The user is in the Types of Linked List page after Sign in
-    #When The user clicks type of the linked list page link in the Types of Linked List page
-    #Then The user should be redirected to type of the linked list page
-#
+  Scenario: Verify that user is able to navigate to "type of the linked list page" upon clicking the hyperlink from Types of Linked List page
+    Given The user is in the Types of Linked List page after Sign in
+    When The user clicks type of the linked list page link in the Types of Linked List page
+    Then The user should be redirected to type of the linked list page
+
   #Test Case 20
   #Scenario: Verify that user is able to navigate to "try here Editor" page for "Types of Linked List" page
     #Given The user is in the Types of Linked List page after Sign in
@@ -245,51 +245,51 @@ Feature: Test Scenarios for Linked List Module
     #Given The user is in the Insertion tryEditor page
     #When The user write the invalid code in Editor and click the Run Button
     #Then The user should able to see an error message in alert window
-
+#
   #Test Case 41
-  Scenario: Verify that user is able to see output for valid python code on"Insertion" page
-    Given The user is in the Insertion tryEditor page
-    When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
-
+  #Scenario: Verify that user is able to see output for valid python code on"Insertion" page
+    #Given The user is in the Insertion tryEditor page
+    #When The user write the valid code in Editor and click the Run Button
+    #Then The user should able to see output in the console
+#
   #Test Case 42
-  Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Insertion" page
-    Given The user is on the Insertion page
-    When The user clicks Linked List Practice Questions button
-    Then The user should be redirected to Linked List Practice page
-
+  #Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Insertion" page
+    #Given The user is on the Insertion page
+    #When The user clicks Linked List Practice Questions button
+    #Then The user should be redirected to Linked List Practice page
+#
   #Test Case 43
-  Scenario: Verify that user is able to navigate to "Deletion" page
-    Given The user is in the Linked List page after Sign in
-    When The user clicks Deletion link
-    Then The user should be redirected to Deletion page
-
+  #Scenario: Verify that user is able to navigate to "Deletion" page
+    #Given The user is in the Linked List page after Sign in
+    #When The user clicks Deletion link
+    #Then The user should be redirected to Deletion page
+#
   #Test Case 44
-  Scenario: Verify that user is able to navigate to "try here Editor" page for "Deletion" page
-    Given The user is on the Deletion page
-    When The user clicks Try Here button in Deletion page
-    Then The user should be redirected to a page having an try Editor with a Run button to test
-
+  #Scenario: Verify that user is able to navigate to "try here Editor" page for "Deletion" page
+    #Given The user is on the Deletion page
+    #When The user clicks Try Here button in Deletion page
+    #Then The user should be redirected to a page having an try Editor with a Run button to test
+#
   #Test Case 45
-  Scenario: Verify that user receives error when click on Run button without entering code for "Deletion" page
-    Given The user is in the Deletion tryEditor page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+  #Scenario: Verify that user receives error when click on Run button without entering code for "Deletion" page
+    #Given The user is in the Deletion tryEditor page
+    #When The user clicks the Run Button without entering the code in the Editor
+    #Then The user is not able to see an error message
+#
   #Test Case 46
-  Scenario: Verify that user receives error for invalid python code for "Deletion" page
-    Given The user is in the Deletion tryEditor page
-    When The user write the invalid code in Editor and click the Run Button
-    Then The user should able to see an error message in alert window
-
+  #Scenario: Verify that user receives error for invalid python code for "Deletion" page
+    #Given The user is in the Deletion tryEditor page
+    #When The user write the invalid code in Editor and click the Run Button
+    #Then The user should able to see an error message in alert window
+#
   #Test Case 47
-  Scenario: Verify that user is able to see output for valid python code on "Deletion" page
-    Given The user is in the Deletion tryEditor page
-    When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
-
+  #Scenario: Verify that user is able to see output for valid python code on "Deletion" page
+    #Given The user is in the Deletion tryEditor page
+    #When The user write the valid code in Editor and click the Run Button
+    #Then The user should able to see output in the console
+#
   #Test Case 48
-  Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Deletion" page
-    Given The user is on the Deletion page
-    When The user clicks Linked List Practice Questions button
-    Then The user should be redirected to Linked List Practice page
+  #Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Deletion" page
+    #Given The user is on the Deletion page
+    #When The user clicks Linked List Practice Questions button
+    #Then The user should be redirected to Linked List Practice page

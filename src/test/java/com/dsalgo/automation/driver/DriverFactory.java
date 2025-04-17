@@ -9,6 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
+	
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
 	// Added Code below for Cross Browser Testing

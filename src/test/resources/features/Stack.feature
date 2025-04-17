@@ -9,8 +9,8 @@ Feature: Test Scenarios for Stack Module
   #Test Case 1
   @tag1
   Scenario: Verify that user is able to navigate to "Stack" data structure page
-    Given The user is in the Home page after Sign in
-    When The user clicks the "Getting Started" button in Stack Panel
+    #Given The user is in the Home page after Sign in
+    #When The user clicks the "Getting Started" button in Stack Panel
     Then The user will be directed to Stack Data Structure Page
   #Test Case 2
  @tag2

@@ -36,9 +36,9 @@
 		
 		<!-- Selenium WebDriver -->
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.27.0</version>
+   		 	<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-java</artifactId>
+    		<version>4.31.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.assertj</groupId>
@@ -52,17 +52,17 @@
 			<version>5.2.3</version>
 		</dependency>
 
-		<!-- TestNG (if using TestNG instead of JUnit) 
-		 <dependency>
+
+	 <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
             <scope>test</scope>
-        </dependency> -->
+        </dependency>
 	</dependencies>
 
-	<build>
-		<!--		<plugins>
+	<!--<build>
+				<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -73,7 +73,7 @@
 					</includes>
 				</configuration>
 			</plugin>
-		</plugins>-->
-	</build>
+		</plugins>
+	</build>-->
 </project>
   

@@ -196,6 +196,11 @@ import com.dsalgo.automation.driver.DriverFactory;
 		{
 			linkedListPracticeLink.click();
 		}
+		 
+		   public void testAssertFalseWithMessage() {
+		        // Assertion with a message to provide context
+		       assert false : "This test is designed to fail";
+		    }
 		
 	}
 
