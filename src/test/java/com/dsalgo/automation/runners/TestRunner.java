@@ -5,13 +5,14 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-    features = "src/test/resources/features", // Location of the feature files
-    glue = {"com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks"}, // Location of the step definition classes
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
-    monochrome = true// Reports
-    )
+@CucumberOptions(features = "src/test/resources/features/Register.feature",
+		glue = { "com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks" }, 																							
+		plugin = { "pretty", "html:target/cucumber-reports.html",
+				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				}, 
+		monochrome = true
+)
 public class TestRunner {
 
-	
 }

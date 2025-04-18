@@ -1,13 +1,22 @@
 package com.dsalgo.automation.pages;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
+
 public class TreePage {
 
 	WebDriver driver ;
+	QueuePage queuepage = new QueuePage();
+	
+	@FindBy (xpath = "//a[@href='tree']")
+	WebElement treeBtn;
 	
 	@FindBy (xpath = "//a[contains(text(),'Overview')]")
 	private WebElement overviewOfTreesLnk;
@@ -72,14 +81,24 @@ public class TreePage {
 	@FindBy(xpath = "//img[contains(@src,'content.com')]")
 	private WebElement binarySearchTreeImage;
 	
+	@FindBy (xpath = "//table[@border=\"1\"]")
+	private WebElement terminologiesTable;
+	
+	@FindBy (xpath = "//table//tr[8]//td[2]/p")
+	private WebElement termTableLastRow;
+	
+	@FindBy (xpath = "//table[@class='Table']")
+	private WebElement treeTraversalTable;
 	
 	
-	
-	public TreePage(WebDriver webDriver) {
-		this.driver = webDriver;
+	public TreePage() {
+		this.driver = DriverFactory.getDriver();
         PageFactory.initElements(driver, this);
 	}
 	
+	public void clickTree() {
+		treeBtn.click();
+	}	
 
 	public void clickOverviewOfTreeslnk() {
 		overviewOfTreesLnk.click();
@@ -164,4 +183,52 @@ public class TreePage {
 	public void clickImplementationOfBSTLnk() {
 		implementationOfBSTLnk.click();
 	}
+	
+	public void practiceQuestions() {
+		queuepage.runBtn.click();
+	}
+
+	public void tryCodeEditor() {
+		queuepage.tryHereBtn.click();
+	}
+	
+	public void verifyCodeEditor(String code) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].CodeMirror.setValue(arguments[1]);", queuepage.codeEditor, code);
+	}
+	
+	public void runCode() {
+		queuepage.runBtn.click();
+	}
+	
+	public String verifyOutput() {
+		return queuepage.output.getText();
+	}
+	
+	public void handleAlert() {
+        Alert alert = driver.switchTo().alert();
+        LoggerLoad.info("Alert says: " + alert.getText());
+        alert.accept();
+	
+	}
+	
+	public String verifyTitleOfPage() {
+		return driver.getTitle();
+	}
+	
+	public boolean verifyTerminologiesTable() {
+		return terminologiesTable.isDisplayed();		
+	}
+	
+	public String verifyTermTableLastRow() {
+		return termTableLastRow.getText();		
+	}
+	
+	public boolean verifyTreeTraversalTable() {
+		return treeTraversalTable.isDisplayed();
+		
+	}
+
+		
+	
 }

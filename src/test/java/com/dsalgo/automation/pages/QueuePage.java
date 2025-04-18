@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
 
 public class QueuePage {
-
+    
 	WebDriver driver;
 	
 	@FindBy (id = "id_username")
@@ -23,7 +24,7 @@ public class QueuePage {
 	@FindBy (xpath = "/html/body/div[2]/div/div[2]/form/input[4]")
 	WebElement loginBtn;
 
-	@FindBy(xpath = "/html/body/div[3]/div[5]/div/div/a")
+	@FindBy(xpath = "//a[@href=\"queue\"]")
 	WebElement queueBtn;
 
 	@FindBy(xpath = "//a[text()='Implementation of Queue in Python']")
@@ -39,19 +40,22 @@ public class QueuePage {
 	private WebElement queueOperationLnk;
 
 	@FindBy(xpath = "//a[text()='Practice Questions']")
-	private WebElement practiceQuestionLnk;
+	public WebElement practiceQuestionLnk;
+	
+	@FindBy(id = "content")
+	public WebElement practiceQuestionContent;
 
 	@FindBy(xpath = "//a[text()='Try here>>>']")
 	public WebElement tryHereBtn;
 
 	@FindBy(css = ".CodeMirror")
-	private WebElement codeEditor;
+	public WebElement codeEditor;
 
 	@FindBy(xpath = "//button[@type='button']")
-	private WebElement runBtn;
+	public WebElement runBtn;
 
 	@FindBy(xpath = "//*[@id='output']")
-	private WebElement output;
+	public WebElement output;
 
 	public QueuePage() {
 		this.driver = DriverFactory.getDriver();
@@ -106,7 +110,7 @@ public class QueuePage {
 
 	public void handleAlert() {
 		Alert alert = driver.switchTo().alert();
-		System.out.println("Alert says: " + alert.getText());
+		LoggerLoad.info("Alert says: " + alert.getText());
 		alert.accept();
 
 	}
@@ -122,15 +126,9 @@ public class QueuePage {
 		return driver.getTitle();
 	}
 
-	public void enterDetails() {
-//			loginPage.userName.sendKeys("abc@test.com");
-//			loginPage.password.sendKeys("testtest@123");
-//			loginPage.loginBtn.click();
-			
-			userName.sendKeys("abc@test.com");
-			password.sendKeys("testtest@123");
-			loginBtn.click();
-		}
+	public String verifyContent() {
+		return practiceQuestionContent.getText();
+	}
 		
 	}
 

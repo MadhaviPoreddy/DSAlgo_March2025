@@ -9,10 +9,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+   private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	// Added Code below for Cross Browser Testing
-	
 	public static void initializeDriver(String browser) {
 		quitDriver();
 
@@ -36,7 +34,6 @@ public class DriverFactory {
 		default:
 			ChromeOptions options = new ChromeOptions();
 
-//			options.addArguments("--incognito");
 //			options.addArguments("--headless=new");
 
 			driver.set(new ChromeDriver(options));
