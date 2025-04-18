@@ -27,9 +27,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Overview of Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Overview of Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -61,9 +61,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Terminologies Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Terminologies Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -91,9 +91,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Types of Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Types of Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -129,8 +129,8 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Tree Traversals Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify TryEditor with valid code
     Given The User is on Tree Traversals Try Editor Page
@@ -163,8 +163,8 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Traversals-Illustration Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify TryEditor with valid code
     Given The User is on Traversals-Illustration Try Editor Page
@@ -197,9 +197,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Binary Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Binary Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -235,8 +235,8 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Types of Binary Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify TryEditor with valid code
     Given The User is on Types of Binary Trees Try Editor Page
@@ -265,9 +265,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation in Python Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Implementation in Python Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -299,8 +299,8 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Binary Tree Traversals Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify TryEditor with valid code
     Given The User is on Binary Tree Traversals Try Editor Page
@@ -329,9 +329,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation of Binary Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Implementation of Binary Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -359,9 +359,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Applications of Binary Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Applications of Binary Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -393,9 +393,9 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Binary Search Trees Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Binary Search Trees Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -423,8 +423,8 @@ Feature: Tree
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation of BST Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify  TryEditor with valid code
     Given The User is on Implementation of BST Try Editor Page

@@ -23,8 +23,8 @@ Feature: Queue
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation of Queue Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
 
   Scenario: Verify TryEditor with valid code
     Given The User is on Implementation of Queue Try Editor Page
@@ -53,9 +53,9 @@ Feature: Queue
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation using collections.deque Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Implementation using collections.deque Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -83,9 +83,9 @@ Feature: Queue
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Implementation using array Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Implementation using array Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button
@@ -113,9 +113,9 @@ Feature: Queue
 
   Scenario: Verify TryEditor with empty code
     Given The User is on Queue Operations Try Editor Page
-    When The user clicks the Run Button without entering the code in the Editor
-    Then The user is not able to see an error message
-
+    When The user clicks the Run Button without entering the code in Try Editor
+    Then The user is not able to see an error message on try Editor page
+    
   Scenario: Verify TryEditor with valid code
     Given The User is on Queue Operations Try Editor Page
     When The user enters a valid Python code in Editor and click on the Run button

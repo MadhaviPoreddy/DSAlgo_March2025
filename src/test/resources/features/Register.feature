@@ -82,4 +82,4 @@ Feature: User Registration
     Scenario: Verify that user is allowed to enter x characters in user name
   	Given The user is on Registration page
     When The user clicks Register button after entering a username with more than x characters	
-    #Then The username field should only allow x charaters
+    Then The username field should only allow x charaters

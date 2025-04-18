@@ -63,12 +63,12 @@ public class CommonStepDef {
         assertEquals(codeEditorTitle, expectedTitle);
     }
 
-    @When("The user clicks the Run Button without entering the code in the Editor")
+    @When("The user clicks the Run Button without entering the code in Try Editor")
     public void when_the_user_clicks_the_run_button_without_entering_the_code_in_the_editor() {
     	queuePage.runCode();
     }
 
-    @Then("The user is not able to see an error message")
+    @Then("The user is not able to see an error message on try Editor page")
     public void then_the_user_is_not_able_to_see_an_error_message() {
     	Map<String, String> specificRow = testData.get(0);
     	String expectedOutput = specificRow.get("Output");
