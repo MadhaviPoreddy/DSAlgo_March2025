@@ -10,7 +10,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features", // Location of the feature files
     glue = {"com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks"}, // Location of the step definition classes
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
+    plugin = {"pretty", "html:target/cucumber-reports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 	tags = "@array", //tags from feature file
     monochrome = true// Reports
     )
