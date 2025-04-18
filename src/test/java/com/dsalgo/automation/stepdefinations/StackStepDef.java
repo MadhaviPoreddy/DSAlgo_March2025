@@ -1,144 +1,153 @@
 package com.dsalgo.automation.stepdefinations;
 import io.cucumber.java.en.*;
+import java.util.List;
+import java.util.Map;
+import com.dsalgo.automation.pages.StackPage;
+import com.dsalgo.automation.utils.ExcelReader;
+//import org.junit.Assert;
+import static org.testng.Assert.*;
 
 public class StackStepDef {
 
-@Given("The user clicks on Getstarted and launch Sign in Page")
-public void the_user_clicks_on_getstarted_and_launch_sign_in_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	StackPage stack=new StackPage();
+	List<Map<String, String>> testData = ExcelReader.getAllRows("Stack");
+	List<Map<String, String>> testData1 = ExcelReader.getAllRows("CodeEditor");
 
-@When("The user enters username and password")
-public void the_user_enters_username_and_password() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
 
-@When("Clicks on login button")
-public void clicks_on_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@When("The user clicks the Getting Started button in Stack Panel")
+		public void the_user_clicks_the_button_in_stack_panel() {
+		stack.stackGetStartedBtn();
+	}
 
-@Then("The user will be directed to dsAlgo Portal Page")
-public void the_user_will_be_directed_to_ds_algo_portal_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Then("The user will be directed to Stack Data Structure Page")
+		public void the_user_will_be_directed_to_data_structure_page() {
+	 	String stackTitle = stack.verfyPageTitle();
+		System.out.println("Title of the page is " +stackTitle);
+		Map<String, String> specificRow = testData.get(0);
+	 	String expectedTitle = specificRow.get("PageTitle");
+	 	assertEquals(stackTitle, expectedTitle);
+	}
 
-@Given("The user is in the Home page after Sign in")
-public void the_user_is_in_the_home_page_after_sign_in() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Given("The user is in the Stack page after Sign in")
+		public void the_user_is_in_the_page_after_sign_in() {
+	}
 
-@When("The user clicks the {string} button in Stack Panel")
-public void the_user_clicks_the_button_in_stack_panel(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@When("The user clicks Operations in Stack link")
+		public void the_user_clicks_link() {
+		stack.operationsInStackLink();
+	}
 
-@Then("The user will be directed to {string} Data Structure Page")
-public void the_user_will_be_directed_to_data_structure_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Then("The user should be redirected to Operations in Stack page")
+		public void the_user_should_be_redirected_to_page() {
+		String stackTitle = stack.verfyPageTitle();
+		Map<String, String> specificRow = testData.get(1);
+	 	String expectedTitle = specificRow.get("PageTitle");
+	 	assertEquals(stackTitle, expectedTitle);
+	}
 
-@Given("The user is in the {string} page after Sign in")
-public void the_user_is_in_the_page_after_sign_in(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Given("The user is on the Operations in Stack page")
+		public void the_user_is_on_the_page() {
+		stack.operationsInStackLink();
+	}
 
-@When("The user clicks {string} link")
-public void the_user_clicks_link(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@When("The user clicks Try Here button in Operations in Stack page")
+		public void the_user_clicks_button_in_operations_in_stack_page() {
+		stack.operationsInStackLinkTryEdit();
+	}
 
-@Then("The user should be redirected to {string} page")
-public void the_user_should_be_redirected_to_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Given("The user is in the Operations in Stack tryEditor page")
+	public void the_user_is_in_the_try_editor_page() {
+		stack.operationsInStackLink();
+		stack.operationsInStackLinkTryEdit();
+	}
+	@When("The user clicks Practice Questions button")
+	public void the_user_clicks_button() {
+		stack.stackPracticeLink();
+	}
+		
+	
+	@Then("The user should able to see output in the console for stack")
+	public void the_user_should_able_to_see_output_in_the_console_for_stack() {
+		Map<String, String> specificRow = testData1.get(1);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = stack.verifyOutput();
+        assertEquals(expectedOutput,codeOutput);
+ 	}
+	
+	
+	@Then("The user should be redirected to Practice page")
+	public void the_user_should_be_redirected_to_Practice_page() {
+		stack.verfyPageTitle();
+	}
+	
 
-@Given("The user is on the {string} page")
-public void the_user_is_on_the_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@When("The user clicks Implementation link")
+	public void the_user_clicks_Implementation_link() {
+	   stack.stackImplementation();
+	}
+	
+	@Then("The user should be redirected to Implementation page")
+	public void the_user_should_be_redirected_to_Implementation_page() {
+	String stackTitle = stack.verfyPageTitle();
+	Map<String, String> specificRow = testData.get(2);
+ 	String expectedTitle = specificRow.get("PageTitle");
+ 	assertEquals(stackTitle, expectedTitle);
+	System.out.println("Title of the page is matched with the actual title: " +stackTitle);
+	System.out.println("User is landed on Implementation of Stack page");
+	}
 
-@When("The user clicks {string} button in Operations in Stack page")
-public void the_user_clicks_button_in_operations_in_stack_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@Given("The user is on the Implementation page")
+	public void the_user_is_on_the_Implementation_page() {
+	stack.stackImplementation();
+	System.out.println("User is landed on Implementation in Stack page");
+	}
+	@When("The user clicks Try Here button in Implementation page")
+	public void the_user_clicks_button_in_Implementation_page() {
+	stack.stackImplementationTryEdit();
+	System.out.println("User is clicked on Try Edit button on Operations in Stack page");
+	}
+	
+	@Given("The user is in the Implementation Stack tryEditor page")
+	public void the_user_is_in_the_Implementation_try_editor_page() {
+		stack.stackImplementation();
+		stack.stackImplementationTryEdit();
+		System.out.println("User is clicked on Try Edit button on Implementation in Stack page");
+	  
+	}
+	@When("The user clicks Applications link")
+		public void the_user_clicks_applications_link() throws InterruptedException {
+		Thread.sleep(2000);
+		stack.stackApplications();
+	}
+	
+	@Then("The user should be redirected to Applications page")
+	public void the_user_should_be_redirected_to_applications_page() {
+	String stackTitle = stack.verfyPageTitle();
+	Map<String, String> specificRow = testData.get(3);
+ 	String expectedTitle = specificRow.get("PageTitle");
+ 	assertEquals(stackTitle, expectedTitle);
+	System.out.println("Title of the page is matched with the actual title: " +stackTitle);
+	System.out.println("User is landed on Applications of Stack page");
+	}
+	
+	@Given("The user is on the Applications page")
+		public void the_user_is_on_the_applications_page() {
+		stack.stackApplications();
+		System.out.println("User is landed on Applications in Stack page");
+	}
 
-@Then("The user should be redirected to a page having an try Editor with a Run button to test")
-public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Given("The user is in the tryEditor page")
-public void the_user_is_in_the_try_editor_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user clicks the Run Button without entering the code in the Editor")
-public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Then("The user is not able to see an error message")
-public void the_user_is_not_able_to_see_an_error_message() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user write the invalid code in Editor and click the Run Button")
-public void the_user_write_the_invalid_code_in_editor_and_click_the_run_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Then("The user should able to see an error message in alert window")
-public void the_user_should_able_to_see_an_error_message_in_alert_window() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user write the valid code in Editor and click the Run Button")
-public void the_user_write_the_valid_code_in_editor_and_click_the_run_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Then("The user should able to see output in the console")
-public void the_user_should_able_to_see_output_in_the_console() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user clicks {string} button")
-public void the_user_clicks_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user clicks {string} button in Implementation page")
-public void the_user_clicks_button_in_implementation_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("The user clicks {string} button in Applications page")
-public void the_user_clicks_button_in_applications_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	@When("The user clicks Try Here button in Applications page")
+	public void the_user_clicks_button_in_applications_page() {
+	stack.stackApplicationsTryEdit();
+	System.out.println("User is clicked on Try Edit button on Applications in Stack page");
+  
+	}
+	@Given("The user is in the Applications tryEditor page")
+	public void the_user_is_in_the_Applications_try_editor_page() {
+		stack.stackApplications();
+		stack.stackApplicationsTryEdit();
+		System.out.println("User is clicked on Try Edit button on Applications in Stack page");
+	  
+	}
 
 }
