@@ -1,6 +1,7 @@
 package com.dsalgo.automation.stepdefinations;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Map;
@@ -38,10 +39,10 @@ public class CommonStepDef {
     @Then("The User should be navigated to Practice Questions page")
     public void then_the_user_should_be_navigated_to_practice_questions_page() {
         String practiceTitle = queuePage.verifyTitleOfPage();
-        assertThat(practiceTitle).isEqualTo("Practice Questions");
+        assertEquals(practiceTitle, "Practice Questions");
         String verifyContect = queuePage.verifyContent();
 		try {
-		assertThat(verifyContect).isEmpty();
+		assertTrue(verifyContect.isEmpty(), "Expected verifyContect to be empty");
 		throw new AssertionError("Test failed: Page is Empty.");
         } catch (AssertionError e) {
             LoggerLoad.error("Assertion failed: " + e.getMessage());
@@ -59,7 +60,7 @@ public class CommonStepDef {
     	Map<String, String> specificRow = testData.get(0);
     	String expectedTitle = specificRow.get("PageTitle");
         String codeEditorTitle = queuePage.verifyTitleOfPage();
-        assertThat(codeEditorTitle).isEqualTo(expectedTitle);
+        assertEquals(codeEditorTitle, expectedTitle);
     }
 
     @When("The user clicks the Run Button without entering the code in the Editor")
@@ -72,7 +73,7 @@ public class CommonStepDef {
     	Map<String, String> specificRow = testData.get(0);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = queuePage.verifyOutput();
-        assertThat(codeOutput).isEqualTo(expectedOutput);
+        assertEquals(codeOutput, expectedOutput);
     }
 
     @When("The user enters a valid Python code in Editor and click on the Run button")
@@ -88,7 +89,7 @@ public class CommonStepDef {
     	Map<String, String> specificRow = testData.get(1);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = queuePage.verifyOutput();
-        assertThat(codeOutput).isEqualTo(expectedOutput);
+        assertEquals(codeOutput, expectedOutput);
     }
 
     @When("The user enters an invalid code in Editor and click on the Run button")
@@ -102,7 +103,7 @@ public class CommonStepDef {
     @Then("The user should get an error message after excuting the code")
     public void then_the_user_should_get_an_error_message_after_excuting_the_code() {
     	Boolean isDisplayed = queuePage.alertPresent();
-    	assertThat(isDisplayed).isTrue();
+    	assertTrue(isDisplayed);
     	queuePage.handleAlert();
         
     }

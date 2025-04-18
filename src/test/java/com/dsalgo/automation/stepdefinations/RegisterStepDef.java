@@ -1,6 +1,7 @@
 package com.dsalgo.automation.stepdefinations;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +37,7 @@ public class RegisterStepDef {
 	@Given("The user is on Registration page")
 	public void the_user_is_on_registration_page() {
 		String pageTitle = registerPage.verifyTitleOfPage();
-		assertThat(pageTitle).isEqualTo("Registration");
+		assertEquals(pageTitle,"Registration");
 	}
 
 	@When("The user clicks Register button with all fields empty")
@@ -47,7 +48,7 @@ public class RegisterStepDef {
 	@Then("The error {string} appears below Username textbox")
 	public void then_the_error_appears_below_username_textbox(String errorMsg) {
 		String actualErrMsg = registerPage.verifyUserErrorMsg();
-		assertThat(errorMsg).isEqualTo(actualErrMsg);
+		assertEquals(errorMsg,actualErrMsg);
 	}
 
 	@When("The user clicks Register button after entering Username with other fields empty")
@@ -64,7 +65,7 @@ public class RegisterStepDef {
 	public void then_the_error_message_appears_below_password_textbox(String errorMsg) {
 		String actualErrMsg = registerPage.verifyPwdErrorMsg();
 		;
-		assertThat(errorMsg).isEqualTo(actualErrMsg);
+		assertEquals(errorMsg,actualErrMsg);
 
 	}
 
@@ -80,7 +81,7 @@ public class RegisterStepDef {
 	@Then("The error message {string} appears below Password Confirmation textbox")
 	public void then_the_error_message_appears_below_password_confirmation_textbox(String errorMsg) {
 		String actualErrMsg = registerPage.verifyCnPwdErrorMsg();
-		assertThat(errorMsg).isEqualTo(actualErrMsg);
+		assertEquals(errorMsg, actualErrMsg);
 	}
 
 	@When("The user clicks Register button after entering space in username field and valid passwords")
@@ -122,7 +123,7 @@ public class RegisterStepDef {
 	public void then_the_username_field_should_only_allow_x_charaters() {
 		String userName = registerPage.verifyUserNameField();
 		int userLength = userName.length();
-		assertThat(userLength).isEqualTo(150);
+		assertEquals(userLength, 150);
 
 	}
 
@@ -140,7 +141,7 @@ public class RegisterStepDef {
 		String actualErrMsg = registerPage.verifyErrorMessage();
 		String displyedMsg = "password_mismatch:The two password fields didn’t match.";
 		try {
-			assertThat(actualErrMsg).isEqualTo(displyedMsg);
+			assertEquals(actualErrMsg, displyedMsg);
 			throw new AssertionError("Test failed: Incorrect error message displayed.");
 		} catch (AssertionError e) {
 			LoggerLoad.error("Assertion failed: " + e.getMessage());
@@ -188,7 +189,7 @@ public class RegisterStepDef {
 	public void then_the_user_should_able_to_see_an_pwd_warning_message(String arg1) {
 		String actualErrMsg = registerPage.verifyErrorMessage();
 		String displyedMsg = "password_mismatch:The two password fields didn’t match.";
-		assertThat(actualErrMsg).isEqualTo(displyedMsg);
+		assertEquals(actualErrMsg, displyedMsg);
 
 	}
 
@@ -206,7 +207,7 @@ public class RegisterStepDef {
 		Map<String, String> specificRow = testData.get(0);
 		String expectedSuccMsg = succMsg + specificRow.get("Username");
 		String successMesg = registerPage.verifySucces();
-		assertThat(expectedSuccMsg).isEqualTo(successMesg);
+		assertEquals(expectedSuccMsg, successMesg);
 
 	}
 
@@ -220,7 +221,7 @@ public class RegisterStepDef {
 	public void then_the_user_is_not_able_to_land_on_home_page() {
 		String actualErrMsg = registerPage.verifyTitleOfPage();
 		String displyedMsg = "Numpy Ninja";
-		assertThat(actualErrMsg).isEqualTo(displyedMsg);
+		assertEquals(actualErrMsg, displyedMsg);
 
 	}
 
@@ -240,7 +241,7 @@ public class RegisterStepDef {
 	public void then_the_user_should_be_navigated_to_login_page() {
 		String actualErrMsg = registerPage.verifyTitleOfPage();
 		String displyedMsg = "Login";
-		assertThat(actualErrMsg).isEqualTo(displyedMsg);
+		assertEquals(actualErrMsg, displyedMsg);
 	}
 
 }
