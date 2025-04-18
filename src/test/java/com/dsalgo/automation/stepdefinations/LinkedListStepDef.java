@@ -121,6 +121,16 @@ public class LinkedListStepDef {
 		linkedList.creatingLinkedListTryEdit();
 	}
 	
+	@Then("The user should able to see output in the console for Linkedlist")
+	public void the_user_should_able_to_see_output_in_the_console_for_Linkedlist() {
+		Map<String, String> specificRow = testData1.get(1);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = linkedList.verifyOutput();
+        assertEquals(expectedOutput,codeOutput);
+ 	}
+	
+	
+	
 	@When("The user clicks Types of Linked List link")
 	public void the_user_clicks_Typesof_Linked_List_link() {
 		linkedList.typesOfListLink();

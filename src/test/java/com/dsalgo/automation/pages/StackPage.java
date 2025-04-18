@@ -42,6 +42,9 @@ public class StackPage {
 	//practice Questions
 	@FindBy (xpath="//*[@id=\"content\"]/a") WebElement stackPracticeLink;
 	
+	@FindBy(xpath = "//pre[@id='output']") WebElement output;
+
+	
 	public StackPage()
  	{
  	
@@ -49,6 +52,11 @@ public class StackPage {
  		this.driver=DriverFactory.getDriver();
 		PageFactory.initElements( driver, this);
  	}
+	
+	public String verifyOutput() {
+		return output.getText();
+	}
+	
 	public void stackGetStartedBtn()
 	{
 		stackGetStartedBtn.click();

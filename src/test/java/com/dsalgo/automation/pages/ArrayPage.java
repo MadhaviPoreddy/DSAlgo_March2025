@@ -51,7 +51,7 @@ public class ArrayPage {
  	@FindBy (xpath="//*[@id=\"content\"]/a") WebElement arrayPractieceQue;
  	@FindBy (css="body > div:nth-child(3) > a") WebElement searchArrayPractieceQue;
  	@FindBy (xpath="/html/body/div[3]/a") WebElement maxConsucutiveOnesPractieceQue;
- 	@FindBy (xpath="/html/body/div[]/a") WebElement findNumwithEvenDigitsPractieceQue;
+ 	@FindBy (xpath="/html/body/div[4]/a") WebElement findNumwithEvenDigitsPractieceQue;
  	@FindBy (xpath="/html/body/div[5]/a") WebElement squaresOfSortedArrayPractieceQue;
 
  	//practice Questions Text Editor

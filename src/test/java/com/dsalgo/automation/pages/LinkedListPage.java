@@ -77,6 +77,8 @@ import com.dsalgo.automation.driver.DriverFactory;
 		//practice Questions
 		@FindBy (xpath="//a [text()='Practice Questions']") WebElement linkedListPracticeLink;
 		
+		@FindBy(xpath = "//pre[@id='output']") WebElement output;
+		
 		
 		public LinkedListPage()
 	 	{
@@ -126,7 +128,9 @@ import com.dsalgo.automation.driver.DriverFactory;
 		{
 			creatingLinkedListTryEdit.click();
 		}
-		
+		public String verifyOutput() {
+			return output.getText();
+		}
 		
 		//3rd link
 		public void typesOfListLink()

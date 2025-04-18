@@ -127,14 +127,17 @@ public class ArrayStepDef {
     	array.arrayPythonTextEditRun();
 	}
 
-	@Then("The user should able to see output in the console")
-	public void the_user_should_able_to_see_output_in_the_console() {
+	
+	@Then("The user should able to see output in the console for Arrays")
+	public void the_user_should_able_to_see_output_in_the_console_for_Arrays() {
 		Map<String, String> specificRow = testData1.get(1);
     	String expectedOutput = specificRow.get("Output");
         String codeOutput = array.verifyOutput();
         assertEquals(expectedOutput,codeOutput);
  	}
-
+	
+	
+	
 	@When("The user clicks Basic Operation in List link")
 	public void the_user_clicks_link_of_the_Basic_Operation() {
 	array.arrayBasicOperinListLink();

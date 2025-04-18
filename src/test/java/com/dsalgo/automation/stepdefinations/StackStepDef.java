@@ -65,6 +65,16 @@ public class StackStepDef {
 		stack.stackPracticeLink();
 	}
 		
+	
+	@Then("The user should able to see output in the console for stack")
+	public void the_user_should_able_to_see_output_in_the_console_for_stack() {
+		Map<String, String> specificRow = testData1.get(1);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = stack.verifyOutput();
+        assertEquals(expectedOutput,codeOutput);
+ 	}
+	
+	
 	@Then("The user should be redirected to Practice page")
 	public void the_user_should_be_redirected_to_Practice_page() {
 		stack.verfyPageTitle();
