@@ -1,20 +1,11 @@
 package com.dsalgo.automation.stepdefinations;
 import io.cucumber.java.en.*;
-
 import java.util.List;
 import java.util.Map;
-
-import com.dsalgo.automation.pages.ArrayPage;
 import com.dsalgo.automation.pages.StackPage;
 import com.dsalgo.automation.utils.ExcelReader;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.junit.Assert;
-
-import com.dsalgo.automation.driver.DriverFactory;
-import com.dsalgo.automation.utils.ExcelReader;
+//import org.junit.Assert;
+import static org.testng.Assert.*;
 
 public class StackStepDef {
 
@@ -26,7 +17,6 @@ public class StackStepDef {
 	@When("The user clicks the Getting Started button in Stack Panel")
 		public void the_user_clicks_the_button_in_stack_panel() {
 		stack.stackGetStartedBtn();
-		System.out.println("Stack Home page is displayed");
 	}
 
 	@Then("The user will be directed to Stack Data Structure Page")
@@ -35,13 +25,11 @@ public class StackStepDef {
 		System.out.println("Title of the page is " +stackTitle);
 		Map<String, String> specificRow = testData.get(0);
 	 	String expectedTitle = specificRow.get("PageTitle");
-	 	Assert.assertEquals(stackTitle, expectedTitle);
-		System.out.println("Title of the page is matched with the actual title");
+	 	assertEquals(stackTitle, expectedTitle);
 	}
 
 	@Given("The user is in the Stack page after Sign in")
 		public void the_user_is_in_the_page_after_sign_in() {
-		System.out.println("Stack Home page is displayed");
 	}
 
 	@When("The user clicks Operations in Stack link")
@@ -54,30 +42,23 @@ public class StackStepDef {
 		String stackTitle = stack.verfyPageTitle();
 		Map<String, String> specificRow = testData.get(1);
 	 	String expectedTitle = specificRow.get("PageTitle");
-	 	Assert.assertEquals(stackTitle, expectedTitle);
-		System.out.println("Title of the page is matched with the actual title: " +stackTitle);
-		System.out.println("User is landed on Operations in Stack page");
+	 	assertEquals(stackTitle, expectedTitle);
 	}
 
 	@Given("The user is on the Operations in Stack page")
 		public void the_user_is_on_the_page() {
 		stack.operationsInStackLink();
-		System.out.println("User is landed on Operations in Stack page");
 	}
 
 	@When("The user clicks Try Here button in Operations in Stack page")
 		public void the_user_clicks_button_in_operations_in_stack_page() {
 		stack.operationsInStackLinkTryEdit();
-		System.out.println("User is clicked on Try Edit button on Operations in Stack page");
-	  
 	}
 
 	@Given("The user is in the Operations in Stack tryEditor page")
 	public void the_user_is_in_the_try_editor_page() {
 		stack.operationsInStackLink();
 		stack.operationsInStackLinkTryEdit();
-		System.out.println("User is clicked on Try Edit button on Operations in Stack page");
-	  
 	}
 	@When("The user clicks Practice Questions button")
 	public void the_user_clicks_button() {
@@ -86,11 +67,10 @@ public class StackStepDef {
 		
 	@Then("The user should be redirected to Practice page")
 	public void the_user_should_be_redirected_to_Practice_page() {
-		System.out.println("User is landed on Practiece questions on Operations in Stack  page");
-		String PractieceQTitle=stack.verfyPageTitle();
-		System.out.println("Title of the page is: " +PractieceQTitle);
+		stack.verfyPageTitle();
 	}
 	
+
 	@When("The user clicks Implementation link")
 	public void the_user_clicks_Implementation_link() {
 	   stack.stackImplementation();
@@ -101,7 +81,7 @@ public class StackStepDef {
 	String stackTitle = stack.verfyPageTitle();
 	Map<String, String> specificRow = testData.get(2);
  	String expectedTitle = specificRow.get("PageTitle");
- 	Assert.assertEquals(stackTitle, expectedTitle);
+ 	assertEquals(stackTitle, expectedTitle);
 	System.out.println("Title of the page is matched with the actual title: " +stackTitle);
 	System.out.println("User is landed on Implementation of Stack page");
 	}
@@ -135,7 +115,7 @@ public class StackStepDef {
 	String stackTitle = stack.verfyPageTitle();
 	Map<String, String> specificRow = testData.get(3);
  	String expectedTitle = specificRow.get("PageTitle");
- 	Assert.assertEquals(stackTitle, expectedTitle);
+ 	assertEquals(stackTitle, expectedTitle);
 	System.out.println("Title of the page is matched with the actual title: " +stackTitle);
 	System.out.println("User is landed on Applications of Stack page");
 	}

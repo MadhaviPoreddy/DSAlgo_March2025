@@ -1,9 +1,11 @@
 #Author:Madhavi
-@tag
+@array
 Feature: Test Scenarios for Arrays
 
   Background: The user sign in to dsAlgo Portal
-    Given The user clicks on Getstarted and login to DS algo Home page Page
+  	Given the user is on the DS Algo Sign in Page
+    And the user enters a valid credentials and click on login
+    #Given The user clicks on Getstarted and login to DS algo Home page Page
     When The user clicks the Getting Started button in Array Panel After Sign in
 
   #Test Case 1
@@ -12,19 +14,19 @@ Feature: Test Scenarios for Arrays
     #Then The user be directed to Array Data Structure Page
 #
   #Test Case 2
-  #@tag2
+  #@tag1
   #Scenario: Verify that user is able to navigate to "Arrays in Python" page
     #Given The user is in the Array page after Sign in
     #When The user clicks Arrays in Python link
     #Then The user should be redirected to Arrays in Python page
-#
+
   #Test Case 3
-    #@tag3
+    #@tag1
   #Scenario: Verify that user is able to navigate to "try Editor" page for "Arrays in Python" page
     #Given The user is on the Arrays in Python page
     #When The user clicks Try Here button in Arrays in Python page
     #Then The user should be redirected to a page having an try Editor with a Run button to test
-#
+
   #Test Case 4
   #Scenario: Verify that user receives error when click on Run button without entering code for "Arrays in Python" page
     #Given The user is in the tryEditor page
@@ -186,7 +188,7 @@ Feature: Test Scenarios for Arrays
     #Given The user is on the Search the array Practice Questions editor
     #When The user write the valid Search the Array code in Editor and Click the Submit Button
     #Then The user is not able to see success message Submission successful
-#
+
   #Test Case 31
   #Scenario: Verify that user receives error message without entering any code in "Search the Array" editor and click on Run button
     #Given The user is on the Search the array Practice Questions editor
@@ -294,20 +296,20 @@ Feature: Test Scenarios for Arrays
     #Given The user is on the Squares of a Sorted Array practice question editor
     #When The user write the invalid code in Editor and click the Run Button
     #Then The user should able to see an error message in alert window
-#
-  #Test Case 49---Kalpana to check the step 3
-  #Scenario: Verify that user is able to run valid python code for "Squares of a Sorted Array" question
-    #Given The user is on the Squares of a Sorted Array practice question editor
-    #When The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button
-    #Then The user should able to see Squares of a Sorted Array output in the console
 
-  #Test Case 50 ----> Defect and Fail the test case ----Kalpana to check the step for double verification
-  Scenario: Verify that user receives error message on submitting invalid python code for "Squares of a Sorted Array" question
+  #Test Case 49
+  Scenario: Verify that user is able to run valid python code for "Squares of a Sorted Array" question
     Given The user is on the Squares of a Sorted Array practice question editor
-    When The user write the invalid code in Practice Questions Editor and Click the Submit Button
-    Then The user should be able to see error message No tests were Collected
+    When The user write the valid Squares of a Sorted Array code in Editor and Click the Run Button
+    Then The user should able to see Squares of a Sorted Array output in the console
 
-  #Test Case 51 ----> Defect and Fail the test case ----Kalpana to check the step 3 for double verification
+  #Test Case 50
+  #Scenario: Verify that user receives error message on submitting invalid python code for "Squares of a Sorted Array" question
+    #Given The user is on the Squares of a Sorted Array practice question editor
+    #When The user write the invalid code in Practice Questions Editor and Click the Submit Button
+    #Then The user should be able to see error message No tests were Collected
+
+  #Test Case 51 
   #Scenario: Verify that user receives "Submission Successful" on submitting valid python code for "Squares of a Sorted Array" question
     #Given The user is on the Squares of a Sorted Array practice question editor
     #When The user write the valid Squares of a Sorted Array code in Editor and Click the Submit Button
@@ -319,18 +321,18 @@ Feature: Test Scenarios for Arrays
     #When The user Clicks the Run Button without entering any code in Editor
     #Then The user is not able to see error message for blank input
 
-  #Test Case 53 ------>Kalpana to check this 3rd step since its not reading console error and print
+  #Test Case 53
   #Scenario: Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Submit button
     #Given The user is on the Squares of a Sorted Array practice question editor
     #When The user Clicks the Submit Button without entering any code in Editor
     #Then The user should be able to see error message No tests were Collected
-
+#
   #Test Case 54
   #Scenario: Verify that user is able to navigate to "Arrays in Python" page
     #Given The user is in the Array page after Sign in
     #When The user clicks Arrays in Python link of the Arrays page left side menu
     #Then The user should be redirected to Arrays in Python page
-
+#
   #Test Case 55 -This will be mapped to Registration page
   #Scenario: Verify that user is able to redirected to the  home page
    #	Given The user is in the Array page after Sign in

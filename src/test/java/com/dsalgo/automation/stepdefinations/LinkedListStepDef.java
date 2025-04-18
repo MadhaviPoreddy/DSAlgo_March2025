@@ -4,14 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.*;
 import com.dsalgo.automation.pages.*;
-//import com.dsalgo.automation.pages.LinkedListPage;
-//import com.dsalgo.automation.pages.StackPage;
 import static org.testng.Assert.*;
-import static org.assertj.core.api.Assertions.*;
 import java.util.*;
-import org.apache.poi.ss.usermodel.Cell;
 import org.junit.Assert;
-import com.dsalgo.automation.driver.DriverFactory;
 import com.dsalgo.automation.utils.ExcelReader;
 
 public class LinkedListStepDef {
@@ -25,7 +20,6 @@ public class LinkedListStepDef {
 	@When("The user clicks the Getting Started button in Linked List After Sign in")
 	public void the_user_clicks_the_button_in_LinkedList_panel() {
 		linkedList.linkedListGetStartedBtn();
-	System.out.println("Stack Home page is displayed");
 }
 	
 	@Then("The user will be directed to Linked List Data Structure Page")
@@ -33,10 +27,8 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(0);
      	String expectedTitle = specificRow.get("PageTitle");
      	String linkedListTitle = linkedList.verfyPageTitle();
-     	Assert.assertEquals(linkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +linkedListTitle);
-		System.out.println("Title passed through excel is" +expectedTitle);
-
+     	assertEquals(linkedListTitle, expectedTitle,"Title is matching with ");
+	
 	}
 
 	@Given("The user is in the Linked List page after Sign in")
@@ -45,7 +37,6 @@ public class LinkedListStepDef {
  	String expectedTitle = specificRow.get("PageTitle");
  	String LinkedListTitle = linkedList.verfyPageTitle();
  	Assert.assertEquals(LinkedListTitle, expectedTitle);
-	System.out.println("Title of the page is : " +LinkedListTitle);
  
 	}
 
@@ -60,7 +51,6 @@ public class LinkedListStepDef {
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
      	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 
 	@Given("The user is on the Linked List Introduction page")
@@ -93,9 +83,7 @@ public class LinkedListStepDef {
 		
 	@Then("The user should be redirected to Linked List Practice page")
 	public void the_user_should_be_redirected_to_linkedList_Practice_page() {
-		System.out.println("User is landed on Practiece questions on Operations in linkedList page");
-		String PractieceQTitle=linkedList.verfyPageTitle();
-		System.out.println("Title of the page is: " +PractieceQTitle);
+		linkedList.verfyPageTitle();
 	}
 
 	
@@ -110,7 +98,6 @@ public class LinkedListStepDef {
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 		
 	@Given("The user is in the Creating Linked List page after Sign in")
@@ -145,7 +132,6 @@ public class LinkedListStepDef {
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 		
 	@Given("The user is in the Types of Linked List page after Sign in")
@@ -163,12 +149,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(8);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-		System.out.println("Title of the page is : " +LinkedListTitle);
-		System.out.println("Expected Title of the page is : " +expectedTitle);
-
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
-		
+	 	assertEquals(LinkedListTitle, expectedTitle,"\"Test failed:Page title is not matched with Actual Title");		
 		linkedList.testAssertFalseWithMessage();
 	}
 	
@@ -182,10 +163,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(9);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	System.out.println("Title of the page is : " +LinkedListTitle);
-	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
+	 	assertEquals(LinkedListTitle, expectedTitle,"\"Test failed:Page title is not matched with Actual Title");		
 	 	linkedList.testAssertFalseWithMessage();
 
 	}
@@ -200,10 +178,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(10);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	System.out.println("Title of the page is : " +LinkedListTitle);
-	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
+	 	assertEquals(LinkedListTitle, expectedTitle,"\"Test failed:Page title is not matched with Actual Title");		
 	 	linkedList.testAssertFalseWithMessage();
 
 	}
@@ -218,11 +193,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(11);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	System.out.println("Title of the page is : " +LinkedListTitle);
-	 	System.out.println("Title from excel sheet of the page is : " +expectedTitle);
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-	 	
-	 	linkedList.testAssertFalseWithMessage();
+	 	assertEquals(expectedTitle,LinkedListTitle,"Test Case Failed: Title of the page is not matched with Expected Title");
 	 	}
 	
 	@When("The user clicks Try Here button in Types of Linked List page")
@@ -248,7 +219,6 @@ public class LinkedListStepDef {
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
 	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 		
 	
@@ -280,7 +250,6 @@ public class LinkedListStepDef {
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
      	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 
 	@Given("The user is on the Traversal page")
@@ -310,7 +279,6 @@ public class LinkedListStepDef {
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
      	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 	
 	@Given("The user is on the Insertion page")
@@ -338,7 +306,6 @@ public class LinkedListStepDef {
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
      	Assert.assertEquals(LinkedListTitle, expectedTitle);
-		System.out.println("Title of the page is : " +LinkedListTitle);
 	}
 	
 	@Given("The user is on the Deletion page")

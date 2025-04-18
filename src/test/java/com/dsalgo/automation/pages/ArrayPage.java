@@ -2,27 +2,16 @@ package com.dsalgo.automation.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import com.dsalgo.automation.driver.DriverFactory;
-import com.google.j2objc.annotations.ReflectionSupport.Level;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
-
 public class ArrayPage {
-	static WebDriver driver;
+	WebDriver driver;
 	
  	String url="https://dsportalapp.herokuapp.com";
 	@FindBy (xpath ="/html/body/div[1]/div/div/a/button")WebElement getStartedHome;
@@ -62,7 +51,7 @@ public class ArrayPage {
  	@FindBy (xpath="//*[@id=\"content\"]/a") WebElement arrayPractieceQue;
  	@FindBy (css="body > div:nth-child(3) > a") WebElement searchArrayPractieceQue;
  	@FindBy (xpath="/html/body/div[3]/a") WebElement maxConsucutiveOnesPractieceQue;
- 	@FindBy (xpath="/html/body/div[4]/a") WebElement findNumwithEvenDigitsPractieceQue;
+ 	@FindBy (xpath="/html/body/div[]/a") WebElement findNumwithEvenDigitsPractieceQue;
  	@FindBy (xpath="/html/body/div[5]/a") WebElement squaresOfSortedArrayPractieceQue;
 
  	//practice Questions Text Editor
@@ -72,6 +61,9 @@ public class ArrayPage {
 	@FindBy(xpath = "//pre[text()=\"Error occurred during submission\"]") WebElement outputerror;
 	@FindBy(xpath = "//pre [text()=\" No tests were collected\"]") WebElement Blankoutputerror;
 	@FindBy(xpath = "//pre[@id='output']") WebElement output;
+	//@FindBy(xpath = "//pre[text()=\"[4, 9, 9, 49, 121]\"]") WebElement squaresOfSortedArrayOutput;
+
+	
 
 	
  	public ArrayPage()
