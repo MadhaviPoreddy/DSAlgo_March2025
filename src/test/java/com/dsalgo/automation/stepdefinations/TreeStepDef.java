@@ -13,12 +13,8 @@ import com.dsalgo.automation.utils.LoggerLoad;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
 public class TreeStepDef {
 
-//	private static final Logger LoggerLoad = LogManager.getLogger(TreeStepDef.class);
-			
 	TreePage treePage = new TreePage();
 	List<Map<String, String>> testData = ExcelReader.getAllRows("Tree");
 
