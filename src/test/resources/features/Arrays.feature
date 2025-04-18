@@ -43,14 +43,14 @@ Feature: Test Scenarios for Arrays
   Scenario: Verify that user is able to see output for valid python code for "Arrays in Python" page
     Given The user is in the tryEditor page
     When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
+    Then The user should able to see output in the console for Arrays
 
   #Test Case 7
-  #Scenario: Verify that user is able to navigate to "Arrays using List" page
-    #Given The user is in the Array page after Sign in
-    #When The user clicks Arrays using List link
-    #Then The user should be redirected to Arrays using List page
-#
+  Scenario: Verify that user is able to navigate to "Arrays using List" page
+    Given The user is in the Array page after Sign in
+    When The user clicks Arrays using List link
+    Then The user should be redirected to Arrays using List page
+
   #Test Case 8
   Scenario: Verify that user is able to navigate to "Arrays using List" page
     Given The user is in the Array Topics page
@@ -58,10 +58,10 @@ Feature: Test Scenarios for Arrays
     Then The user should be redirected to Arrays using List page
 
   #Test Case 9
-  #Scenario: Verify that user is able to navigate to "try Editor" page for "Arrays using List" page
-    #Given The user is on the Arrays Using List page
-    #When The user clicks Try Here button in Arrays using List page
-    #Then The user should be redirected to a page having an try Editor with a Run button to test
+  Scenario: Verify that user is able to navigate to "try Editor" page for "Arrays using List" page
+    Given The user is on the Arrays Using List page
+    When The user clicks Try Here button in Arrays using List page
+    Then The user should be redirected to a page having an try Editor with a Run button to test
 #
   #Test Case 10
   Scenario: Verify that user receives error when click on Run button without entering code for "Arrays using List" page
@@ -70,23 +70,23 @@ Feature: Test Scenarios for Arrays
     Then The user is not able to see an error message
 
   #Test Case 11
-  #Scenario: Verify that user receives error for invalid python code for "Arrays using List" page
-    #Given The user is in the Arrays using List tryEditor page
-    #When The user write the invalid code in Editor and click the Run Button
-    #Then The user should able to see an error message in alert window
+  Scenario: Verify that user receives error for invalid python code for "Arrays using List" page
+    Given The user is in the Arrays using List tryEditor page
+    When The user write the invalid code in Editor and click the Run Button
+    Then The user should able to see an error message in alert window
 #
   #Test Case 12
   Scenario: Verify that user is able to see output for valid python code for "Arrays using List" page
     Given The user is in the Arrays using List tryEditor page
     When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
+    Then The user should able to see output in the console for Arrays
 
   #Test Case 13
-  #Scenario: Verify that user is able to navigate to "Basic Operation in List" page
-    #Given The user is in the Array page after Sign in
-    #When The user clicks Basic Operation in List link
-    #Then The user should be redirected to Basic Operation in List page
-#
+  Scenario: Verify that user is able to navigate to "Basic Operation in List" page
+    Given The user is in the Array page after Sign in
+    When The user clicks Basic Operation in List link
+    Then The user should be redirected to Basic Operation in List page
+
   #Test Case 14
   Scenario: Verify that user is able to navigate to "Basic Operation in List" page
     Given The user is in the Array Topics page
@@ -94,11 +94,11 @@ Feature: Test Scenarios for Arrays
     Then The user should be redirected to Basic Operation in List page
 
   #Test Case 15
-  #Scenario: Verify that user is able to navigate to "try Editor" page for "Basic Operation in List" page
-    #Given The user is on the Basic Operation in List page
-    #When The user clicks Try Here button in Basic Operation in List page
-    #Then The user should be redirected to a page having an try Editor with a Run button to test
-#
+  Scenario: Verify that user is able to navigate to "try Editor" page for "Basic Operation in List" page
+    Given The user is on the Basic Operation in List page
+    When The user clicks Try Here button in Basic Operation in List page
+    Then The user should be redirected to a page having an try Editor with a Run button to test
+
   #Test Case 16
   Scenario: Verify that user receives error when click on Run button without entering code for "Basic Operation in List" page
     Given The user is in the Basic Operation tryEditor page
@@ -106,19 +106,19 @@ Feature: Test Scenarios for Arrays
     Then The user is not able to see an error message
 
   #Test Case 17
-  #Scenario: Verify that user receives error for invalid python code for "Basic Operation in List" page
-    #Given The user is in the Basic Operation tryEditor page
-    #When The user write the invalid code in Editor and click the Run Button
-    #Then The user should able to see an error message in alert window
+  Scenario: Verify that user receives error for invalid python code for "Basic Operation in List" page
+    Given The user is in the Basic Operation tryEditor page
+    When The user write the invalid code in Editor and click the Run Button
+    Then The user should able to see an error message in alert window
 #
   #Test Case 18
   Scenario: Verify that user is able to see output for valid python code for "Basic Operation in List" page
     Given The user is in the Basic Operation tryEditor page
     When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
+    Then The user should able to see output in the console for Arrays
 
   #Test Case 19
-  #Scenario: Verify that user is able to navigate to "Applications of Array" page
+  Scenario: Verify that user is able to navigate to "Applications of Array" page
     Given The user is in the Array page after Sign in
     When The user clicks Applications of Array link
     Then The user should be redirected to Application of Array page
@@ -151,7 +151,7 @@ Feature: Test Scenarios for Arrays
   Scenario: Verify that user is able to see output for valid python code for "Applications of Array" page
     Given The user is in the Applications of Array tryEditor page
     When The user write the valid code in Editor and click the Run Button
-    Then The user should able to see output in the console
+    Then The user should able to see output in the console for Arrays
 
   #Test Case 25
   Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Arrays in Python" page
