@@ -382,6 +382,7 @@ public class ArrayStepDef {
         assertEquals(expectedOutput,codeOutput);
 		}
 	
+	
 	@When("The user write the valid Max Consecutive Ones code in Editor and Click the Submit Button")
 	public void the_user_write_the_valid_code_in_MaxConsecutiveOnes_Practice_Question_editor_and_click_the_submit_button() {
 		Map<String, String> specificRow = testData2.get(6);
@@ -414,6 +415,15 @@ public class ArrayStepDef {
     	array.arrayPythonTextEditRun();
 		}
 
+	@Then("The user should able to see Find Numbers with Even Number of Digits Practiece Questions output in the console")
+	public void the_user_should_able_to_see_Find_with_even_Numbers_Practiece_Questions_output_in_the_console() {
+		Map<String, String> specificRow = testData2.get(8);
+    	String expectedOutput = specificRow.get("Output");
+        String codeOutput = array.verifyOutput();
+        assertEquals(expectedOutput,codeOutput,"Output is blank when clicked on run");
+		}
+	
+	
 	@Then("The user is not able to see success message Submission successful in Find Numbers with Even Number of Digits output")
 	public void the_user_should_able_to_see_Find_Numbers_with_Even_Number_of_Digits_s_output_in_the_console() {
 		Map<String, String> specificRow = testData2.get(8);
