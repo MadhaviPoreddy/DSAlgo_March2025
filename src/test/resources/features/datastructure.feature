@@ -35,7 +35,7 @@ Feature: Navigation to Data Structures - Introduction Page
     Given the user is on the "Data Structures-Introduction" "Try Editor" page
     And the user enters invalid python code
     When the user clicks on the "Run" button
-    Then the user should see an error message in an alert window
+    Then the user should see an error message in an alert window for data structure
 
   Scenario: Verify output for valid Python code
     Given the user is on the "Data Structures-Introduction" "Try Editor" page

@@ -254,7 +254,7 @@ public class DataStructureStepDef {
 		datastructurepom.enterPythonCode(invalidCode);
 	}
 
-	@Then("the user should see an error message in an alert window")
+	@Then("the user should see an error message in an alert window for data structure")
 	public void the_user_should_see_error_alert() {
 		try {
 			String alertText = datastructurepom.AlertGetText();

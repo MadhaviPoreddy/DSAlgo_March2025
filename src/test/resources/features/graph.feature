@@ -30,7 +30,7 @@ Feature: Navigation to Graph Data Structure Page
     Given the user is on the "Graph" "Try Editor" page
     And the user enters invalid python code for Graph
     When the user clicks on the "Graph Run" button
-    Then the user should see an error message in an alert window
+    Then the user should see an error message in an alert window for graph
 
   Scenario: Verify output for valid Python code
     Given the user is on the "Graph" "Try Editor" page

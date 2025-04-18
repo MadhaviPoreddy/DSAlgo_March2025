@@ -7,6 +7,7 @@ import java.util.Map;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.dsalgo.automation.pages.DataStructure;
 import com.dsalgo.automation.pages.GraphPage;
 import com.dsalgo.automation.pages.HomePage;
 import com.dsalgo.automation.pages.LoginPage;
@@ -21,6 +22,7 @@ public class GraphStepDef {
 	HomePage homepom = new HomePage();
 	LoginPage loginpom = new LoginPage();
 	GraphPage graphpom = new GraphPage();
+	DataStructure datastructurepom = new DataStructure();
 	List<WebElement> paragraphElements;
 	
 	
@@ -100,6 +102,17 @@ public class GraphStepDef {
 		// Get value of third row and column "pythonCode"
 		String invalidCode = allData.get(1).get("PythonCode");		
 		graphpom.enterPythonCode(invalidCode);
+	}
+	
+	@Then("the user should see an error message in an alert window for graph")
+	public void the_user_should_see_error_alert() {
+		try {
+			String alertText = datastructurepom.AlertGetText();
+			Assert.assertFalse(alertText.isEmpty(), "Alert is empty or not displayed.");
+			
+		} catch (NullPointerException e) {
+			Assert.fail("Alert was not displayed.");
+		}
 	}
 	
 	@And("the user enters valid python code for Graph")
