@@ -28,7 +28,7 @@ public class GraphPage {
 	WebElement getStartedgraph;
 	@FindBy (linkText="Graph")
 	WebElement graphLink;
-	@FindBy (xpath ="//a[@href='graph-representations']")
+	@FindBy (xpath ="//*[text()='Graph Representations']")
 	WebElement graphRep_link;
 	@FindBy(xpath="//a[contains(text(),'Practice Questions')]")
 	WebElement graphPracticeQues;
