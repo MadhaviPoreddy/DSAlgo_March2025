@@ -60,7 +60,7 @@ public class LoginStepDef {
 	public void user_clicks_login_with_empty_fields(String username, String password) throws InterruptedException {
 	    // Just click the login button — don't enter anything
 	    loginpom.clickLogin();
-	    Thread.sleep(2000);
+	   
 	}
 	
 	@When("the user enters username and leaves the Password field empty")
