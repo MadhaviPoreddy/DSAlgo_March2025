@@ -1,7 +1,7 @@
 package com.dsalgo.automation.stepdefinations;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.*;
 import com.dsalgo.automation.pages.*;
 import static org.testng.Assert.*;
@@ -11,9 +11,7 @@ import com.dsalgo.automation.utils.ExcelReader;
 
 public class LinkedListStepDef {
 
-	
-	WebDriver driver=new ChromeDriver();
-	LinkedListPage linkedList=new LinkedListPage();;
+	LinkedListPage linkedList=new LinkedListPage();
 	List<Map<String, String>> testData = ExcelReader.getAllRows("LinkedList");
 	List<Map<String, String>> testData1 = ExcelReader.getAllRows("CodeEditor");
 	
