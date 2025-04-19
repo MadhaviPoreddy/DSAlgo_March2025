@@ -1,5 +1,5 @@
 #Author:Madhavi
-@array
+#@array
 Feature: Test Scenarios for Arrays
 
   Background: The user sign in to dsAlgo Portal
@@ -9,19 +9,16 @@ Feature: Test Scenarios for Arrays
     When The user clicks the Getting Started button in Array Panel After Sign in
 
   #Test Case 1
-  #@tag1
   Scenario: Verify that user is able to navigate to "Array" data structure page
     Then The user be directed to Array Data Structure Page
 
   #Test Case 2
-  #@tag1
   Scenario: Verify that user is able to navigate to "Arrays in Python" page
     Given The user is in the Array page after Sign in
     When The user clicks Arrays in Python link
     Then The user should be redirected to Arrays in Python page
 
   #Test Case 3
-    #@tag1
   Scenario: Verify that user is able to navigate to "try Editor" page for "Arrays in Python" page
     Given The user is on the Arrays in Python page
     When The user clicks Try Here button in Arrays in Python page
@@ -337,4 +334,4 @@ Feature: Test Scenarios for Arrays
   Scenario: Verify that user is able to redirected to the  home page
    	Given The user is in the Array page after Sign in
     When The user clicks the NumpyNinja link on the top left corner
-    Then The user is not able to land on home page
+    Then The user should be navigated to numpy ninja main page

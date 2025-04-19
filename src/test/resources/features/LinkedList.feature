@@ -1,6 +1,5 @@
-
 #Author: Madhavi
-@linkedlist
+#@ll
 Feature: Test Scenarios for Linked List Module
 
  Background: The user sign in to dsAlgo Portal
@@ -10,12 +9,10 @@ Feature: Test Scenarios for Linked List Module
     When The user clicks the Getting Started button in Linked List After Sign in
 
   #Test Case 1
-  #@tag1
   Scenario: Verify that user is able to navigate to "Linked List" data structure page
    Then The user will be directed to Linked List Data Structure Page
 
   #Test Case 2
-  #@tag2
   Scenario: Verify that user is able to navigate to "Introduction" page
     Given The user is in the Linked List page after Sign in
     When The user clicks Introduction link

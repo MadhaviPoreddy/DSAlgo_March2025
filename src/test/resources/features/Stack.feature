@@ -1,5 +1,5 @@
 #Author:Madhavi
-@stack
+#@stack
 Feature: Test Scenarios for Stack Module
 
   Background: The user sign in to dsAlgo Portal
@@ -9,11 +9,9 @@ Feature: Test Scenarios for Stack Module
     When The user clicks the Getting Started button in Stack Panel
 
   #Test Case 1
-  #@tag1
   Scenario: Verify that user is able to navigate to "Stack" data structure page
     Then The user will be directed to Stack Data Structure Page
   #Test Case 2
- #@tag2
   Scenario: Verify that user is able to navigate to "Operations in Stack" page
     Given The user is in the Stack page after Sign in
     When The user clicks Operations in Stack link
