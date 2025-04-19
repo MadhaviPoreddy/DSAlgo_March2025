@@ -34,7 +34,12 @@ public class DriverFactory {
 		default:
 			ChromeOptions options = new ChromeOptions();
 
-//			options.addArguments("--headless=new");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--start-maximized");
+			options.addArguments("--headless=new");
 
 			driver.set(new ChromeDriver(options));
 			driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
