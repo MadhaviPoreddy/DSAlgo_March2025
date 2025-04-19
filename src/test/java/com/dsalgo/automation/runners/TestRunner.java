@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
     glue = {"com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks"}, // Location of the step definition classes
     plugin = {"pretty", "html:target/cucumber-reports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-	tags = "@array", //tags from feature file
+	tags = "", //tags from feature file
     monochrome = true// Reports
     )
 
