@@ -103,16 +103,14 @@ public class HomeStepDef {
 		List<Map<String, String>> data = ExcelReader.getAllRows("SignIn"); // Specify the correct path to your Excel
 																			// file
 
-		// Retrieve username and password from the Excel file
-		for (Map<String, String> row : data) {
-			String username = row.get("username");
-			String password = row.get("password");
-			if (username != null && password != null) {
-				// You can now use them for login logic
-				loginpom.enterUsername(username);
-				loginpom.enterPassword(password);
-			}
-		}
+		// Get first data row (not header)
+	    Map<String, String> rowData = data.get(0); // index 0 = first data row after header
+	    //Exact value from excel cell
+	    String username = rowData.get("username");
+		String password = rowData.get("password");
+		//Use it in the step
+	    loginpom.enterUsername(username);
+		loginpom.enterPassword(password);
 
 		// Sign in using the retrieved credentials
 		loginpom.clickLogin();
