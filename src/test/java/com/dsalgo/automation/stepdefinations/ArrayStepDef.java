@@ -196,7 +196,7 @@ public class ArrayStepDef {
 		Map<String, String> specificRow = testData.get(2);
      	String expectedTitle = specificRow.get("PageTitle");
      	String arrayUsingListTitle = array.verfyArrayTitle();
-     	assertEquals(arrayUsingListTitle, expectedTitle);	
+     	Assert.assertEquals(arrayUsingListTitle, expectedTitle);	
 	}
 	
 	@Given("The user is on the Basic Operation in List page")
