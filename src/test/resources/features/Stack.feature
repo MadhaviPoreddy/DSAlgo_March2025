@@ -1,5 +1,5 @@
 #Author:Madhavi
-@stack
+#@stack
 Feature: Test Scenarios for Stack Module
 
   Background: The user sign in to dsAlgo Portal
