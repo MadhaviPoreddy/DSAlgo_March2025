@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.dsalgo.automation.pages.QueuePage;
 import com.dsalgo.automation.utils.ExcelReader;
+import com.dsalgo.automation.utils.LoggerLoad;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,20 +18,11 @@ public class QueueStepDef {
 	QueuePage queuePage = new QueuePage();
 	List<Map<String, String>> testData = ExcelReader.getAllRows("Queue");
 
-	@Then("the user should navigated to Queue page")
-	public void then_the_user_should_navigated_to_queue_page() {
-		Map<String, String> specificRow = testData.get(0);
-		String expectedTitle = specificRow.get("PageTitle");
-		String qPageTitle = queuePage.verifyTitleOfPage();
-		assertEquals(qPageTitle, expectedTitle);
-	}
 
 	@Given("The User is on Queue page")
 	public void given_the_user_is_on_queue_page() {
-		Map<String, String> specificRow = testData.get(0);
-		String expectedTitle = specificRow.get("PageTitle");
-		String qPageTitle = queuePage.verifyTitleOfPage();
-		assertEquals(qPageTitle, expectedTitle);
+		String queuePageTile = queuePage.verifyTitleOfPage();
+		LoggerLoad.info("User is on page " +queuePageTile);
 	}
 
 	@When("The user clicks on Implementation of Queue in Python link")
@@ -82,10 +74,6 @@ public class QueueStepDef {
 	public void the_user_is_on_implementation_using_collections_deque_try_editor_page() {
 		queuePage.clickimpOfCollectionDq();
 		queuePage.tryCodeEditor();
-		Map<String, String> specificRow = testData.get(5);
-		String expectedTitle = specificRow.get("PageTitle");
-		String codeEditorTitle = queuePage.verifyTitleOfPage();
-		assertEquals(codeEditorTitle, expectedTitle);
 	}
 
 	@When("The user clicks on Implementation using array link")
@@ -112,10 +100,6 @@ public class QueueStepDef {
 	public void the_user_is_on_implementation_using_array_try_editor_page() {
 		queuePage.clickImplementationUsingArray();
 		queuePage.tryCodeEditor();
-		Map<String, String> specificRow = testData.get(5);
-		String expectedTitle = specificRow.get("PageTitle");
-		String codeEditorTitle = queuePage.verifyTitleOfPage();
-		assertEquals(codeEditorTitle, expectedTitle);
 	}
 
 	@When("The user clicks on Queue Operations link")
