@@ -11,9 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features", // Location of the feature files
     glue = {"com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks"}, // Location of the step definition classes
-    plugin = {"pretty", "html:target/cucumber-reports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+    plugin = {"pretty", "html:target/cucumber/cucumber-reports.html","json:target/cucumber/cucumber.json",
+    		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-	//tags = "@ll", //tags from feature file
+	tags = "", //tags from feature file
     monochrome = true// Reports
     )
 
