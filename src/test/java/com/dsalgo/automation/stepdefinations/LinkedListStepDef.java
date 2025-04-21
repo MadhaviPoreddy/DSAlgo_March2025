@@ -1,12 +1,9 @@
 package com.dsalgo.automation.stepdefinations;
 
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.*;
 import com.dsalgo.automation.pages.*;
 import static org.testng.Assert.*;
 import java.util.*;
-import org.junit.Assert;
 import com.dsalgo.automation.utils.ExcelReader;
 
 public class LinkedListStepDef {
@@ -34,7 +31,7 @@ public class LinkedListStepDef {
     Map<String, String> specificRow = testData.get(0);
  	String expectedTitle = specificRow.get("PageTitle");
  	String LinkedListTitle = linkedList.verfyPageTitle();
- 	Assert.assertEquals(LinkedListTitle, expectedTitle);
+ 	assertEquals(LinkedListTitle, expectedTitle);
  
 	}
 
@@ -48,7 +45,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(1);
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
-     	Assert.assertEquals(LinkedListTitle, expectedTitle);
+     	assertEquals(LinkedListTitle, expectedTitle);
 	}
 
 	@Given("The user is on the Linked List Introduction page")
@@ -61,11 +58,6 @@ public class LinkedListStepDef {
 		linkedList.linkedListIntroductionTryEdit();
 	}
 
-//	@Then("The user should be redirected to a page having an try Editor with a Run button to test")
-//	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
 
 	@Given("The user is in the Linked List Introduction tryEditor page")
 	public void the_user_is_in_the_Linked_List_Introduction_try_editor_page() {
@@ -95,7 +87,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(2);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
+	 	assertEquals(LinkedListTitle, expectedTitle);
 	}
 		
 	@Given("The user is in the Creating Linked List page after Sign in")
@@ -139,7 +131,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(3);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
+	 	assertEquals(LinkedListTitle, expectedTitle);
 	}
 		
 	@Given("The user is in the Types of Linked List page after Sign in")
@@ -226,7 +218,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(4);
 	 	String expectedTitle = specificRow.get("PageTitle");
 	 	String LinkedListTitle = linkedList.verfyPageTitle();
-	 	Assert.assertEquals(LinkedListTitle, expectedTitle);
+	 	assertEquals(LinkedListTitle, expectedTitle);
 	}
 		
 	
@@ -257,7 +249,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(5);
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
-     	Assert.assertEquals(LinkedListTitle, expectedTitle);
+     	assertEquals(LinkedListTitle, expectedTitle);
 	}
 
 	@Given("The user is on the Traversal page")
@@ -286,7 +278,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(6);
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
-     	Assert.assertEquals(LinkedListTitle, expectedTitle);
+     	assertEquals(LinkedListTitle, expectedTitle);
 	}
 	
 	@Given("The user is on the Insertion page")
@@ -313,7 +305,7 @@ public class LinkedListStepDef {
 		Map<String, String> specificRow = testData.get(7);
      	String expectedTitle = specificRow.get("PageTitle");
      	String LinkedListTitle = linkedList.verfyPageTitle();
-     	Assert.assertEquals(LinkedListTitle, expectedTitle);
+     	assertEquals(LinkedListTitle, expectedTitle);
 	}
 	
 	@Given("The user is on the Deletion page")

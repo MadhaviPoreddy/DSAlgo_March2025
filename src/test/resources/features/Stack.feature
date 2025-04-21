@@ -3,10 +3,9 @@
 Feature: Test Scenarios for Stack Module
 
   Background: The user sign in to dsAlgo Portal
-     Given the user is on the DS Algo Sign in Page
-    And the user enters a valid credentials and click on login
-   #Given The user clicks on Getstarted and login to DS algo Home page Page
-    When The user clicks the Getting Started button in Stack Panel
+    Given the user is on the DS Algo Sign in Page
+    When the user enters a valid credentials and click on login
+    And The user clicks the Getting Started button in Stack Panel
 
   #Test Case 1
   Scenario: Verify that user is able to navigate to "Stack" data structure page

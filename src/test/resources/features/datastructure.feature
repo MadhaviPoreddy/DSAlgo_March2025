@@ -2,8 +2,7 @@ Feature: Navigation to Data Structures - Introduction Page
 
   Background: 
     Given the user is on the DS Algo Sign in Page
-    And the user enters a valid credentials and click on login
-    And the user is redirected to the Home page
+    When the user enters a valid credentials and click on login
 
   Scenario: Verify that user is able to navigate to Data Structures-Introduction page
     Given the user is on the "Home" page
