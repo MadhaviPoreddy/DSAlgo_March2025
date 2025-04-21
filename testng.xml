@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.dsalgo.automation.stepdefinations.ArrayStepDef">     
+      </class>
+    </classes>
+  </test>
+</suite>  Suite 
+
+-->
+<suite name="Suite" parallel="classes" thread-count="4">
+<test name="Test">
+<groups>
+     <run>
+        <!-- Use include to specify what you want to run or exclude to not run the mentioned group(s) -->
+        <include name="fullRegression"/>
+        <exclude name="brokenOrDevelopment"/>
+     </run>
+  </groups>
+<packages>
+    <!-- Packages who contains the test cases classes -->
+    <package name="com.dsalgo.automation.stepdefinations."/>       
+</packages>
+ </test>
+</suite> 

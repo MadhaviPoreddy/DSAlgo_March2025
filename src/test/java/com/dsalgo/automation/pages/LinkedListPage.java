@@ -4,7 +4,6 @@
 
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,7 +11,7 @@ import com.dsalgo.automation.driver.DriverFactory;
 
 	public class LinkedListPage {
 
-	    WebDriver driver= new ChromeDriver();
+	    WebDriver driver;
 		String url="https://dsportalapp.herokuapp.com/login";
 		@FindBy (xpath="//*[@id=\"id_username\"]") WebElement userName;
 		@FindBy (xpath="//*[@id=\"id_password\"]") WebElement passWord;
