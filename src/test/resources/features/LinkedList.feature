@@ -1,5 +1,4 @@
 #Author: Madhavi
-#@ll
 Feature: Test Scenarios for Linked List Module
 
  Background: The user sign in to dsAlgo Portal
@@ -8,23 +7,23 @@ Feature: Test Scenarios for Linked List Module
     #Given The user clicks on Getstarted and login to DS algo Home page Page
     When The user clicks the Getting Started button in Linked List After Sign in
 
-  #Test Case 1
+  ##Test Case 1
   Scenario: Verify that user is able to navigate to "Linked List" data structure page
    Then The user will be directed to Linked List Data Structure Page
 
-  #Test Case 2
+  ##Test Case 2
   Scenario: Verify that user is able to navigate to "Introduction" page
     Given The user is in the Linked List page after Sign in
     When The user clicks Introduction link
     Then The user should be redirected to Introduction page
 
-  #Test Case 3
+  ##Test Case 3
   Scenario: Verify that user is able to navigate to "try here Editor" page for "Introduction" page
     Given The user is on the Linked List Introduction page
     When The user clicks Try Here button in Linked List Introcution page
     Then The user should be redirected to a page having an try Editor with a Run button to test
 
-  #Test Case 4
+  ##Test Case 4
   Scenario: Verify that user receives error when click on Run button without entering code for "Linked List Introduction" page
     Given The user is in the Linked List Introduction tryEditor page
     When The user clicks the Run Button without entering the code in the Editor
@@ -210,85 +209,85 @@ Feature: Test Scenarios for Linked List Module
     When The user write the invalid code in Editor and click the Run Button
     Then The user should able to see an error message in alert window
 
-  #Test Case 35
+  ##Test Case 35
   Scenario: Verify that user is able to see output for valid python code on"Traversal" page
     Given The user is in the Traversal tryEditor page
     When The user write the valid code in Editor and click the Run Button
     Then The user should able to see output in the console for Linkedlist
 
-  #Test Case 36
+  ##Test Case 36
   Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Traversal" page
     Given The user is on the Traversal page
     When The user clicks Linked List Practice Questions button
     Then The user should be redirected to Linked List Practice page
 
- #Test Case 37
+ ##Test Case 37
   Scenario: Verify that user is able to navigate to "Insertion" page
     Given The user is in the Linked List page after Sign in
     When The user clicks Insertion link
     Then The user should be redirected to Insertion page
 
-  #Test Case 38
+  ##Test Case 38
   Scenario: Verify that user is able to navigate to "try here Editor" page for "Insertion" page
     Given The user is on the Insertion page
     When The user clicks Try Here button in Insertion page
     Then The user should be redirected to a page having an try Editor with a Run button to test
 
-  #Test Case 39
+  ##Test Case 39
   Scenario: Verify that user receives error when click on Run button without entering code for "Insertion" page
     Given The user is in the Insertion tryEditor page
     When The user clicks the Run Button without entering the code in the Editor
     Then The user is not able to see an error message
 
-  #Test Case 40
+  ##Test Case 40
   Scenario: Verify that user receives error for invalid python code for "Insertion" page
     Given The user is in the Insertion tryEditor page
     When The user write the invalid code in Editor and click the Run Button
     Then The user should able to see an error message in alert window
 
-  #Test Case 41
+  ##Test Case 41
   Scenario: Verify that user is able to see output for valid python code on"Insertion" page
     Given The user is in the Insertion tryEditor page
     When The user write the valid code in Editor and click the Run Button
     Then The user should able to see output in the console for Linkedlist
 
-  #Test Case 42
+  ##Test Case 42
   Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Insertion" page
     Given The user is on the Insertion page
     When The user clicks Linked List Practice Questions button
     Then The user should be redirected to Linked List Practice page
-
-  #Test Case 43
+#
+  ##Test Case 43
   Scenario: Verify that user is able to navigate to "Deletion" page
     Given The user is in the Linked List page after Sign in
     When The user clicks Deletion link
     Then The user should be redirected to Deletion page
 
-  #Test Case 44
+  ##Test Case 44
   Scenario: Verify that user is able to navigate to "try here Editor" page for "Deletion" page
     Given The user is on the Deletion page
     When The user clicks Try Here button in Deletion page
     Then The user should be redirected to a page having an try Editor with a Run button to test
 
-  #Test Case 45
+  ##Test Case 45
   Scenario: Verify that user receives error when click on Run button without entering code for "Deletion" page
     Given The user is in the Deletion tryEditor page
     When The user clicks the Run Button without entering the code in the Editor
     Then The user is not able to see an error message
 
-  #Test Case 46
+  ##Test Case 46
   Scenario: Verify that user receives error for invalid python code for "Deletion" page
     Given The user is in the Deletion tryEditor page
     When The user write the invalid code in Editor and click the Run Button
     Then The user should able to see an error message in alert window
 
-  #Test Case 47
+  ##Test Case 47
   Scenario: Verify that user is able to see output for valid python code on "Deletion" page
     Given The user is in the Deletion tryEditor page
     When The user write the valid code in Editor and click the Run Button
     Then The user should able to see output in the console for Linkedlist
 
-  #Test Case 48
+  ##Test Case 48
   Scenario: Verify that user is able to navigate to "Practice Questions" Page for "Deletion" page
     Given The user is on the Deletion page
     When The user clicks Linked List Practice Questions button

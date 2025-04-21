@@ -13,6 +13,8 @@ public class DriverFactory {
 
 	public static void initializeDriver(String browser) {
 		quitDriver();
+		clearDriverCache();
+
 
 		switch (browser) {
 
@@ -34,13 +36,19 @@ public class DriverFactory {
 		default:
 			ChromeOptions options = new ChromeOptions();
 
-//			options.addArguments("--headless=new");
-
+//			options.addArguments("--no-sandbox");
+ //		    options.addArguments("--headless=new");
+		
 			driver.set(new ChromeDriver(options));
 			driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get().manage().window().maximize();
 			break;
 		}
+	}
+
+	private static Object clearDriverCache() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public static WebDriver getDriver() {
