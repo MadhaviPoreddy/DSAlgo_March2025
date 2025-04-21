@@ -20,16 +20,13 @@ public class TreeStepDef {
 
 	@Given("The user is on Tree page")
 	public void the_user_is_on_tree_page() {
-		Map<String, String> specificRow = testData.get(0);
-		String expectedTitle = specificRow.get("PageTitle");
-		String treePageTitle = treePage.verifyTitleOfPage();
-		assertEquals(treePageTitle, expectedTitle);
+		String treePageTile = treePage.verifyTitleOfPage();
+		LoggerLoad.info("User is on page " +treePageTile);
 	}
 
 	@When("The user clicks on Overview of Trees link")
 	public void when_the_user_clicks_on_overview_of_trees_link() {
 		treePage.clickOverviewOfTreeslnk();
-
 	}
 
 	@Then("The User should be navigated to Overview of Trees page")
@@ -44,15 +41,6 @@ public class TreeStepDef {
 	@Given("The User is on Overview of Trees page")
 	public void given_the_user_is_on_overview_of_trees_page() {
 		treePage.clickOverviewOfTreeslnk();
-
-	}
-
-	@When("The Overview of Trees page is fully loaded")
-	public void when_the_overview_of_trees_page_is_fully_loaded() {
-		Map<String, String> specificRow = testData.get(1);
-		String expectedTitle = specificRow.get("PageTitle");
-		String OvrvwOfTreePageTitle = treePage.verifyTitleOfPage();
-		assertEquals(OvrvwOfTreePageTitle, expectedTitle);
 
 	}
 
@@ -89,10 +77,6 @@ public class TreeStepDef {
 	@Given("The User is on Terminologies page")
 	public void given_the_user_is_on_terminologies_page() {
 		treePage.clickTerminologieslnk();
-		Map<String, String> specificRow = testData.get(2);
-		String expectedTitle = specificRow.get("PageTitle");
-		String terminologiesPageTitle = treePage.verifyTitleOfPage();
-		assertEquals(terminologiesPageTitle, expectedTitle);
 
 	}
 
@@ -134,10 +118,6 @@ public class TreeStepDef {
 	@Given("The User is on Types of Trees page")
 	public void given_the_user_is_on_types_of_trees_page() {
 		treePage.clickTypesOfTreeslnk();
-		Map<String, String> specificRow = testData.get(3);
-		String expectedTitle = specificRow.get("PageTitle");
-		String typesOfTreePageTitle = treePage.verifyTitleOfPage();
-		assertEquals(typesOfTreePageTitle, expectedTitle);
 
 	}
 

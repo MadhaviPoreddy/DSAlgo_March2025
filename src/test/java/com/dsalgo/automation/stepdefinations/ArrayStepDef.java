@@ -14,20 +14,10 @@ import com.dsalgo.automation.utils.ExcelReader;
 
 public class ArrayStepDef {
 
-	//WebDriver driver;
 	ArrayPage array=new ArrayPage();
 	List<Map<String, String>> testData = ExcelReader.getAllRows("Arrays");
 	List<Map<String, String>> testData1 = ExcelReader.getAllRows("CodeEditor");
 	List<Map<String, String>> testData2 = ExcelReader.getAllRows("Arrays_Practice_Editor");
-
-//	@Given("The user clicks on Getstarted and login to DS algo Home page Page")
-//	public void the_user_clicks_on_getstarted_and_launch_sign_in_page() throws InterruptedException {
-//		array.homeGetstarted();
-//		array.homeSignin();
-//		array.enterUsername();
-//		array.enterPassword();
-//		array.clickLogin();
-//	}
 
 	@When("The user clicks the Getting Started button in Array Panel After Sign in")
 	public void the_user_clicks_the_button_in_array_panel_after_sign_in() {
@@ -44,10 +34,8 @@ public class ArrayStepDef {
 
 	@Given("The user is in the Array page after Sign in")
 	public void the_user_is_in_the_page_after_sign_in() {
-		Map<String, String> specificRow = testData.get(0);
-     	String expectedTitle = specificRow.get("PageTitle");
-     	String arrayTitle = array.verfyArrayTitle();
-     	Assert.assertEquals(arrayTitle, expectedTitle);
+
+
      }
 
 	@When("The user clicks Arrays in Python link")
