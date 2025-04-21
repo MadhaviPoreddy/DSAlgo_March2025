@@ -1,13 +1,10 @@
 package com.dsalgo.automation.runners;
+import org.testng.annotations.DataProvider;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+//import io.cucumber.junit.CucumberOptions;
 
-import org.junit.runner.RunWith;
-//import org.testng.annotations.DataProvider;
-import io.cucumber.junit.Cucumber;
-//import io.cucumber.testng.AbstractTestNGCucumberTests;
-//import io.cucumber.testng.CucumberOptions;
-import io.cucumber.junit.CucumberOptions;
-
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/features", // Location of the feature files
     glue = {"com.dsalgo.automation.stepdefinations", "com.dsalgo.automation.hooks"}, // Location of the step definition classes
@@ -18,14 +15,12 @@ import io.cucumber.junit.CucumberOptions;
     monochrome = true// Reports
     )
 
-public class TestRunner {
-//public class TestRunner extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests{
 	
-//	@Override
-//    @DataProvider(parallel = false)
-//    public Object[][] scenarios() {
-//				
-//		return super.scenarios();
-//    }
+	@Override
+	@DataProvider(parallel = true)
+	public Object[][] scenarios() {
+		return super.scenarios();
+	}
 
 }

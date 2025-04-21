@@ -2,10 +2,9 @@
 Feature: Test Scenarios for Linked List Module
 
  Background: The user sign in to dsAlgo Portal
-    Given the user is on the DS Algo Sign in Page
-    And the user enters a valid credentials and click on login
-    #Given The user clicks on Getstarted and login to DS algo Home page Page
-    When The user clicks the Getting Started button in Linked List After Sign in
+   Given the user is on the DS Algo Sign in Page
+    When the user enters a valid credentials and click on login
+    And The user clicks the Getting Started button in Linked List After Sign in
 
   ##Test Case 1
   Scenario: Verify that user is able to navigate to "Linked List" data structure page
