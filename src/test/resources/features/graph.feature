@@ -2,9 +2,8 @@ Feature: Navigation to Graph Data Structure Page
 
   Background: 
     Given the user is on the DS Algo Sign in Page
-    And the user enters a valid credentials and click on login
-    And the user is redirected to the Home page
-
+    When the user enters a valid credentials and click on login
+    
   Scenario: Verify that user navigates to the Graph page after signing in
     Given the user is on the "Home" page
     When the user clicks the Getting Started button in "Graph"

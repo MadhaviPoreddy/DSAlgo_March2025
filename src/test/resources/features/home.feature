@@ -1,8 +1,7 @@
 Feature: Access dsAlgo Portal
 
   Scenario: Verify that the user can open the dsAlgo Portal
-    Given the user has a web browser open
-    When the user enters the correct dsAlgo portal URL
+    Given the user enters the correct dsAlgo portal URL
     Then the user should land on the dsAlgo portal homepage with Get Started button
 
   Scenario: Verify the Home page for a user without Sign in

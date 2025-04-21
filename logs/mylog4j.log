@@ -1,0 +1,301 @@
+[2025-04-20 17:38:04] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:04] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:04] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:04] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:38:19] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:38:19] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:38:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:23] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:38:23] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:38:23] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:38:23] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:38:23] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:38:23] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:23] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:23] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:27] INFO  com.dsalgo.automation.utils.LoggerLoad - Home Page:https://dsportalapp.herokuapp.com/home
+[2025-04-20 17:38:27] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:38:29] INFO  com.dsalgo.automation.pages.GraphPage - Page title: Graph
+[2025-04-20 17:38:29] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:29] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:29] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:29] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:38:41] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:38:41] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:38:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:45] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:38:45] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:38:45] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:38:45] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:38:45] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:38:45] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:45] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:45] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:49] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:38:49] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:38:49] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:38:49] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:38:49] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:38:51] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:38:52] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:38:52] INFO  com.dsalgo.automation.pages.GraphPage - Current URL: https://dsportalapp.herokuapp.com/graph/graph/
+[2025-04-20 17:38:53] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:38:53] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:38:53] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:38:53] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:39:05] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:05] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:09] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:39:09] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:09] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:09] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:39:09] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:39:09] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:09] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:09] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:13] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:13] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:13] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:39:13] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:39:13] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:39:15] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:39:19] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
+[2025-04-20 17:39:19] INFO  com.dsalgo.automation.pages.GraphPage - Current URL: https://dsportalapp.herokuapp.com/tryEditor
+[2025-04-20 17:39:19] INFO  com.dsalgo.automation.pages.GraphPage - Text editor visibility: true
+[2025-04-20 17:39:20] INFO  com.dsalgo.automation.pages.GraphPage - Run button visibility: true
+[2025-04-20 17:39:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:20] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:39:30] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:30] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:30] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:30] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:30] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:34] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:39:34] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:34] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:34] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:39:34] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:39:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:38] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:39:40] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:39:43] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
+[2025-04-20 17:39:44] INFO  com.dsalgo.automation.utils.LoggerLoad - Try Editor is not empty
+[2025-04-20 17:39:44] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:39:44] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:39:44] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:39:44] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:39:45] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Run button
+[2025-04-20 17:39:47] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:39:47] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:39:47] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:39:47] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:40:01] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:01] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:01] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:01] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:01] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:05] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:40:05] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:05] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:05] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:40:05] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:40:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:05] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:09] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:40:11] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:40:15] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
+[2025-04-20 17:40:15] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:15] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:15] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:40:15] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:40:15] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:15] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:15] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:18] INFO  com.dsalgo.automation.pages.GraphPage - Entered Python code: print("NumpyNinja
+[2025-04-20 17:40:19] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Run button
+[2025-04-20 17:40:19] INFO  com.dsalgo.automation.pages.DataStructure - Alert appeared: SyntaxError: bad input on line 1
+[2025-04-20 17:40:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:19] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:19] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:40:30] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:31] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:34] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:40:34] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:34] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:34] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:40:34] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:40:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:34] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:38] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:40:40] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:40:44] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
+[2025-04-20 17:40:44] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:40:44] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:40:44] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:40:44] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:40:44] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:44] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:44] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:47] INFO  com.dsalgo.automation.pages.GraphPage - Entered Python code: print("DSAlgo");
+[2025-04-20 17:40:49] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Run button
+[2025-04-20 17:40:49] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:40:49] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:40:49] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:40:49] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:41:03] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:03] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:03] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:03] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:03] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:06] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:41:06] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:06] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:06] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:41:06] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:41:06] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:06] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:06] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:10] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:10] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:10] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:41:10] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:41:10] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:41:12] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:41:13] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
+[2025-04-20 17:41:13] INFO  com.dsalgo.automation.pages.GraphPage - Current URL: https://dsportalapp.herokuapp.com/graph/graph-representations/
+[2025-04-20 17:41:13] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:13] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:13] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:13] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:41:24] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:24] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:24] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:24] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:24] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:27] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:41:27] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:27] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:27] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:41:27] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:41:27] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:27] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:27] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:30] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:30] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:30] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:41:30] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:41:30] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:41:32] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
+[2025-04-20 17:41:35] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Try Here
+[2025-04-20 17:41:35] INFO  com.dsalgo.automation.pages.GraphPage - Current URL: https://dsportalapp.herokuapp.com/tryEditor
+[2025-04-20 17:41:35] INFO  com.dsalgo.automation.pages.GraphPage - Text editor visibility: true
+[2025-04-20 17:41:35] INFO  com.dsalgo.automation.pages.GraphPage - Run button visibility: true
+[2025-04-20 17:41:36] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:36] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:36] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:36] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:41:46] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:46] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:46] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:46] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:46] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:50] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:41:50] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:41:50] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:41:50] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:41:50] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:41:50] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:50] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:50] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:53] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:41:55] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on NumpyNinja logo
+[2025-04-20 17:41:57] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:41:57] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:41:57] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:41:57] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:42:08] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:08] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:08] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:42:08] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:42:08] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:42:12] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:42:12] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:12] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:12] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:42:12] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:42:12] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:42:12] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:42:12] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:42:15] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:15] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:15] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:42:15] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:42:15] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:42:17] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Graph link
+[2025-04-20 17:42:18] INFO  com.dsalgo.automation.pages.GraphPage - Clicked on Practice Questions link
+[2025-04-20 17:42:18] INFO  com.dsalgo.automation.pages.GraphPage - Page title: Practice Questions
+[2025-04-20 17:42:18] INFO  com.dsalgo.automation.pages.GraphPage - Body text: NumpyNinja
+Data Structures
+Abc@test.com Sign out
+[2025-04-20 17:42:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:42:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:42:20] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:42:20] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:42:31] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:31] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:42:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:42:31] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:42:35] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:42:35] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:35] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:35] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:42:35] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:42:35] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:42:35] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:42:35] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:42:38] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:42:38] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:42:38] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:42:38] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:42:38] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on Graph 
+[2025-04-20 17:42:40] INFO  com.dsalgo.automation.pages.GraphPage - Clicked Graph Representation link
+[2025-04-20 17:42:40] INFO  com.dsalgo.automation.pages.GraphPage - Paragraph text: Here, you can see that all the column values when added will be 2. This is because there will always be two vertices connecting an edge.
+[2025-04-20 17:42:40] INFO  com.dsalgo.automation.pages.GraphPage - Paragraph and table overlapping: true
+[2025-04-20 17:45:22] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:45:22] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:45:22] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:45:22] INFO  com.dsalgo.automation.utils.LoggerLoad - Choosen Browser is : chrome
+[2025-04-20 17:45:37] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:45:37] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:45:37] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:45:37] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:45:37] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:45:41] INFO  com.dsalgo.automation.pages.LoginPage - Navigated to login URL: https://dsportalapp.herokuapp.com/login
+[2025-04-20 17:45:41] INFO  com.dsalgo.automation.pages.LoginPage - Initialized Login page
+[2025-04-20 17:45:41] INFO  com.dsalgo.automation.pages.HomePage - HomePage initialized with WebDriver and waitHelper
+[2025-04-20 17:45:41] INFO  com.dsalgo.automation.pages.DataStructure - Initialized DataStructure page
+[2025-04-20 17:45:41] INFO  com.dsalgo.automation.pages.GraphPage - GraphPage initialized
+[2025-04-20 17:45:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2025-04-20 17:45:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+[2025-04-20 17:45:41] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[2025-04-20 17:45:45] INFO  com.dsalgo.automation.utils.LoggerLoad - Home Page:https://dsportalapp.herokuapp.com/home
+[2025-04-20 17:45:45] INFO  com.dsalgo.automation.pages.HomePage - click Get Startedlink on  DataStructures 
+[2025-04-20 17:45:46] INFO  com.dsalgo.automation.pages.DataStructure - Page title: Data Structures-Introduction

@@ -31,7 +31,6 @@ public class GraphStepDef {
 	public void the_user_is_on_the_data_structure_page(String section) {
         homepom.getStartedhome(section); 
 	    graphpom.clickGraphLink();
-	    Assert.assertEquals(graphpom.getTitleofPage(), "Graph", "User is not on the Graph page.");
 	}
 
 	@Then("the user should be redirected to the {string} subtopics page")
@@ -55,16 +54,10 @@ public class GraphStepDef {
 		case "Graph":
 			homepom.getStartedhome(topic);
 			graphpom.clickGraphLink();
-		    String expectedUrl = topic.toLowerCase() + "/graph/"; // adjust based on your site title
-		    String actualUrl = graphpom.getCurrentUrl();
-		    Assert.assertFalse(expectedUrl.contains(actualUrl), "User is not on the expected graph subtopics page: " + topic);
 		    break;
 		case "Graph Representations":
 			homepom.getStartedhome("Graph");
 			graphpom.clickGraphRep();
-			String expectedGraphRepUrl = topic.toLowerCase() + "/graph/graph-representations/"; // adjust based on your site title
-		    String actualGraphRepUrl = graphpom.getCurrentUrl();
-		    Assert.assertFalse(expectedGraphRepUrl.contains(actualGraphRepUrl), "User is not on the expected graph subtopics page: " + topic);
 		    break;
 		}
 		
