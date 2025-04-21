@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.testng.annotations.Test;
 
 import com.dsalgo.automation.utils.ExcelReader;
 
@@ -18,12 +19,13 @@ public class ArrayStepDef {
 	List<Map<String, String>> testData = ExcelReader.getAllRows("Arrays");
 	List<Map<String, String>> testData1 = ExcelReader.getAllRows("CodeEditor");
 	List<Map<String, String>> testData2 = ExcelReader.getAllRows("Arrays_Practice_Editor");
-
+@Test
 	@When("The user clicks the Getting Started button in Array Panel After Sign in")
 	public void the_user_clicks_the_button_in_array_panel_after_sign_in() {
 		array.arrayHome();
 	}
 
+@Test
 	@Then("The user be directed to Array Data Structure Page")
 	public void the_user_be_directed_to_data_structure_page() {
 		Map<String, String> specificRow = testData.get(0);
@@ -31,18 +33,18 @@ public class ArrayStepDef {
      	String arrayTitle = array.verfyArrayTitle();
      	Assert.assertEquals(arrayTitle, expectedTitle);
 	}
-
+@Test
 	@Given("The user is in the Array page after Sign in")
 	public void the_user_is_in_the_page_after_sign_in() {
 
 
      }
-
+@Test
 	@When("The user clicks Arrays in Python link")
 	public void the_user_clicks_link() {
 		array.arrayPythonLink();
 	}
-
+@Test
 	@Then("The user should be redirected to Arrays in Python page")
 	public void the_user_should_be_redirected_to_page() {
 		Map<String, String> specificRow = testData.get(1);
@@ -50,17 +52,17 @@ public class ArrayStepDef {
      	String arrayPythonTitle = array.verfyArrayTitle();
      	Assert.assertEquals(arrayPythonTitle, expectedTitle);
 	}
-
+@Test
 	@Given("The user is on the Arrays in Python page")
 	public void the_user_is_on_the_page() {
 		array.arrayPythonLink();
 	}
-
+@Test
 	@When("The user clicks Try Here button in Arrays in Python page")
 	public void the_user_clicks_button_in_arrays_in_python_page() {
 		array.arrayPythonLinkTryEdit();
 	}
-
+@Test
 	@Then("The user should be redirected to a page having an try Editor with a Run button to test")
 	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test() {
 		Map<String, String> specificRow = testData1.get(0);
@@ -68,19 +70,19 @@ public class ArrayStepDef {
      	String codeEditor = array.verfyArrayTitle();
      	Assert.assertEquals(codeEditor, expectedTitle);
 	}
-
+@Test
 	@Given("The user is in the tryEditor page")
 	public void the_user_is_in_the_try_editor_page() {
 		array.arrayPythonLink();
 		array.arrayPythonLinkTryEdit();
 	}
-
+@Test
 	@When("The user clicks the Run Button without entering the code in the Editor")
 	public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor() {
 		array.arrayPythonTextEditRun();
 
 	}
-
+@Test
 	@Then("The user is not able to see an error message")
 	public void the_user_is_not_able_to_see_an_error_message() {
 		Map<String, String> specificRow = testData1.get(0);
@@ -88,7 +90,7 @@ public class ArrayStepDef {
         String codeOutput = array.verifyOutput();
         assertEquals(expectedOutput,codeOutput);
 	}
-
+@Test
 	
 	@When("The user write the invalid code in Editor and click the Run Button")
 	public void the_user_write_the_invalid_code_in_editor_and_click_the_run_button() {
@@ -97,7 +99,7 @@ public class ArrayStepDef {
     	array.verifyCodeEditor(invalidCode);
     	array.arrayPythonTextEditRun();
 	}
-
+@Test
 	@Then("The user should able to see an error message in alert window")
 	public void the_user_should_able_to_see_an_error_message_in_alert_window() throws InterruptedException {
 		Boolean isDisplayed = array.alertPresent();
@@ -106,7 +108,7 @@ public class ArrayStepDef {
 		array.acceptAlert();
 
 	}
-
+@Test
 	@When("The user write the valid code in Editor and click the Run Button")
 	public void the_user_write_the_valid_code_in_editor_and_click_the_run_button() {
 		Map<String, String> specificRow = testData1.get(1);
@@ -115,7 +117,7 @@ public class ArrayStepDef {
     	array.arrayPythonTextEditRun();
 	}
 
-	
+@Test
 	@Then("The user should able to see output in the console for Arrays")
 	public void the_user_should_able_to_see_output_in_the_console_for_Arrays() {
 		Map<String, String> specificRow = testData1.get(1);
@@ -123,7 +125,7 @@ public class ArrayStepDef {
         String codeOutput = array.verifyOutput();
         assertEquals(expectedOutput,codeOutput);
  	}
-	
+@Test
 	
 	
 	@When("The user clicks Basic Operation in List link")
@@ -131,6 +133,8 @@ public class ArrayStepDef {
 	array.arrayBasicOperinListLink();
 	
 	}
+
+@Test
 	@Then("The user should be redirected to Basic Operation in List page")
 	public void the_user_should_be_redirected_to_basic_operation_list_page() {
 		
@@ -139,33 +143,38 @@ public class ArrayStepDef {
      	String arrayUsingListTitle = array.verfyArrayTitle();
      	Assert.assertEquals(arrayUsingListTitle, expectedTitle);
 	}
+
+@Test
 	@Given("The user is in the Array Topics page")
 	public void the_user_is_in_the_array_topics_page() throws InterruptedException {
 		Thread.sleep(2000);
 		array.arrayPythonLink();
      }
-	
+@Test
 	@When("The user clicks Arrays using List link of the Arrays Topics page left side menu")
 	public void the_user_clicks_arrays_using_list_page_link_of_the_arrays_topics_page_left_side_menu() {
 		array.arrayUsingListfromLeftMenu();
 	}
-	
+@Test
 	@When("The user clicks Basic Operation in List link of the Arrays Topics page left side menu")
 	public void the_user_clicks_basic_operation_in_list_link_of_the_arrays_topics_page_left_side_menu() {
 		array.arrayBasicOperationfromLeftMenu();
 	}
 	
+
+@Test
 	@Given("The user is on the Arrays Using List page")
 	public void the_user_is_on_the_array_using_list_page() throws InterruptedException {
 		Thread.sleep(2000);
 		array.arrayUsingList();
 	}
+@Test
 	@When("The user clicks Try Here button in Arrays using List page")
 	public void the_user_clicks_button_in_arrays_using_list_page() {
 	    array.arrayUsingListTryEdit();
 	}
 	
-	
+@Test
 	@Given("The user is in the Arrays using List tryEditor page")
 	public void the_user_is_in_the_arrays_using_list_try_editor_page() {
 		array.arrayUsingList();

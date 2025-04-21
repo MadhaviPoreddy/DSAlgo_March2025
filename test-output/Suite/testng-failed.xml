@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.dsalgo.automation.stepdefinations.ArrayStepDef">
+        <methods>
+          <include name="the_user_is_in_the_arrays_using_list_try_editor_page"/>
+          <include name="the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test"/>
+          <include name="the_user_is_not_able_to_see_an_error_message"/>
+          <include name="the_user_should_able_to_see_an_error_message_in_alert_window"/>
+          <include name="the_user_should_be_redirected_to_basic_operation_list_page"/>
+          <include name="the_user_is_in_the_try_editor_page"/>
+          <include name="the_user_clicks_basic_operation_in_list_link_of_the_arrays_topics_page_left_side_menu"/>
+          <include name="the_user_clicks_arrays_using_list_page_link_of_the_arrays_topics_page_left_side_menu"/>
+          <include name="the_user_clicks_button_in_arrays_in_python_page"/>
+          <include name="the_user_is_in_the_array_topics_page"/>
+          <include name="the_user_clicks_link"/>
+          <include name="the_user_is_on_the_page"/>
+          <include name="the_user_clicks_link_of_the_Basic_Operation"/>
+          <include name="the_user_is_on_the_array_using_list_page"/>
+          <include name="the_user_clicks_the_run_button_without_entering_the_code_in_the_editor"/>
+          <include name="the_user_should_able_to_see_output_in_the_console_for_Arrays"/>
+          <include name="the_user_write_the_valid_code_in_editor_and_click_the_run_button"/>
+          <include name="the_user_clicks_button_in_arrays_using_list_page"/>
+          <include name="the_user_should_be_redirected_to_page"/>
+          <include name="the_user_write_the_invalid_code_in_editor_and_click_the_run_button"/>
+          <include name="the_user_be_directed_to_data_structure_page"/>
+          <include name="the_user_clicks_the_button_in_array_panel_after_sign_in"/>
+        </methods>
+      </class> <!-- com.dsalgo.automation.stepdefinations.ArrayStepDef -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

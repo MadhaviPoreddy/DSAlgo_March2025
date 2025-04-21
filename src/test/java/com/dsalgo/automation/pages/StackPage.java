@@ -10,7 +10,6 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class StackPage {
 
-   // WebDriver driver= new ChromeDriver();
 	WebDriver driver;
 
 	String url="https://dsportalapp.herokuapp.com/login";
