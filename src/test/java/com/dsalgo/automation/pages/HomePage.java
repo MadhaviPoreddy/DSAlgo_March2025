@@ -5,8 +5,7 @@ package com.dsalgo.automation.pages;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
 import com.dsalgo.automation.utils.configReader;
 import com.dsalgo.automation.utils.waitHelper;
 
@@ -27,8 +27,7 @@ public class HomePage {
 	waitHelper waitHelper;
 	String url = configReader.getProperty("baseUrl");
 	String homeurl = configReader.getProperty("homeUrl");
-	//Setting up logging using Apache Log4j
-	private static final Logger LoggerLoad = LogManager.getLogger(HomePage.class);
+	
 	
 	
 	// Get Started Button
@@ -133,7 +132,7 @@ public class HomePage {
 		try {
 			return getStartedbtn.isDisplayed();
 		} catch (NoSuchElementException e) {
-			LoggerLoad.error("Get Started button not visible", e);
+			LoggerLoad.error("Get Started button not visible");
 			return false;
 		}
 	}
@@ -143,7 +142,7 @@ public class HomePage {
 			getStartedbtn.click();
 			LoggerLoad.info("Clicked on Get Started button.");
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click on Get Started button.", e);
+			LoggerLoad.error("Failed to click on Get Started button.");
 		}
 	}
 
@@ -157,7 +156,7 @@ public class HomePage {
 			String alertMsg = alertMessage.getText();
 			return alertMsg;
 		}catch (NoSuchElementException e) {
-			LoggerLoad.error("Alert message not found.", e);
+			LoggerLoad.error("Alert message not found.");
 			return null;
 		}
 	}
@@ -234,7 +233,7 @@ public class HomePage {
 				break;
 			}
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click Get Started link for: " + string, e);
+			LoggerLoad.error("Failed to click Get Started link for: " + string);
 		}
 		
 	}
@@ -286,7 +285,7 @@ public class HomePage {
 				break;
 			}
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to select dropdown option: " + string, e);
+			LoggerLoad.error("Failed to select dropdown option: " + string);
 		}
 
 	}
@@ -307,7 +306,7 @@ public class HomePage {
 			signin.click();
 			LoggerLoad.info("Clicked on Signin link.");
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click on Signin link", e);
+			LoggerLoad.error("Failed to click on Signin link");
 		}
 	}
 
@@ -317,7 +316,7 @@ public class HomePage {
 			register.click();
 			LoggerLoad.info("Clicked on Register link.");
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click on Register link", e);
+			LoggerLoad.error("Failed to click on Register link");
 		}
 	}
 
@@ -332,7 +331,7 @@ public class HomePage {
 			signOut.click();
 			LoggerLoad.info("Clicked on Sign out link.");
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click on Sign out link", e);
+			LoggerLoad.error("Failed to click on Sign out link");
 		}
 	}
 	
@@ -345,7 +344,7 @@ public class HomePage {
 			numpyNinjaLogo.click();
 			LoggerLoad.info("Clicked on NumpyNinja Logo link.");
 		}catch (Exception e) {
-			LoggerLoad.error("Failed to click on Sign out link", e);
+			LoggerLoad.error("Failed to click on Sign out link");
 		}
 	}
 	
