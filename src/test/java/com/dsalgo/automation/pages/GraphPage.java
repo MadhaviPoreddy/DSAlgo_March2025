@@ -3,8 +3,7 @@ package com.dsalgo.automation.pages;
 
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
 import com.dsalgo.automation.utils.waitHelper;
 
 
@@ -22,7 +22,7 @@ public class GraphPage {
 	waitHelper waitHelper;
 	
 	//Setting up logging using Apache Log4j
-	private static final Logger LoggerLoad = LogManager.getLogger(GraphPage.class);
+	//private static final Logger LoggerLoad = LogManager.getLogger(GraphPage.class);
 	
 	@FindBy (xpath ="//a[@href ='graph']")
 	WebElement getStartedgraph;
@@ -68,7 +68,7 @@ public class GraphPage {
 			graphLink.click();
 			LoggerLoad.info("Clicked on Graph link");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click Graph link", e);
+			LoggerLoad.error("Failed to click Graph link");
 		}
 	}
 	
@@ -83,7 +83,7 @@ public class GraphPage {
 			try_here.click();
 			LoggerLoad.info("Clicked on Try Here");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click Try Here", e);
+			LoggerLoad.error("Failed to click Try Here");
 		}
 	}
 	
@@ -93,7 +93,7 @@ public class GraphPage {
 			LoggerLoad.info("Text editor visibility: " + visible);
 			return visible;
 		} catch (Exception e) {
-			LoggerLoad.error("Text editor not visible", e);
+			LoggerLoad.error("Text editor not visible");
 			return false;
 		}
 	}
@@ -104,7 +104,7 @@ public class GraphPage {
 			LoggerLoad.info("Run button visibility: " + visible);
 			return visible;
 		} catch (Exception e) {
-			LoggerLoad.error("Run button not visible", e);
+			LoggerLoad.error("Run button not visible");
 			return false;
 		}
 	}
@@ -118,7 +118,7 @@ public class GraphPage {
 			runBtn.click();
 			LoggerLoad.info("Clicked Run button");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click Run button", e);
+			LoggerLoad.error("Failed to click Run button");
 		}
 	}
 	
@@ -132,7 +132,7 @@ public class GraphPage {
 			output.sendKeys(pythonCode);
 			LoggerLoad.info("Entered Python code: " + pythonCode);
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to enter Python code", e);
+			LoggerLoad.error("Failed to enter Python code");
 		}
 	}
 	
@@ -145,7 +145,7 @@ public class GraphPage {
 			graphRep_link.click();
 			LoggerLoad.info("Clicked Graph Representation link");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click Graph Representation link", e);
+			LoggerLoad.error("Failed to click Graph Representation link");
 		}
 	}
 	
@@ -154,7 +154,7 @@ public class GraphPage {
 			numpyninjaLogo.click();
 			LoggerLoad.info("Clicked on NumpyNinja logo");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click NumpyNinja logo", e);
+			LoggerLoad.error("Failed to click NumpyNinja logo");
 		}
 	}
 	
@@ -163,7 +163,7 @@ public class GraphPage {
 			graphPracticeQues.click();
 			LoggerLoad.info("Clicked on Practice Questions link");
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click Practice Questions link", e);
+			LoggerLoad.error("Failed to click Practice Questions link");
 		}
 	}
 	
@@ -186,7 +186,7 @@ public class GraphPage {
 			LoggerLoad.info("Paragraph visibility: " + visible);
 			return visible;
 		} catch (Exception e) {
-			LoggerLoad.error("Paragraph not visible", e);
+			LoggerLoad.error("Paragraph not visible");
 			return false;
 		}
 	}

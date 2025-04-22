@@ -1,7 +1,6 @@
 package com.dsalgo.automation.pages;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
 import com.dsalgo.automation.utils.configReader;
 import com.dsalgo.automation.utils.waitHelper;
 
@@ -18,8 +18,7 @@ public class LoginPage {
 	waitHelper waitHelper;
 	String loginurl = configReader.getProperty("loginUrl");
 	String registerurl = configReader.getProperty("registerUrl");
-	//Setting up logging using Apache Log4j
-	private static final Logger LoggerLoad = LogManager.getLogger(LoginPage.class);
+	
 
 	
 	@FindBy(xpath = "//input[@id='id_username']")
@@ -54,7 +53,7 @@ public class LoginPage {
 			driver.get(loginurl);
 			LoggerLoad.info("Navigated to login URL: " + loginurl);
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to navigate to login URL", e);
+			LoggerLoad.error("Failed to navigate to login URL");
 		}
 	}
 	
@@ -71,7 +70,7 @@ public class LoginPage {
 		try {
 			username.sendKeys(userName);
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to enter username", e);
+			LoggerLoad.error("Failed to enter username");
 		}
 
 	}
@@ -80,7 +79,7 @@ public class LoginPage {
 		try {
 			password.sendKeys(passWord);
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to enter password", e);
+			LoggerLoad.error("Failed to enter password");
 		}
 	}
 
@@ -89,7 +88,7 @@ public class LoginPage {
 		try {
 		loginbtn.click();
 		} catch (Exception e) {
-			LoggerLoad.error("Failed to click login button", e);
+			LoggerLoad.error("Failed to click login button");
 		}
 	}
 
@@ -100,7 +99,7 @@ public class LoginPage {
 			String alertMessage = alertMsg.getText();
 			return alertMessage;
 			} catch (Exception e) {
-				LoggerLoad.error("Failed to get invalid alert message", e);
+				LoggerLoad.error("Failed to get invalid alert message");
 				return null;
 		}
 	}
@@ -120,7 +119,7 @@ public class LoginPage {
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 	        return (String) js.executeScript("return arguments[0].validationMessage;", username);
 	    } catch (Exception e) {
-			LoggerLoad.error("Failed to get username validation message", e);
+			LoggerLoad.error("Failed to get username validation message");
 			return null;
 	    }
     }
@@ -130,7 +129,7 @@ public class LoginPage {
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 	        return (String) js.executeScript("return arguments[0].validationMessage;", password);
     	} catch (Exception e) {
-    		LoggerLoad.error("Failed to get password validation message", e);
+    		LoggerLoad.error("Failed to get password validation message");
     		return null;
     	}
     }

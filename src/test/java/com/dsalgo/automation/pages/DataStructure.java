@@ -1,8 +1,7 @@
 package com.dsalgo.automation.pages;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.dsalgo.automation.driver.DriverFactory;
+import com.dsalgo.automation.utils.LoggerLoad;
 import com.dsalgo.automation.utils.waitHelper;
 
 
@@ -20,8 +20,7 @@ public class DataStructure {
 	public WebDriver driver;
 	waitHelper waitHelper;
 	
-	//Setting up logging using Apache Log4j
-	private static final Logger LoggerLoad = LogManager.getLogger(DataStructure.class);
+	
 	
 	@FindBy (xpath = "//a[@href ='data-structures-introduction']")
 	WebElement getStartedDSintro_link;
@@ -62,7 +61,7 @@ public class DataStructure {
 			timecomplexity_link.click();
 			LoggerLoad.info("Clicked on 'Time Complexity' link");
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to click Time Complexity link", e);
+	        LoggerLoad.error("Failed to click Time Complexity link");
 	    }
 	}
 	
@@ -77,7 +76,7 @@ public class DataStructure {
 			practiceQues.click();
 			 LoggerLoad.info("Clicked on Practice Questions");
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to click Practice Questions", e);
+	        LoggerLoad.error("Failed to click Practice Questions");
 	    }
 	}
 	
@@ -92,7 +91,7 @@ public class DataStructure {
 		tryHere_link.click();
 			LoggerLoad.info("Clicked on Try Here link");
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to click Try Here", e);
+	        LoggerLoad.error("Failed to click Try Here");
 	    }
 	}
 	
@@ -102,7 +101,7 @@ public class DataStructure {
             LoggerLoad.info("Text editor visible: " + visible);
             return visible;
         } catch (Exception e) {
-            LoggerLoad.error("Text editor not visible", e);
+            LoggerLoad.error("Text editor not visible");
             return false;
     }	}
 	
@@ -112,7 +111,7 @@ public class DataStructure {
 	        LoggerLoad.info("Run button visible: " + visible);
 	        return visible;
 	    } catch (Exception e) {
-	        LoggerLoad.error("Run button not visible", e);
+	        LoggerLoad.error("Run button not visible");
 	        return false;
 	    }
 	}
@@ -128,7 +127,7 @@ public class DataStructure {
 			runBtn.click();
 			LoggerLoad.info("Clicked on Run button");
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to click Run button", e);
+	        LoggerLoad.error("Failed to click Run button");
 	    }
 	}
 	
@@ -143,7 +142,7 @@ public class DataStructure {
 			output.sendKeys(pythonCode);
 			LoggerLoad.info("Entered Python code into editor: " + pythonCode);
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to enter Python code", e);
+	        LoggerLoad.error("Failed to enter Python code");
 	    }
 	}
 	
@@ -158,7 +157,7 @@ public class DataStructure {
 			numpyninjaLogo.click();
 			LoggerLoad.info("Clicked on NumpyNinja logo");
 	    } catch (Exception e) {
-	        LoggerLoad.error("Failed to click NumpyNinja logo", e);
+	        LoggerLoad.error("Failed to click NumpyNinja logo");
 	    }
 	}
 	public String AlertGetText() {
@@ -169,7 +168,7 @@ public class DataStructure {
 		        LoggerLoad.info("Alert appeared: " + alertText);
 		        return alertText;
 		  } catch (Exception e) {
-		        LoggerLoad.error("No alert was present or failed to handle alert", e);
+		        LoggerLoad.error("No alert was present or failed to handle alert");
 		        return null;
 		  }
 	}
