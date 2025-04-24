@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>44/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>94/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 21 13:14:23 EDT 2025</td>
+<td>Started on:</td><td>Wed Apr 23 06:09:53 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137665 ms)</td>
+<tr><td>Total time:</td><td>234 seconds (234773 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,6 +75,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives "Submission Successful" on submitting valid python code for "Max Consecutive Ones" question", "Test Scenarios for Arrays"</td>
+<td><div><pre>java.lang.AssertionError: Test case Failed: Out put from console is not matched with the expected output expected [] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message(ArrayStepDef.java:335)
+	at ✽.The user is not able to see success message Submission successful(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:228)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1193452130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1193452130'><pre>java.lang.AssertionError: Test case Failed: Out put from console is not matched with the expected output expected [] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message(ArrayStepDef.java:335)
+	at ✽.The user is not able to see success message Submission successful(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:228)
+</pre></div></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "linked list page" upon clicking the hyperlink from Types of Linked List page", "Test Scenarios for Linked List Module"</td>
 <td><div><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [linked list] but found [www.javatpoint.com]
 	at org.testng.Assert.fail(Assert.java:99)
@@ -82,17 +104,39 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_Linked_List_page_through_Linkedlist_hyperlink(LinkedListStepDef.java:166)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_Linked_List_page_through_Linkedlist_hyperlink(LinkedListStepDef.java:167)
 	at ✽.The user should be redirected to linked list link page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:108)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1568812146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1568812146'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [linked list] but found [www.javatpoint.com]
+</pre></div><a href='#' onClick='toggleBox("stack-trace982616593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace982616593'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [linked list] but found [www.javatpoint.com]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_Linked_List_page_through_Linkedlist_hyperlink(LinkedListStepDef.java:166)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_Linked_List_page_through_Linkedlist_hyperlink(LinkedListStepDef.java:167)
 	at ✽.The user should be redirected to linked list link page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:108)
+</pre></div></td>
+<td>16</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Submit button", "Test Scenarios for Arrays"</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed : Expected output is not matching with Actual output expected [ No tests were collected] but found [No tests were collected]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_able_to_see_error_message_No_tests_were_Collected(ArrayStepDef.java:499)
+	at ✽.The user should be able to see error message No tests were Collected(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:324)
+</pre></div><a href='#' onClick='toggleBox("stack-trace292783698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292783698'><pre>java.lang.AssertionError: Test Case Failed : Expected output is not matching with Actual output expected [ No tests were collected] but found [No tests were collected]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_able_to_see_error_message_No_tests_were_Collected(ArrayStepDef.java:499)
+	at ✽.The user should be able to see error message No tests were Collected(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:324)
 </pre></div></td>
 <td>28</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
@@ -104,41 +148,19 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_singly_Linked_List_page(LinkedListStepDef.java:152)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_singly_Linked_List_page(LinkedListStepDef.java:153)
 	at ✽.The user should be redirected to singly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace648374582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace648374582'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [singly linked list] but found [www.javatpoint.com]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1756619104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756619104'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [singly linked list] but found [www.javatpoint.com]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_singly_Linked_List_page(LinkedListStepDef.java:152)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_singly_Linked_List_page(LinkedListStepDef.java:153)
 	at ✽.The user should be redirected to singly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:102)
 </pre></div></td>
-<td>29</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "doubly linked list page" upon clicking the hyperlink from Types of Linked List page", "Test Scenarios for Linked List Module"</td>
-<td><div><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [doubly linked list] but found [www.javatpoint.com]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_doubly_Linked_List_page(LinkedListStepDef.java:181)
-	at ✽.The user should be redirected to doubly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:114)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2046805787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2046805787'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [doubly linked list] but found [www.javatpoint.com]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_doubly_Linked_List_page(LinkedListStepDef.java:181)
-	at ✽.The user should be redirected to doubly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:114)
-</pre></div></td>
-<td>28</td>
+<td>20</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "type of the linked list page" upon clicking the hyperlink from Types of Linked List page", "Test Scenarios for Linked List Module"</td>
@@ -148,19 +170,107 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_typesof_Linked_List_page_through_link(LinkedListStepDef.java:196)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_typesof_Linked_List_page_through_link(LinkedListStepDef.java:197)
 	at ✽.The user should be redirected to type of the linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:120)
-</pre></div><a href='#' onClick='toggleBox("stack-trace141097984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace141097984'><pre>java.lang.AssertionError: Test Case Failed: Title of the page is not matched with Expected Title expected [www.javatpoint.com] but found [type of the linked list]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2060034221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2060034221'><pre>java.lang.AssertionError: Test Case Failed: Title of the page is not matched with Expected Title expected [www.javatpoint.com] but found [type of the linked list]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_typesof_Linked_List_page_through_link(LinkedListStepDef.java:196)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_typesof_Linked_List_page_through_link(LinkedListStepDef.java:197)
 	at ✽.The user should be redirected to type of the linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:120)
 </pre></div></td>
-<td>26</td>
+<td>21</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives "Submission Successful" on submitting valid python code for "Search the array" question", "Test Scenarios for Arrays"</td>
+<td><div><pre>java.lang.AssertionError: Test case Failed: Out put from console is not matched with the expected output expected [] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message(ArrayStepDef.java:335)
+	at ✽.The user is not able to see success message Submission successful(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:186)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1063841981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063841981'><pre>java.lang.AssertionError: Test case Failed: Out put from console is not matched with the expected output expected [] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message(ArrayStepDef.java:335)
+	at ✽.The user is not able to see success message Submission successful(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:186)
+</pre></div></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives "Submission Successful" on submitting valid python code for "Squares of a Sorted Array" question", "Test Scenarios for Arrays"</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed : Expected and Actual results are not matching expected [ No tests were collected] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message_for_SquaresofSortedArray_code(ArrayStepDef.java:463)
+	at ✽.The user is not able to see success message Submission successful for Squares of a Sorted Array code(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:312)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1855486655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1855486655'><pre>java.lang.AssertionError: Test Case Failed : Expected and Actual results are not matching expected [ No tests were collected] but found [Submission Successful]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_not_able_to_see_Submission_success_message_for_SquaresofSortedArray_code(ArrayStepDef.java:463)
+	at ✽.The user is not able to see success message Submission successful for Squares of a Sorted Array code(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:312)
+</pre></div></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "doubly linked list page" upon clicking the hyperlink from Types of Linked List page", "Test Scenarios for Linked List Module"</td>
+<td><div><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [doubly linked list] but found [www.javatpoint.com]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_doubly_Linked_List_page(LinkedListStepDef.java:182)
+	at ✽.The user should be redirected to doubly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:114)
+</pre></div><a href='#' onClick='toggleBox("stack-trace923181485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace923181485'><pre>java.lang.AssertionError: &quot;Test failed:Page title is not matched with Actual Title expected [doubly linked list] but found [www.javatpoint.com]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.LinkedListStepDef.the_user_should_be_redirected_to_doubly_Linked_List_page(LinkedListStepDef.java:182)
+	at ✽.The user should be redirected to doubly linked list page(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/LinkedList.feature:114)
+</pre></div></td>
+<td>36</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message on submitting invalid python code for "Squares of a Sorted Array" question", "Test Scenarios for Arrays"</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed : Expected output is not matching with Actual output expected [ No tests were collected] but found [No tests were collected]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_able_to_see_error_message_No_tests_were_Collected(ArrayStepDef.java:499)
+	at ✽.The user should be able to see error message No tests were Collected(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:306)
+</pre></div><a href='#' onClick='toggleBox("stack-trace978302019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace978302019'><pre>java.lang.AssertionError: Test Case Failed : Expected output is not matching with Actual output expected [ No tests were collected] but found [No tests were collected]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.dsalgo.automation.stepdefinations.ArrayStepDef.the_user_is_able_to_see_error_message_No_tests_were_Collected(ArrayStepDef.java:499)
+	at ✽.The user should be able to see error message No tests were Collected(file:///C:/Users/mpore/eclipse-workspace/DSAlgo_March2025/src/test/resources/features/Arrays.feature:306)
+</pre></div></td>
+<td>45</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -171,204 +281,309 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>33</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Applications of Array" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>16</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Run button", "Test Scenarios for Arrays"</td>
 <td></td>
 <td>24</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Deletion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>13</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on "Deletion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>13</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>35</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Introduction" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>32</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>23</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Introduction" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>34</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>29</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>22</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>28</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>34</td>
+<td>29</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Introduction" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Applications of Array" page", "Test Scenarios for Arrays"</td>
 <td></td>
-<td>36</td>
+<td>22</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for invalid python code on running "Find Numbers with Even Number of Digits" question", "Test Scenarios for Arrays"</td>
 <td></td>
-<td>28</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Insertion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>24</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>39</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>24</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Deletion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>13</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>38</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>19</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Insertion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>28</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>23</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>27</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>17</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Traversal" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>12</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Deletion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>11</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Introduction page" from left side menu", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>34</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>23</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Linked List Introduction" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>34</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Insertion" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>30</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>17</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Linked list introduction" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>34</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>25</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Linked List" data structure page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>31</td>
-<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
-<tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Linked List Introduction" page", "Test Scenarios for Linked List Module"</td>
-<td></td>
-<td>34</td>
+<td>22</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Implement Linked List" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>24</td>
+<td>19</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>15</td>
+<td>26</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Deletion" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Deletion" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>15</td>
+<td>11</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Linked List Introduction" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>29</td>
+<td>31</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Deletion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>11</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to redirected to the  home page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>25</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Introduction" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
 <td>23</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Linked list introduction" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>22</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Applications of Array" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Search the array" Page from Practice question page of "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Deletion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>11</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>21</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try Editor" page for "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code on running "Max Consecutive Ones" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try Editor" page for "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives "Submission Successful" on submitting valid python code for "Find Numbers with Even Number of Digits" question", "Test Scenarios for Arrays"</td>
 <td></td>
 <td>28</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code for "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Find Numbers with Even Number of Digits" editor and click on Submit button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>27</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code for "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Linked List" data structure page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Array" data structure page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Search the Array" editor and click on Run button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>31</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try Editor" page for "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>38</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>28</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to run valid python code for "Find Numbers with Even Number of Digits" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>13</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code on running "Search the array" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>16</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>25</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Introduction" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>30</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try Editor" page for "Applications of Array" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code for "Applications of Array" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>13</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Max Consecutive Ones" editor and click on Submit button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>29</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on "Deletion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>11</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>26</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to run valid python code for "Search the array" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>16</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Squares of a Sorted Array" editor and click on Run button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>28</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error on submitting invalid python code for "Find Numbers with Even Number of Digits" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Implement Linked List in Python" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>26</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>14</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Deletion" page", "Test Scenarios for Linked List Module"</td>
@@ -376,19 +591,164 @@ function toggleAllBoxes() {
 <td>11</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>14</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Find Numbers with Even Number of Digits" Page from Practice question page of "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to run valid python code for "Squares of a Sorted Array" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>30</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Max Consecutive Ones" editor and click on Run button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Squares of a Sorted Array" Page from Practice question page of "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>33</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Introduction" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>28</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code for "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Deletion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>10</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message without entering any code in "Search the Array" editor and click on Submit button", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>17</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>11</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message on submitting invalid python code for "Max Consecutive Ones" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>22</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Traversal" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to run valid python code for "Max Consecutive Ones" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error on submitting invalid python code for "Search the array" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>24</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>26</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Practice Questions" Page for "Insertion" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>12</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>26</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Max Consecutive Ones" Page from Practice question page of "Arrays in Python" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>23</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Arrays using List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>19</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Applications of Array" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>22</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for invalid python code on running "Squares of a Sorted Array" question", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>27</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Introduction page" from left side menu", "Test Scenarios for Linked List Module"</td>
 <td></td>
 <td>22</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
 <td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "Creating Linked List" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>37</td>
+<td>19</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 <tr>
-<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to navigate to "try here Editor" page for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to see output for valid python code on"Linked List Introduction" page", "Test Scenarios for Linked List Module"</td>
 <td></td>
-<td>25</td>
+<td>30</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error for invalid python code for "Basic Operation in List" page", "Test Scenarios for Arrays"</td>
+<td></td>
+<td>18</td>
+<td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
+<tr>
+<td title='com.dsalgo.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgo.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error when click on Run button without entering code for "Types of Linked List" page", "Test Scenarios for Linked List Module"</td>
+<td></td>
+<td>20</td>
 <td>com.dsalgo.automation.runners.TestRunner@5656be13</td></tr>
 </table><p>
 </body>

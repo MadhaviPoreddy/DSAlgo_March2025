@@ -12,34 +12,29 @@ public class StackPage {
 
 	WebDriver driver;
 
-	String url="https://dsportalapp.herokuapp.com/login";
-	@FindBy (xpath="//*[@id=\"id_username\"]") WebElement userName;
-	@FindBy (xpath="//*[@id=\"id_password\"]") WebElement passWord;
-	@FindBy (css="body > div.container > div > div.col-sm > form > input[type=submit]:nth-child(6)") WebElement loginBtn;
 	@FindBy (xpath="//a [@href='stack']") WebElement stackGetStartedBtn;
-	@FindBy (xpath="/html/body/div[2]/h4") WebElement stackHeader;
 	
 	//Operations in stack
-	@FindBy (xpath="/html/body/div[2]/ul[1]/a") WebElement operationsInStackLink;
-	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement operationsInStackLinkTryEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement operationsInStackLinkTextEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement operationsInStackLinkTextEditRun;
+	@FindBy (xpath="//*[text()='Operations in Stack']") WebElement operationsInStackLink;
+	@FindBy (xpath="//a[@href='/tryEditor']") WebElement operationsInStackLinkTryEdit;
+	@FindBy (css=".CodeMirror") WebElement operationsInStackLinkTextEdit;
+	@FindBy (xpath="//button[text()='Run']") WebElement operationsInStackLinkTextEditRun;
 	
 
 	//Implementation 
-	@FindBy (xpath="/html/body/div[2]/ul[2]/a") WebElement stackImplementation;
-	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement stackImplementationTryEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement stackImplementationTextEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement stackImplementationTextEditRun;
+	@FindBy (xpath="//*[text()='Implementation']") WebElement stackImplementation;
+	@FindBy (xpath="//a[@href='/tryEditor']") WebElement stackImplementationTryEdit;
+	@FindBy (css=".CodeMirror") WebElement stackImplementationTextEdit;
+	@FindBy (xpath="//button[text()='Run']") WebElement stackImplementationTextEditRun;
 	
 	//Applications
 	@FindBy (xpath="//a [@href='stack-applications']") WebElement stackApplications;
-	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement stackApplicationsTryEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement stackApplicationsTextEdit;
-	@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement traversalTextEditRun;
+	@FindBy (xpath="//a[@href='/tryEditor']") WebElement stackApplicationsTryEdit;
+	@FindBy (css=".CodeMirror") WebElement stackApplicationsTextEdit;
+	@FindBy (xpath="//button[text()='Run']") WebElement traversalTextEditRun;
 	
 	//practice Questions
-	@FindBy (xpath="//*[@id=\"content\"]/a") WebElement stackPracticeLink;
+	@FindBy (xpath="//*[text()='Practice Questions']") WebElement stackPracticeLink;
 	
 	@FindBy(xpath = "//pre[@id='output']") WebElement output;
 

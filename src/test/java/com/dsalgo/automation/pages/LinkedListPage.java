@@ -12,65 +12,61 @@ import com.dsalgo.automation.driver.DriverFactory;
 	public class LinkedListPage {
 
 	    WebDriver driver;
-		String url="https://dsportalapp.herokuapp.com/login";
-		@FindBy (xpath="//*[@id=\"id_username\"]") WebElement userName;
-		@FindBy (xpath="//*[@id=\"id_password\"]") WebElement passWord;
-		@FindBy (css="body > div.container > div > div.col-sm > form > input[type=submit]:nth-child(6)") WebElement loginBtn;
-		@FindBy (xpath="/html/body/div[3]/div[3]/div/div/a") WebElement linkedListGetStartedBtn;
-		@FindBy (xpath="/html/body/div[2]/ul[1]/a") WebElement arrayHeader;
+		@FindBy (xpath="//a[@href ='linked-list']") WebElement linkedListGetStartedBtn;
 		
 		//Introduction
-		@FindBy (xpath="/html/body/div[2]/ul[1]/a") WebElement linkedListIntroductionLink;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement linkedListIntroductionTryEdit;
+		@FindBy (xpath="//*[text()='Introduction']") WebElement linkedListIntroductionLink;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement linkedListIntroductionTryEdit;
 		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement linkedListIntroductionTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement linkedListIntroductionTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[1]/a") WebElement linkedListIntroductionFromLeftMenu;
+		@FindBy (xpath="//button[text()='Run']") WebElement linkedListIntroductionTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/introduction/']") WebElement linkedListIntroductionFromLeftMenu;
 		
 		//Creating Linked List
-		@FindBy (xpath="/html/body/div[2]/ul[2]/a") WebElement creatingLinkedList;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement creatingLinkedListTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement creatingLinkedListTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement creatingLinkedListTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[2]") WebElement creatingLinkedListFromLeftMenu;
+		@FindBy (xpath="//*[text()='Creating Linked LIst']") WebElement creatingLinkedList;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement creatingLinkedListTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement creatingLinkedListTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement creatingLinkedListTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/creating-linked-list/']") WebElement creatingLinkedListFromLeftMenu;
 
 		//Types of Linked Lists
-		@FindBy (xpath="/html/body/div[2]/ul[3]/a") WebElement typesOfListLink;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement typesOfListTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement typesOfListTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement typesOfListTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[3]") WebElement typesOfListLinkFromLeftMenu;
+		@FindBy (xpath="//*[text()='Types of Linked List']") WebElement typesOfListLink;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement typesOfListTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement typesOfListTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement typesOfListTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/types-of-linked-list/']") WebElement typesOfListLinkFromLeftMenu;
 		@FindBy (xpath="//a [text()='singly linked list']") WebElement TypesOfLL_SinglyLinkedListLink;
 		@FindBy (xpath="//a [text()='linked list']") WebElement TypesOfLL_LinkedListLink;
 
 		
 
 		//Implement Linked List in Python
-		@FindBy (xpath="/html/body/div[2]/ul[4]/a") WebElement implementLinkedList;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement implementLinkedListTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement implementLinkedListTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement implementLinkedListTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[4]") WebElement implementLinkedListFromLeftMenu;
+		@FindBy (xpath="//*[text()='Implement Linked List in Python']") WebElement implementLinkedList;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement implementLinkedListTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement implementLinkedListTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement implementLinkedListTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/implement-linked-list-in-python/']") WebElement implementLinkedListFromLeftMenu;
 
 		//Traversal
-		@FindBy (xpath="/html/body/div[2]/ul[5]/a") WebElement traversalLink;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement traversalTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement traversalTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement traversalTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[5]") WebElement traversalLinkedListFromLeftMenu;
+		@FindBy (xpath="//*[text()='Traversal']") WebElement traversalLink;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement traversalTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement traversalTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement traversalTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/traversal/']") WebElement traversalLinkedListFromLeftMenu;
 
 		//Insertion
-		@FindBy (xpath="/html/body/div[2]/ul[6]/a") WebElement insertionLink;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement insertionTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement insertionTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement insertionTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[6]") WebElement insertionLinkedListFromLeftMenu;
+		@FindBy (xpath="//*[text()='Insertion']") WebElement insertionLink;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement insertionTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement insertionTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement insertionTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/insertion-in-linked-list/']") WebElement insertionLinkedListFromLeftMenu;
 
 		//Deletion
-		@FindBy (xpath="/html/body/div[2]/ul[7]/a") WebElement deletionLink;
-		@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement deletionTryEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div") WebElement deletionTextEdit;
-		@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement deletionTextEditRun;
-		@FindBy (xpath="//*[@id=\"content\"]/li[7]") WebElement deletionLinkedListFromLeftMenu;
+		@FindBy (xpath="//*[text()='Deletion']") WebElement deletionLink;
+		@FindBy (xpath="//a[@href='/tryEditor']") WebElement deletionTryEdit;
+		@FindBy (xpath=".CodeMirror") WebElement deletionTextEdit;
+		@FindBy (xpath="//button[text()='Run']") WebElement deletionTextEditRun;
+		@FindBy (xpath="//a[@href='/linked-list/deletion-in-linked-list/']") WebElement deletionLinkedListFromLeftMenu;
+		
 		
 		
 		//practice Questions

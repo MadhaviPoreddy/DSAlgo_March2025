@@ -1,5 +1,5 @@
 #Author:Madhavi
-#@array
+@array
 Feature: Test Scenarios for Arrays
 
   Background: The user sign in to dsAlgo Portal

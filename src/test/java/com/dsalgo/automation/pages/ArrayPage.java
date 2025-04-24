@@ -13,50 +13,47 @@ import org.openqa.selenium.JavascriptExecutor;
 public class ArrayPage {
 	WebDriver driver;
 	
- 	String url="https://dsportalapp.herokuapp.com";
-	@FindBy (xpath ="/html/body/div[1]/div/div/a/button")WebElement getStartedHome;
-	@FindBy (xpath ="//*[@id=\"navbarCollapse\"]/div[2]/ul/a[3]")WebElement signinLink;
-	@FindBy (xpath ="//*[@id=\"id_username\"]")WebElement userName;
-	@FindBy (xpath ="//*[@id=\"id_password\"]")WebElement passWord;
-	@FindBy (xpath ="/html/body/div[2]/div/div[2]/form/input[4]")WebElement logInBtn;
- 	@FindBy (xpath="/html/body/div[3]/div[2]/div/div/a") WebElement arrayGetStartedBtn;
- 	@FindBy (xpath="/html/body/div[2]/h4") WebElement arrayHeader;
+ 	@FindBy (xpath="//a[@href ='array']") WebElement arrayGetStartedBtn;
  	
  	//Arrays in Python
- 	@FindBy (xpath="/html/body/div[2]/ul[1]/a") WebElement arrayPythonLink;
- 	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement arrayPythonLinkTryEdit;
+ 	@FindBy (xpath="//*[text()='Arrays in Python']") WebElement arrayPythonLink;
+ 	@FindBy (xpath="//a[@href='/tryEditor']") WebElement arrayPythonLinkTryEdit;
  	@FindBy (css=".CodeMirror") WebElement arrayPythonTextEdit;
- 	@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement arrayPythonTextEditRun;
+ 	@FindBy (xpath="//button[text()='Run']") WebElement arrayPythonTextEditRun;
  	
  	//Arrays Using List
- 	@FindBy (xpath="/html/body/div[2]/ul[2]/a") WebElement arrayUsingList;
- 	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement arrayUsingListTryEdit;
+ 	@FindBy (xpath="//*[text()='Arrays Using List']") WebElement arrayUsingList;
+ 	@FindBy (xpath="//a[@href='/tryEditor']") WebElement arrayUsingListTryEdit;
  	@FindBy (css=".CodeMirror") WebElement arrayUsingListTextEdit;
- 	@FindBy (xpath="//*[@id=\"content\"]/li[2]/a") WebElement arrayUsingListfromLeftMenu;
- 	@FindBy (xpath="//*[@id=\"content\"]/li[1]/a") WebElement arrayInPythonfromLeftMenu;
+ 	@FindBy (xpath="//a[@href='/array/arrays-using-list/']") WebElement arrayUsingListfromLeftMenu;//arrayUsingList
+ 	@FindBy (xpath="//a[@href='/array/arrays-in-python/']") WebElement arrayInPythonfromLeftMenu; //arrayPythonLink
 	
  	
  	//Basic Operations in Lists
- 	@FindBy (xpath="/html/body/div[2]/ul[3]/a") WebElement arrayBasicOperinListLink;
- 	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement arrayBasicOperinListTryEdit;
- 	@FindBy (xpath="//*[@id=\"content\"]/li[3]/a") WebElement arrayBasicOperationfromLeftMenu;
+ 	@FindBy (xpath="//*[text()='Basic Operations in Lists']") WebElement arrayBasicOperinListLink;
+ 	@FindBy (xpath="//a[@href='/tryEditor']") WebElement arrayBasicOperinListTryEdit;
+ 	@FindBy (xpath="//a[@href='/array/basic-operations-in-lists/']") WebElement arrayBasicOperationfromLeftMenu;//arrayBasicOperinListLink
 
  	//Applications of Array
- 	@FindBy (xpath="/html/body/div[2]/ul[4]/a") WebElement applicationOfArraryLink;
- 	@FindBy (xpath="/html/body/div[2]/div/div[2]/a") WebElement applicationOfArraryTryEdit;
- 	@FindBy (xpath="//*[@id=\"content\"]/li[4]/a") WebElement arrayApplicationfromLeftMenu;
+ 	@FindBy (xpath="//*[text()='Applications of Array']") WebElement applicationOfArraryLink;
+ 	@FindBy (xpath="//a[@href='/tryEditor']") WebElement applicationOfArraryTryEdit;
+ 	@FindBy (xpath="//a[@href='/array/applications-of-array/']") WebElement arrayApplicationfromLeftMenu;//applicationOfArraryLink
  	
  	//practice Questions
  	
- 	@FindBy (xpath="//*[@id=\"content\"]/a") WebElement arrayPractieceQue;
- 	@FindBy (css="body > div:nth-child(3) > a") WebElement searchArrayPractieceQue;
- 	@FindBy (xpath="/html/body/div[3]/a") WebElement maxConsucutiveOnesPractieceQue;
- 	@FindBy (xpath="/html/body/div[4]/a") WebElement findNumwithEvenDigitsPractieceQue;
- 	@FindBy (xpath="/html/body/div[5]/a") WebElement squaresOfSortedArrayPractieceQue;
+ 	
+ 	//*[text()='Search the array']
+ 	@FindBy (xpath="//*[text()='Practice Questions']") WebElement arrayPractieceQue;
+ 	@FindBy (xpath="//*[text()='Search the array']") WebElement searchArrayPractieceQue;
+ 	@FindBy (xpath="//*[text()='Max Consecutive Ones']") WebElement maxConsucutiveOnesPractieceQue;
+ 	@FindBy (xpath="//*[text()='Find Numbers with Even Number of Digits']") WebElement findNumwithEvenDigitsPractieceQue;
+ 	@FindBy (xpath="//*[text()='Squares of  a Sorted Array']") WebElement squaresOfSortedArrayPractieceQue;
 
  	//practice Questions Text Editor
  	//@FindBy (xpath="//*[@id=\"answer_form\"]/button") WebElement arrayPracticeRun;
- 	@FindBy (css="#answer_form > input.button") WebElement arrayPracticeSubmit;
+ 	@FindBy (xpath="//input[@value='Submit']") WebElement arrayPracticeSubmit;
+ 	
+ 	//input[@value='Submit']
 
 	@FindBy(xpath = "//pre[text()=\"Error occurred during submission\"]") WebElement outputerror;
 	@FindBy(xpath = "//pre [text()=\" No tests were collected\"]") WebElement Blankoutputerror;
@@ -72,29 +69,6 @@ public class ArrayPage {
  		this.driver=DriverFactory.getDriver();
 		PageFactory.initElements( driver, this);
  	}
- 	
- 	public void homeGetstarted()
-	{
- 		driver.navigate().to("https://dsportalapp.herokuapp.com/");
- 		getStartedHome.click();
-	}
-
- 	public void homeSignin()
-	{
-		signinLink.click();
-	}
-	public void enterUsername()
-	{
-		userName.sendKeys("abc@test.com");
-	}
-	public void enterPassword()
-	{
-		passWord.sendKeys("testtest@123");
-	}
-	public void clickLogin()
-	{
-		logInBtn.click();
-	}
  	
 	public void arrayPythonLink()
 	{

@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
     plugin = {"pretty", "html:target/cucumber/cucumber-reports.html","json:target/cucumber/cucumber.json",
     		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-	tags = "", //tags from feature file
+	tags = "@array or @ll", //tags from feature file
     monochrome = true// Reports
     )
 
